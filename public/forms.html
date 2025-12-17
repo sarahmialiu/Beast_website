@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>First Three.js Project</title>
+  <title>Forms</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div id="ui">
+    <img class="responsive" src="images/trees.png" alt="header-img">
 
-    <div id="home-button">beast</div>
+    <div id="home-button"><a href="index.html">beast</a></div>
 
     <div id="buttons">
       <div class="dropdown">
@@ -68,34 +69,35 @@
             <a href="#">Contact</a>
         </div>
       </div>
-
     </div>
 
   </div>
 
-  <script type="module" src="/main.js"></script>
+  <p style="color:black; padding:80px;">
+    This is the forms page.
+  </p>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      document.body.classList.add('loaded')
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded')
 
-      document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', e => {
-          if (
-            link.hostname === window.location.hostname &&
-            !link.hasAttribute('target')
-          ) {
-            e.preventDefault()
-            document.body.classList.remove('loaded')
+        document.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', e => {
+            if (
+              link.hostname === window.location.hostname &&
+              !link.hasAttribute('target')
+            ) {
+              e.preventDefault()
+              document.body.classList.remove('loaded')
 
-            setTimeout(() => {
-              window.location.href = link.href
-            }, 400)
-          }
+              setTimeout(() => {
+                window.location.href = link.href
+              }, 400)
+            }
+          })
         })
       })
-    })
-  </script>
+    </script>
 
 </body>
 </html>
