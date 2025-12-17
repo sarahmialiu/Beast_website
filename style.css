@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Three.js canvas */
+canvas {
+  position: fixed; /* THIS is critical */
+  inset: 0;
+  z-index: 0;
+}
+
+/* UI layer */
+#ui {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Text itself */
+#home-button {
+  position: absolute;
+  top: 36px;
+  left: 40px;
+  color: white;
+  font-size: 36px;
+  font-family: 'Courier New', Courier, monospace;
+  pointer-events: auto;
+}
+
+/* Buttons container */
+#buttons {
+  position: absolute;
+  top: 42px;
+  right: 40px;
+  display: flex;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+/* Buttons */
+#buttons button {
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 4px 40px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  /* backdrop-filter: blur(4px); */
+}
+
+#buttons button:hover { 
+  background-color: #dddddd1e;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #dddddd1e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  opacity: 0;
+  transform: translateY(-16px);
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  transition: color 0.2s ease;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover { background-color: #dddddd39; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content { 
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
