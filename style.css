@@ -1,9 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   background-color: rgb(15, 13, 21);
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+html, body {
+  height: auto;
+  overflow-y: auto;
 }
 
 body.loaded {
@@ -17,18 +29,21 @@ canvas {
   z-index: 0;
 }
 
-/* UI layer */
-#ui {
+/* Navigation Bar */
+#topbar {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   inset: 0;
-  z-index: 10;
   pointer-events: none;
 }
 
 /* Text itself */
 #home-button {
   position: absolute;
-  top: 36px;
+  top: 28px;
   left: 40px;
   color: white;
   font-size: 36px;
@@ -39,7 +54,7 @@ canvas {
 /* Buttons container */
 #buttons {
   position: absolute;
-  top: 42px;
+  top: 34px;
   right: 40px;
   display: flex;
   gap: 12px;
@@ -53,13 +68,13 @@ canvas {
   border: 1px solid rgba(255, 255, 255, 0);
   padding: 4px 40px;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Jost", sans-serif;
   cursor: pointer;
   /* backdrop-filter: blur(4px); */
 }
 
 #buttons button:hover { 
-  background-color: #dddddd1e;
+  background-color: #191f28e3;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -72,7 +87,7 @@ canvas {
 .dropdown-content {
   display: block;
   position: absolute;
-  background-color: #dddddd1e;
+  background-color: #191f28e3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -92,7 +107,8 @@ canvas {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 200;
   transition: color 0.2s ease;
 }
 
@@ -106,13 +122,239 @@ canvas {
   pointer-events: auto; 
 }
 
-img.responsive {
-  width:100%; 
-  height:110px;
+/* Burger icon */
+#burger {
+  display: none;
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
 }
 
+/* Responsive: when screen is small */
+@media screen and (max-width: 1100px) {
+  #buttons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #buttons.active {
+    display: flex;
+  }
+
+  #burger {
+    display: block;
+  }
+
+  #topbar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .dropdown-content {
+    position: static; /* Stack links vertically */
+  }
+  
+  .dropbtn {
+    width: 100%;
+    text-align: left;
+    background-color: #444;
+  }
+}
+
+img.responsive {
+  width:100%; 
+  height:102px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative; 
+  text-align: left;
+  margin-left: 40px;
+
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+/* ----- taken from w3.css ----- */
+
+.w3-row-padding:before,
+.w3-row-padding:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w3-row-padding,
+.w3-row-padding > .w3-quarter {
+  padding: 0 8px;
+}
+
+.w3-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.w3-center {
+  text-align: center !important;
+}
+
+.w3-quarter {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 601px) {
+  .w3-quarter {
+    width: 24.99999%;
+  }
+}
+
+.w3-main,
+#main {
+  transition: margin-left 0.4s;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .w3-sidebar.w3-collapse {
+    display: none;
+  }
+
+  .w3-main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .w3-auto {
+    max-width: 100%;
+  }
+}
+
+/* Content widths */
+.w3-content,
+.w3-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w3-content {
+  max-width: 980px;
+}
+
+.w3-auto {
+  max-width: 1140px;
+}
+
+/* Padding utilities */
+.w3-padding-small {
+  padding: 4px 8px !important;
+}
+
+.w3-padding {
+  padding: 8px 16px !important;
+}
+
+.w3-padding-large {
+  padding: 12px 24px !important;
+}
+
+/* Fixed positioning */
+.w3-top,
+.w3-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.w3-top {
+  top: 0;
+}
+
+.w3-bottom {
+  bottom: 0;
+}
+
+/* Bar / navigation */
+.w3-bar {
+  width: 100%;
+  overflow: hidden;
+}
+
+.w3-center .w3-bar {
+  display: inline-block;
+  width: auto;
+}
+
+.w3-bar .w3-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+.w3-bar .w3-dropdown-hover,
+.w3-bar .w3-dropdown-click {
+  position: static;
+  float: left;
+}
+
+.w3-bar .w3-button {
+  white-space: normal;
+}
+
+/* Bar block */
+.w3-bar-block .w3-bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+}
+
+.w3-bar-block.w3-center .w3-bar-item {
+  text-align: center;
+}
+
+.w3-block {
+  display: block;
+  width: 100%;
+}
+
+/* Colors */
+.w3-white,
+.w3-hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.w3-wide {
+  letter-spacing: 4px;
+}
+

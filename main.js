@@ -51,7 +51,7 @@ controls.update();
 
 
 // Lighting
-const light = new THREE.DirectionalLight(0xfaefcf, 2);
+const light = new THREE.DirectionalLight(0xfaefcf, 2.5);
 light.position.set(15, 20, 15);
 light.lookAt(0, 0, 0);
 
@@ -62,7 +62,7 @@ light.shadow.normalBias = 0.02;
 
 scene.add(light);
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 1.6);
+const ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
 scene.add(ambientLight);
 
 // shadow debugger
