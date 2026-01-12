@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   overflow: hidden;
@@ -12,15 +13,14 @@ body {
   font-weight: 300;
   color: white;
 }
-
 html, body {
   height: auto;
   overflow-y: auto;
 }
-
 body.loaded {
   opacity: 1;
 }
+
 
 /* Three.js canvas */
 canvas {
@@ -28,6 +28,7 @@ canvas {
   inset: 0;
   z-index: 0;
 }
+
 
 /* Navigation Bar */
 #topbar {
@@ -72,7 +73,6 @@ canvas {
   cursor: pointer;
   /* backdrop-filter: blur(4px); */
 }
-
 #buttons button:hover { 
   background-color: #191f28e3;
 }
@@ -82,7 +82,6 @@ canvas {
   position: relative;
   display: inline-block;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: block;
@@ -100,7 +99,6 @@ canvas {
     opacity 0.25s ease,
     transform 0.25s ease;
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
   color: rgb(255, 255, 255);
@@ -111,10 +109,8 @@ canvas {
   font-weight: 200;
   transition: color 0.2s ease;
 }
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover { background-color: #dddddd39; }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content { 
   opacity: 1;
