@@ -20,65 +20,69 @@
   <img class="responsive" src="images/trees.png" alt="header-img">
 
   <div id="home-button"><a href="index.html">beast</a></div>
+  <div id="burger">☰</div>
 
   <div id="buttons">
     <div class="dropdown">
       <button class="dropbtn">
-          <a href="forms.html">forms</a>
+        <a href="forms.html">forms</a>
       </button>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn">academics</button>
+      <button class="dropbtn">
+        <a href="academics.html">academics</a> <span class="carrot">▸</span>
+      </button>
       <div class="dropdown-content">
-          <a href="#">First Year</a>
-          <a href="#">Second Year</a>
-          <a href="#">Courses</a>
-          <a href="#">Teaching</a>
-          <a href="#">Qualifying Exam & Dissertation</a>
-          <a href="#">Fellowships & Awards</a>
-          <a href="#">Computing Resources</a>
-          <a href="#">Intellectual Property</a>
-          <a href="#">Student Handbook</a>
-      </div>
-    </div>
-    
-    <div class="dropdown">
-      <button class="dropbtn">extracurriculars</button>
-      <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">DEI</button>
-      <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+        <a href="#">First Year</a>
+        <a href="#">Second Year</a>
+        <a href="#">Courses</a>
+        <a href="#">Teaching</a>
       </div>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn">
-          <a href="faqs.html">FAQs</a>
+        <a href="extracurriculars.html">extracurriculars</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="dei.html">DEI</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="faqs.html">FAQs</a>
       </button>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn">about</button>
+      <button class="dropbtn">
+        <a href="about.html">about</a> <span class="carrot">▸</span>
+      </button>
       <div class="dropdown-content">
-          <a href="#">BEAST</a>
-          <a href="#">Position Descriptions</a>
-          <a href="#">Student Directory</a>
-          <a href="#">Contact</a>
+        <a href="#">BEAST</a>
+        <a href="#">Position Descriptions</a>
+        <a href="#">Student Directory</a>
+        <a href="#">Contact</a>
       </div>
     </div>
-  </div>
 
+  </div>
 </div>
+
 
 <p style="color:black; padding:60px;">
   forms page.
@@ -183,6 +187,24 @@
       })
     })
   })
+</script>
+
+<script>
+  const burger = document.getElementById('burger');
+  const buttons = document.getElementById('buttons');
+
+  burger.addEventListener('click', () => {
+    buttons.classList.toggle('active');
+  });
+
+  // Mobile dropdown toggles
+  document.querySelectorAll('#buttons .dropdown').forEach(dropdown => {
+    const btn = dropdown.querySelector('.dropbtn');
+    btn.addEventListener('click', e => {
+      e.preventDefault(); // prevent navigation if button is link
+      dropdown.classList.toggle('active');
+    });
+  });
 </script>
 
 

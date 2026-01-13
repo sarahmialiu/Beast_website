@@ -13,93 +13,112 @@
 </head>
 
 <body>
-  <div id="topbar">
-    <div id="burger" onclick="toggleMenu()">☰</div>
+<div id="topbar">
+  <div id="home-button">beast</div>
+  <div id="burger">☰</div>
 
-    <div id="home-button">beast</div>
-
-    <div id="buttons">
-      <div class="dropdown">
-        <button class="dropbtn">
-            <a href="forms.html">forms</a>
-        </button>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">academics</button>
-        <div class="dropdown-content">
-            <a href="#">First Year</a>
-            <a href="#">Second Year</a>
-            <a href="#">Courses</a>
-            <a href="#">Teaching</a>
-            <a href="#">Qualifying Exam & Dissertation</a>
-            <a href="#">Fellowships & Awards</a>
-            <a href="#">Computing Resources</a>
-            <a href="#">Intellectual Property</a>
-            <a href="#">Student Handbook</a>
-        </div>
-      </div>
-      
-      <div class="dropdown">
-        <button class="dropbtn">extracurriculars</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">DEI</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">
-            <a href="faqs.html">FAQs</a>
-        </button>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">about</button>
-        <div class="dropdown-content">
-            <a href="#">BEAST</a>
-            <a href="#">Position Descriptions</a>
-            <a href="#">Student Directory</a>
-            <a href="#">Contact</a>
-        </div>
-      </div>
-
+  <div id="buttons">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="forms.html">forms</a>
+      </button>
     </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="academics.html">academics</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">First Year</a>
+        <a href="#">Second Year</a>
+        <a href="#">Courses</a>
+        <a href="#">Teaching</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="extracurriculars.html">extracurriculars</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="dei.html">DEI</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="faqs.html">FAQs</a>
+      </button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="about.html">about</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">BEAST</a>
+        <a href="#">Position Descriptions</a>
+        <a href="#">Student Directory</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
   </div>
+</div>
 
-  <script type="module" src="/main.js"></script>
+<script type="module" src="/main.js"></script>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      document.body.classList.add('loaded')
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded')
 
-      document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', e => {
-          if (
-            link.hostname === window.location.hostname &&
-            !link.hasAttribute('target')
-          ) {
-            e.preventDefault()
-            document.body.classList.remove('loaded')
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', e => {
+        if (
+          link.hostname === window.location.hostname &&
+          !link.hasAttribute('target')
+        ) {
+          e.preventDefault()
+          document.body.classList.remove('loaded')
 
-            setTimeout(() => {
-              window.location.href = link.href
-            }, 400)
-          }
-        })
+          setTimeout(() => {
+            window.location.href = link.href
+          }, 400)
+        }
       })
     })
-  </script>
+  })
+</script>
+
+<script>
+  const burger = document.getElementById('burger');
+  const buttons = document.getElementById('buttons');
+
+  burger.addEventListener('click', () => {
+    buttons.classList.toggle('active');
+  });
+
+  // Mobile dropdown toggles
+  document.querySelectorAll('#buttons .dropdown').forEach(dropdown => {
+    const btn = dropdown.querySelector('.dropbtn');
+    btn.addEventListener('click', e => {
+      e.preventDefault(); // prevent navigation if button is link
+      dropdown.classList.toggle('active');
+    });
+  });
+</script>
 
 </body>
 </html>

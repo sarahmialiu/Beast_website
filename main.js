@@ -41,7 +41,7 @@ composer.addPass(new RenderPass(scene, camera));
 const bokehPass = new BokehPass(scene, camera, {
   focus: 0.7,     // distance in world units
   aperture: 0.006, // blur strength
-  maxblur: 0.02
+  maxblur: 0.1
 });
 composer.addPass(bokehPass);
 
