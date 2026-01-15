@@ -51,7 +51,7 @@ controls.update();
 
 
 // Lighting
-const light = new THREE.DirectionalLight(0xfaefcf, 2.5);
+const light = new THREE.DirectionalLight(0xfaefcf, 2.8);
 light.position.set(15, 20, 15);
 light.lookAt(0, 0, 0);
 

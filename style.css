@@ -7,7 +7,7 @@ body {
   margin: 0;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.125s ease-in-out;
   background-color: rgb(15, 13, 21);
   font-family: "Jost", sans-serif;
   font-weight: 300;
@@ -74,8 +74,8 @@ canvas {
   background: transparent;
   color: white;
   border: none;
-  padding: 4px 40px;
-  font-size: 20px;
+  padding: 0px 40px;
+  font-size: 24px;
   font-family: "Jost", sans-serif;
   cursor: pointer;
   transition: background-color 0.25s ease;
@@ -123,7 +123,8 @@ canvas {
   background-color: rgba(221,221,221,0.22);
 }
 
-.dropdown:hover .dropdown-content {
+.dropbtn:hover + .dropdown-content,
+.dropdown-content:hover {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -143,7 +144,7 @@ canvas {
 }
 
 /* Responsive Mobile Styles */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   #buttons {
     flex-direction: column;
     width: 300px;
@@ -157,6 +158,13 @@ canvas {
     max-height: 0;
     transform: translateY(-16px);
     transition: max-height 0.3s ease, opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  #buttons button {
+    width: 100%;
+    padding: 4px 40px;
+    font-size: 22px;
+    text-align: left;
   }
 
   #buttons.active {
@@ -221,7 +229,7 @@ canvas {
   }
 
   .dropdown-content a {
-    padding: 8px 16px;
+    padding: 8px 40px;
     font-size: 16px;
   }
 }
@@ -236,11 +244,52 @@ img.responsive {
 
 h1 {
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+  position: relative; 
+  text-align: right;
+  margin-left: 0px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 16px;
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
   position: relative; 
   text-align: left;
-  margin-left: 40px;
+  padding-top: 40px;
+}
 
+h4 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+  position: relative; 
+  text-align: left;
+  padding-top: 0px;
+}
+
+h5 {
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 36px;
+  padding-bottom: 20px;
+  padding-top: 60px;
+  line-height: 1;
+  margin: 0;
 }
 
 a {
@@ -409,3 +458,23 @@ a {
   letter-spacing: 4px;
 }
 
+.w3-sidebar{height:100%;width:200px;background-color:#ffffff00;position:fixed!important;z-index:1;overflow:auto}
+
+.w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+
+@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
+
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+
+.w3-main,#main{transition:margin-left .4s}
+@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
