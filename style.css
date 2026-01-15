@@ -2,10 +2,8 @@
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
-  overflow: hidden;
   opacity: 0;
   transition: opacity 0.125s ease-in-out;
   background-color: rgb(15, 13, 21);
@@ -16,6 +14,7 @@ body {
 html, body {
   height: auto;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 body.loaded {
   opacity: 1;
