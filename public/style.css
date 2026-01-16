@@ -340,17 +340,23 @@ a3 {
   text-align: center !important;
 }
 
+.w3-half {
+  float: left;
+  width: 100%;
+}
 .w3-quarter {
   float: left;
   width: 100%;
 }
-
 .w3-sixth {
   float: left;
   width: 100%;
 }
 
 @media (min-width: 601px) {
+  .w3-half {
+    width: 50%;
+  }
   .w3-quarter {
     width: 24.99999%;
   }
@@ -486,7 +492,14 @@ a3 {
   letter-spacing: 4px;
 }
 
-.w3-sidebar{height:100%;width:200px;background-color:#ffffff00;position:fixed!important;z-index:1;overflow:auto}
+.w3-sidebar{
+  height:100%;
+  width:200px;
+  background-color:#ffffff00;
+  position:fixed!important;
+  z-index:1;
+  overflow:auto;
+}
 
 .w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
