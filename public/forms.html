@@ -90,8 +90,8 @@
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="Close Menu">
       <i class="fa fa-remove"></i>
     </a>
-    
-    <h1 class="w3-bar-item"><b>forms</b></h1>
+
+    <a3 class="w3-bar-item" href="#"><b>forms</b></a3>
   </nav>
 
   <div class="w3-main w3-row-padding w3-padding-16" style="max-width:1200px;margin-left:250px;margin-top:50px;" id="forms-gallery">
@@ -210,6 +210,24 @@
       dropdown.classList.toggle('active');
     });
   });
+
+  document.querySelectorAll('a2[href^="#"], a3[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      const href = link.getAttribute('href');
+      if (href === '#') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const target = document.querySelector(link.getAttribute('href'));
+      if (!target) return;
+
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
 </script>
 
 

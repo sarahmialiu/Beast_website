@@ -304,6 +304,16 @@ a2:hover {
   font-weight: 500;
 }
 
+a3 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+  position: relative; 
+  text-align: right;
+  margin-left: 0px;
+}
+
 /* ----- taken from w3.css ----- */
 
 .w3-row-padding:before,
