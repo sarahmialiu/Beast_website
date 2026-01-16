@@ -92,13 +92,13 @@
     </a>
     <h1 class="w3-bar-item"><b>FAQs</b></h1>
 
-    <a class="w3-bar-item w3-button" href="#beast">About Beast</a>
-    <a class="w3-bar-item w3-button" href="#services">Campus Services</a>
-    <a class="w3-bar-item w3-button" href="#advising">Advising</a>
-    <a class="w3-bar-item w3-button" href="#courses">Coursework</a>
-    <a class="w3-bar-item w3-button" href="#quals">Qualifying Exam</a>
-    <a class="w3-bar-item w3-button" href="#dissertation">Dissertation Committee and Defense</a>
-    <a class="w3-bar-item w3-button" href="#life">Life Outside the Program</a>
+    <a2 class="w3-bar-item w3-button" href="#beast">About Beast</a2>
+    <a2 class="w3-bar-item w3-button" href="#services">Campus Services</a2>
+    <a2 class="w3-bar-item w3-button" href="#advising">Advising</a2>
+    <a2 class="w3-bar-item w3-button" href="#courses">Coursework</a2>
+    <a2 class="w3-bar-item w3-button" href="#quals">Qualifying Exam</a2>
+    <a2 class="w3-bar-item w3-button" href="#dissertation">Dissertation Committee and Defense</a2>
+    <a2 class="w3-bar-item w3-button" href="#life">Life Outside the Program</a2>
   </nav>
 
   <div class="w3-main w3-row-padding w3-padding-16" style="max-width:1200px;margin-left:250px;margin-top:0px;" id="qanda">
@@ -304,21 +304,16 @@
     });
   });
 
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault(); // stop default jump
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
+document.querySelectorAll('a2[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
 
-      // optional fade-out/fade-in for same-page scrolling
-      document.body.classList.remove('loaded');
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
 
-      setTimeout(() => {
-        target.scrollIntoView({ behavior: 'smooth' });
-        document.body.classList.add('loaded');
-      }, 200); // slightly shorter fade for smoothness
-    });
+    target.scrollIntoView({ behavior: 'smooth' });
   });
+});
 
 
 </script>

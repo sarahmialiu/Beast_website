@@ -296,6 +296,14 @@ a {
   text-decoration: none;
 }
 
+a2 {
+  color: inherit;
+  text-decoration: none;
+}
+a2:hover {
+  font-weight: 500;
+}
+
 /* ----- taken from w3.css ----- */
 
 .w3-row-padding:before,
