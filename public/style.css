@@ -327,6 +327,9 @@ a3 {
 .w3-row-padding > .w3-quarter {
   padding: 0 8px;
 }
+.w3-row-padding > .w3-sixth {
+  padding: 0 16px;
+}
 
 .w3-padding-16 {
   padding-top: 16px !important;
@@ -342,9 +345,17 @@ a3 {
   width: 100%;
 }
 
+.w3-sixth {
+  float: left;
+  width: 100%;
+}
+
 @media (min-width: 601px) {
   .w3-quarter {
     width: 24.99999%;
+  }
+  .w3-sixth {
+    width: 16.66666%;
   }
 }
 
