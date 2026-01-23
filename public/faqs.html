@@ -16,7 +16,7 @@
 
 <body>
 
-<div id="topbar">
+<div class="topbar">
   <img class="responsive" src="images/trees.png" alt="header-img">
 
   <div id="home-button"><a href="index.html">beast</a></div>
@@ -83,27 +83,21 @@
   </div>
 </div>
 
-<div class="w3-main w3-content w3-padding" style="max-width:1500px;margin-top:100px;">
-
+<div class="page-container">
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="margin-top:100px;margin-left:20px;" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <a3 class="w3-bar-item w3-button" href="#"><b>FAQs</b></a3>
-
-    <a2 class="w3-bar-item w3-button" href="#beast">About Beast</a2>
-    <a2 class="w3-bar-item w3-button" href="#services">Campus Services</a2>
-    <a2 class="w3-bar-item w3-button" href="#advising">Advising</a2>
-    <a2 class="w3-bar-item w3-button" href="#courses">Coursework</a2>
-    <a2 class="w3-bar-item w3-button" href="#quals">Qualifying Exam</a2>
-    <a2 class="w3-bar-item w3-button" href="#dissertation">Dissertation Committee and Defense</a2>
-    <a2 class="w3-bar-item w3-button" href="#life">Life Outside the Program</a2>
+  <nav class="sidebar">
+    <inpage-link class="sidebar-title" href="#">FAQs</inpage-link>
+    <inpage-link class="sidebar-option" href="#beast">About Beast</inpage-link>
+    <inpage-link class="sidebar-option" href="#services">Campus Services</inpage-link>
+    <inpage-link class="sidebar-option" href="#advising">Advising</inpage-link>
+    <inpage-link class="sidebar-option" href="#courses">Coursework</inpage-link>
+    <inpage-link class="sidebar-option" href="#quals">Qualifying Exam</inpage-link>
+    <inpage-link class="sidebar-option" href="#dissertation">Dissertation Committee and Defense</inpage-link>
+    <inpage-link class="sidebar-option" href="#life">Life Outside the Program</inpage-link>
   </nav>
 
-  <section id="top"></section>
-
-  <div class="w3-main w3-row-padding w3-padding-16" style="max-width:1200px;margin-left:250px;margin-top:0px;" id="qanda">
+  <!-- Main -->
+  <div class="page-content">
     <section id="beast">
       <h5>About Beast</h5>
       <hr>
@@ -319,7 +313,7 @@
     });
   });
 
-  document.querySelectorAll('a2[href^="#"], a3[href^="#"]').forEach(link => {
+  document.querySelectorAll('inpage-link[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
 
