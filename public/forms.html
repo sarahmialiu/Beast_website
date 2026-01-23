@@ -16,7 +16,7 @@
 
 <body>
 
-<div id="topbar">
+<div class="topbar">
   <img class="responsive" src="images/trees.png" alt="header-img">
 
   <div id="home-button"><a href="index.html">beast</a></div>
@@ -73,104 +73,118 @@
         <a href="about.html">about</a> <span class="carrot">▸</span>
       </button>
       <div class="dropdown-content">
-        <a href="#">BEAST</a>
-        <a href="#">Position Descriptions</a>
-        <a href="#">Student Directory</a>
-        <a href="#">Contact</a>
+        <a href="about.html#officers">BEAST</a>
+        <a href="about.html#position-descriptions">Position Descriptions</a>
+        <a href="about.html#students">Student Directory</a>
+        <a href="about.html#contact">Contact</a>
       </div>
     </div>
 
   </div>
 </div>
 
-<div class="w3-main w3-content w3-padding" style="max-width:1500px;margin-top:100px">
+<div class="page-container">
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="margin-top:100px;margin-left:20px;" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
-
-    <a3 class="w3-bar-item" href="#"><b>forms</b></a3>
+  <nav class="sidebar">
+    <inpage-link class="sidebar-title" href="#">forms</inpage-link>
   </nav>
 
-  <div class="w3-main w3-row-padding w3-padding-16" style="max-width:1200px;margin-left:250px;margin-top:50px;" id="forms-gallery">
-    <div class="w3-quarter">
-      <a href="pdfs/2025-2026BioEHandbook.pdf" target="_blank">
-        <img src="pdfs/thumbnails/2025-2026BioEHandbook.png" alt="Handbook PNG" style="width:100%">
-      </a>
-      <h2>2025-2026 BioE Student Handbook</h2>
+  <div class="page-content" style="padding-top: 100px">
+    <div class="row-content">
+      <div class="w3-quarter">
+        <a href="pdfs/2025-2026BioEHandbook.pdf" target="_blank">
+          <img src="pdfs/thumbnails/2025-2026BioEHandbook.png" alt="Handbook PNG" style="width:100%">
+        </a>
+        <h2>2025-2026 BioE Student Handbook</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/AnnualProgressReportPreCandidacy.pdf" target="_blank">
+          <img src="pdfs/thumbnails/AnnualProgressReportPreCandidacy.png" alt="ProgReportPre PNG" style="width:100%">
+        </a>
+        <h2>Annual Progress Report (Pre-Candidacy)</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/AnnualProgressReportPostCandidacy.pdf" target="_blank">
+          <img src="pdfs/thumbnails/AnnualProgressReportPostCandidacy.png" alt="ProgReportPost PNG" style="width:100%">
+        </a>
+        <h2>Annual Progress Report (Post-Candidacy)</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/RotationAuthorization2025-26.pdf" target="_blank">
+          <img src="pdfs/thumbnails/RotationAuthorization2025-26.png" alt="RotAuth PNG" style="width:100%">
+        </a>
+        <h2>Rotation Authorization</h2>
+      </div>
     </div>
-    <div class="w3-quarter">
-      <a href="pdfs/AnnualProgressReportPreCandidacy.pdf" target="_blank">
-        <img src="pdfs/thumbnails/AnnualProgressReportPreCandidacy.png" alt="ProgReportPre PNG" style="width:100%">
-      </a>
-      <h2>Annual Progress Report (Pre-Candidacy)</h2>
-    </div>
-    <div class="w3-quarter">
-      <a href="pdfs/AnnualProgressReportPostCandidacy.pdf" target="_blank">
-        <img src="pdfs/thumbnails/AnnualProgressReportPostCandidacy.png" alt="ProgReportPost PNG" style="width:100%">
-      </a>
-      <h2>Annual Progress Report (Post-Candidacy)</h2>
-    </div>
-    <div class="w3-quarter">
-      <a href="pdfs/RotationAuthorization2025-26.pdf" target="_blank">
-        <img src="pdfs/thumbnails/RotationAuthorization2025-26.png" alt="RotAuth PNG" style="width:100%">
-      </a>
-      <h2>Rotation Authorization</h2>
-    </div>
-  </div>
 
-  <div class="w3-main w3-row-padding w3-padding-16" style="max-width:1200px;margin-left:250px;">
-    <div class="w3-quarter">
-      <a href="pdfs/RotationEvaluation2025-26.pdf" target="_blank">
-        <img src="pdfs/thumbnails/RotationEvaluation2025-26.png" alt="RotEval PNG" style="width:100%">
-      </a>
-      <p>Rotation Evaluation</p>
+    <div class="row-content">
+      <div class="w3-quarter">
+        <a href="pdfs/RotationEvaluation2025-26.pdf" target="_blank">
+          <img src="pdfs/thumbnails/RotationEvaluation2025-26.png" alt="RotEval PNG" style="width:100%">
+        </a>
+        <h2>Rotation Evaluation</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/ProgramOfStudy.pdf" target="_blank">
+          <img src="pdfs/thumbnails/ProgramOfStudy.png" alt="ProgOfStudy PNG" style="width:100%">
+        </a>
+        <h2>Program of Study: Major and Minor Declaration</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/AreaRequirements.pdf" target="_blank">
+          <img src="pdfs/thumbnails/AreaRequirements.png" alt="AreaRequirements PNG" style="width:100%">
+        </a>
+        <h2>Program of Study: Area Requirements</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/MentorCommitment.pdf" target="_blank">
+          <img src="pdfs/thumbnails/MentorCommitment.png" alt="MentorCommitment PNG" style="width:100%">
+        </a>
+        <h2>Research Mentor/Dissertation Chair Commitment</h2>
+      </div>
     </div>
-    <div class="w3-quarter">
-      <a href="pdfs/ProgramOfStudy.pdf" target="_blank">
-        <img src="pdfs/thumbnails/ProgramOfStudy.png" alt="ProgOfStudy PNG" style="width:100%">
-      </a>
-      <p>Program of Study: Major and Minor Declaration</p>
-    </div>
-    <div class="w3-quarter">
-      <a href="pdfs/AreaRequirements.pdf" target="_blank">
-        <img src="pdfs/thumbnails/AreaRequirements.png" alt="AreaRequirements PNG" style="width:100%">
-      </a>
-      <p>Program of Study: Area Requirements</p>
-    </div>
-    <div class="w3-quarter">
-      <a href="pdfs/MentorCommitment.pdf" target="_blank">
-        <img src="pdfs/thumbnails/MentorCommitment.png" alt="MentorCommitment PNG" style="width:100%">
-      </a>
-      <p>Research Mentor/Dissertation Chair Commitment</p>
-    </div>
-  </div>
 
-  <div class="w3-main w3-row-padding w3-padding-16" style="max-width:1200px;margin-left:250px;">
-    <div class="w3-quarter">
-      <a href="pdfs/QualsCommitteeWorksheet.pdf" target="_blank">
-        <img src="pdfs/thumbnails/QualsCommitteeWorksheet.png" alt="QualsCommitteeWorksheet PNG" style="width:100%">
-      </a>
-      <p>Qualifying Examination Committee Worksheet</p>
-    </div>
-    <div class="w3-quarter">
-      <a href="pdfs/DissertationCommitteeWorksheet.pdf" target="_blank">
-        <img src="pdfs/thumbnails/DissertationCommitteeWorksheet.png" alt="CommitteePlanning PNG" style="width:100%">
-      </a>
-      <p>Dissertation Committee Worksheet</p>
-    </div>
-    <div class="w3-quarter">
-      <a href="pdfs/DissertationCommitteeUpdate.pdf" target="_blank">
-        <img src="pdfs/thumbnails/DissertationCommitteeUpdate.png" alt="CommitteeUpdate PNG" style="width:100%">
-      </a>
-      <p>Dissertation Committee Update</p>
+    <div class="row-content">
+      <div class="w3-quarter">
+        <a href="pdfs/QualsCommitteeWorksheet.pdf" target="_blank">
+          <img src="pdfs/thumbnails/QualsCommitteeWorksheet.png" alt="QualsCommitteeWorksheet PNG" style="width:100%">
+        </a>
+        <h2>Qualifying Examination Committee Worksheet</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/DissertationCommitteeWorksheet.pdf" target="_blank">
+          <img src="pdfs/thumbnails/DissertationCommitteeWorksheet.png" alt="CommitteePlanning PNG" style="width:100%">
+        </a>
+        <h2>Dissertation Committee Worksheet</h2>
+      </div>
+      <div class="w3-quarter">
+        <a href="pdfs/DissertationCommitteeUpdate.pdf" target="_blank">
+          <img src="pdfs/thumbnails/DissertationCommitteeUpdate.png" alt="CommitteeUpdate PNG" style="width:100%">
+        </a>
+        <h2>Dissertation Committee Update</h2>
+      </div>
     </div>
   </div>
 
 </div>
 
+<footer class="footer">
+  <div class="w3-main w3-row-padding" style="max-width:1500px;margin-left:50px" id="footer-content">
+    <div class="w3-half w3-padding">
+      <h3 style="color: rgb(177, 177, 177); line-height: 1; margin-top: 0px;">BioEngineering Association of STudents</h3>
+      <p style="color: rgb(177, 177, 177);">The BioEngineering Association of STudents (BEAST) is the graduate student organization for the UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide resources and information for current and prospective students.</p>
+      <p style="color: rgb(177, 177, 177);">&copy; 2022 BEAST. All rights reserved.</p>
+    </div>
+    <div class="w3-half w3-padding">
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:35px; margin-right:60px; text-align:right;"><b><a href="#">Contact</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://x.com/BioE_Beast">Twitter</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="#">Credits</a></b></p>
+    </div>
+  </div>
+</footer>
 
 <script>
   window.addEventListener('DOMContentLoaded', () => {
@@ -209,7 +223,7 @@
     });
   });
 
-  document.querySelectorAll('a2[href^="#"], a3[href^="#"]').forEach(link => {
+  document.querySelectorAll('inpage-link[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
 

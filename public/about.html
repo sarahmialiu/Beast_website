@@ -73,10 +73,10 @@
         <a href="about.html">about</a> <span class="carrot">▸</span>
       </button>
       <div class="dropdown-content">
-        <a href="#">BEAST</a>
-        <a href="#">Position Descriptions</a>
-        <a href="#">Student Directory</a>
-        <a href="#">Contact</a>
+        <inpage-link href="#officers">BEAST</inpage-link>
+        <inpage-link href="#position-descriptions">Position Descriptions</inpage-link>
+        <inpage-link href="#students">Student Directory</inpage-link>
+        <inpage-link href="#contact">Contact</inpage-link>
       </div>
     </div>
 
@@ -388,6 +388,22 @@
   </div>
 </div>
 
+<footer class="footer">
+  <div class="w3-main w3-row-padding" style="max-width:1500px;margin-left:50px" id="footer-content">
+    <div class="w3-half w3-padding">
+      <h3 style="color: rgb(177, 177, 177); line-height: 1; margin-top: 0px;">BioEngineering Association of STudents</h3>
+      <p style="color: rgb(177, 177, 177);">The BioEngineering Association of STudents (BEAST) is the graduate student organization for the UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide resources and information for current and prospective students.</p>
+      <p style="color: rgb(177, 177, 177);">&copy; 2022 BEAST. All rights reserved.</p>
+    </div>
+    <div class="w3-half w3-padding">
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:35px; margin-right:60px; text-align:right;"><b><a href="#">Contact</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://x.com/BioE_Beast">Twitter</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="#">Credits</a></b></p>
+    </div>
+  </div>
+</footer>
 
 <script>
   window.addEventListener('DOMContentLoaded', () => {
@@ -404,11 +420,28 @@
 
           setTimeout(() => {
             window.location.href = link.href
-          }, 400)
+          }, 250)
         }
       })
     })
   })
+
+  window.addEventListener('load', () => {
+  if (window.location.hash) {
+    const targetId = window.location.hash.substring(1); // remove #
+    const target = document.getElementById(targetId);
+    if (target) {
+      const headerOffset = 102; // height of your fixed header
+      const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth' // optional
+      });
+    }
+  }
+});
 
   const burger = document.getElementById('burger');
   const buttons = document.getElementById('buttons');
