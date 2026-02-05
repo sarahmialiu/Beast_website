@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beast - Academics</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="topbar">
+  <img class="responsive" src="images/trees.png" alt="header-img">
+
+  <div id="home-button"><a href="index.html">beast</a></div>
+  <div id="burger">☰</div>
+
+  <div id="buttons">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="forms.html">forms</a>
+      </button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="academics.html">academics</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">First Year</a>
+        <a href="#">Second Year</a>
+        <a href="#">Courses</a>
+        <a href="#">Teaching</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="extracurriculars.html">extracurriculars</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="dei.html">DEI</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="faqs.html">FAQs</a>
+      </button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="about.html">about</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <inpage-link href="#officers">BEAST</inpage-link>
+        <inpage-link href="#position-descriptions">Position Descriptions</inpage-link>
+        <inpage-link href="#students">Student Directory</inpage-link>
+        <inpage-link href="#contact">Contact</inpage-link>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="page-container">
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <inpage-link class="sidebar-title" href="#">academics</inpage-link>
+    <a class="sidebar-option" href="academics_firstyear.html">First Year</a>
+    <inpage-link class="sidebar-option" href="#students">Second Year</inpage-link>
+    <inpage-link class="sidebar-option" href="#contact">Courses</inpage-link>
+    <inpage-link class="sidebar-option" href="#contact">Teaching</inpage-link>
+  </nav>
+
+  <!-- Main -->
+  <div class="page-content">
+    
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="w3-main w3-row-padding" style="max-width:1500px;margin-left:50px" id="footer-content">
+    <div class="w3-half w3-padding">
+      <h3 style="color: rgb(177, 177, 177); line-height: 1; margin-top: 0px;">BioEngineering Association of STudents</h3>
+      <p style="color: rgb(177, 177, 177);">The BioEngineering Association of STudents (BEAST) is the graduate student organization for the UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide resources and information for current and prospective students.</p>
+      <p style="color: rgb(177, 177, 177);">&copy; 2022 BEAST. All rights reserved.</p>
+    </div>
+    <div class="w3-half w3-padding">
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:35px; margin-right:60px; text-align:right;"><b><a href="#">Contact</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://x.com/BioE_Beast">Twitter</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a></b></p>
+      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="#">Credits</a></b></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded')
+
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', e => {
+        if (
+          link.hostname === window.location.hostname &&
+          !link.hasAttribute('target')
+        ) {
+          e.preventDefault()
+          document.body.classList.remove('loaded')
+
+          setTimeout(() => {
+            window.location.href = link.href
+          }, 250)
+        }
+      })
+    })
+  })
+
+  window.addEventListener('load', () => {
+  if (window.location.hash) {
+    const targetId = window.location.hash.substring(1); // remove #
+    const target = document.getElementById(targetId);
+    if (target) {
+      const headerOffset = 102; // height of your fixed header
+      const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth' // optional
+      });
+    }
+  }
+});
+
+  const burger = document.getElementById('burger');
+  const buttons = document.getElementById('buttons');
+
+  burger.addEventListener('click', () => {
+    buttons.classList.toggle('active');
+  });
+
+  // Mobile dropdown toggles
+  document.querySelectorAll('#buttons .dropdown').forEach(dropdown => {
+    const btn = dropdown.querySelector('.dropbtn');
+    btn.addEventListener('click', e => {
+      e.preventDefault(); // prevent navigation if button is link
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  document.querySelectorAll('inpage-link[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      const href = link.getAttribute('href');
+      if (href === '#') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const target = document.querySelector(link.getAttribute('href'));
+      if (!target) return;
+
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+</script>
+
+
+</body>
+</html>
