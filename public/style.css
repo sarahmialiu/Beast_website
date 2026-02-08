@@ -57,12 +57,14 @@ canvas {
 }
 
 .row-content {
-  padding: 0px 8px;  
+  padding: 0px 0px;  
 }
 
 .row-content > .w3-sixth {
   padding: 0 16px;
 }
+
+
 
 /* ===============================
    Navigation
@@ -174,17 +176,21 @@ canvas {
 }
 
 .dropdown-content {
-  display: block;
+  position: absolute; /* important */
+  top: 100%;
+  left: 0;
+
   background-color: rgba(25,31,40,0.89);
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
 
   opacity: 0;
   transform: translateY(-16px);
   pointer-events: none;
-  overflow: hidden;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  visibility: hidden;
+
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.25s;
 }
 
 .dropdown-content a {
@@ -220,6 +226,8 @@ canvas {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 /* Burger icon */
@@ -414,6 +422,28 @@ a {
   text-decoration: none;
 }
 
+p a {
+  text-decoration: underline;
+}
+
+p a:hover {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+li a {
+  text-decoration: underline;
+}
+
+li a:hover {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
 a2 {
   color: inherit;
   text-decoration: none;
@@ -486,15 +516,19 @@ a3 {
 
 .w3-half,
 .w3-quarter,
-.w3-sixth {
+.w3-sixth,
+.w3-twothird {
   float: left;
   width: 100%;
 }
+
+.w3-half {padding:20px}
 
 @media (min-width: 601px) {
   .w3-half    { width: 50%; }
   .w3-quarter { width: 24.99999%; padding-right: 24px; }
   .w3-sixth   { width: 16.66666%; }
+  .w3-twothird   { width: 66.66666%; }
 }
 
 /* ===============================
