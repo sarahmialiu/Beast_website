@@ -8,7 +8,7 @@ body {
   transition: opacity 0.125s ease-in-out;
   background-color: rgb(15, 13, 21);
   font-family: "Jost", sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   color: white;
 }
 html, body {

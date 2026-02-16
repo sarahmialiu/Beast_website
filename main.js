@@ -40,7 +40,7 @@ const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
 const bokehPass = new BokehPass(scene, camera, {
   focus: 0.7,     // distance in world units
-  aperture: 0.006, // blur strength
+  aperture: 0.000, // blur strength
   maxblur: 0.1
 });
 composer.addPass(bokehPass);
@@ -462,7 +462,7 @@ const material = new THREE.PointsMaterial({
 });
 
 const particles = new THREE.Points(geometry, material);
-// scene.add(particles);
+scene.add(particles);
 
 function animateParticles() {
   const positions = particles.geometry.attributes.position.array;
