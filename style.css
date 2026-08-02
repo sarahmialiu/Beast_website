@@ -288,6 +288,9 @@ hr {
   .sidebar-menu {
     display: none
   }
+  .flex.items-start {
+    flex-direction: column;
+  }
   .page-content {
     margin-left:0;
     margin-right:0;
