@@ -22,16 +22,37 @@
   </div>
 
   <div class="navbar-end">
-    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1">
+    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
       <span class="megamenu-active"></span>
 
       <button class = "navbar-btn" popovertarget="a1">Academics</button>
       <div id="a1" popover>
         <ul class="menu">
-          <li><a href="academics_firstyear.html">First Year</a></li>
-          <li><a href="quals.html">Qualifying Exam</a></li>
-          <li><a href="dissertation.html">Dissertation</a></li>
-          <li><a href="academics_courses.html">Courses</a></li>
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
           <li><a href="academics_teaching.html">Teaching</a></li>
           <li><a href="forms.html">Forms</a></li>
         </ul>
@@ -40,7 +61,14 @@
       <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
       <div id="a2" popover>
         <ul class="menu">
-          <li><a href="movingtoca.html">Moving to the Bay</a></li>
+          <li>
+            <a href="movingtoca.html">Moving to the Bay</a>
+            <ul>
+              <li><a href="movingtoca.html#housing">Housing</a></li>
+              <li><a href="movingtoca.html#residency">CA Residency</a></li>
+              <li><a href="movingtoca.html#dmv">The DMV</a></li>
+            </ul>
+          </li>
           <li><a>CRM software</a></li>
           <li><a>Security</a></li>
           <li><a>Consulting</a></li>
@@ -52,12 +80,21 @@
         <ul class="menu">
           <li><a>Beast</a></li>
           <li><a>Positions</a></li>
-          <li><a href="directory.html">Student Directory</a></li>
+          <li><a>Student Directory</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a>Contact</a></li>
         </ul>
       </div>
     </div>
+    <!-- <button class="btn sm:hidden" popovertarget="my-megamenu-1">Menu</button> -->
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
   </div>
 </div>
 
@@ -92,48 +129,13 @@
     <!-- Sidebar -->
     <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
       <li><a href="#welcome" class="menu-title">First Year</a></li>
-      <li><a href="#housing" class="menu-item">Housing</a></li>
       <li><a href="#classes" class="menu-item">Classes</a></li>
-      <li><a href="#residency" class="menu-item">CA Residency</a></li>
       <li><a href="#rotations" class="menu-item">Rotations</a></li>
       <li><a href="#forms" class="menu-item">Forms</a></li>
     </ul>
     
     <!-- Main -->
     <div class="page-content">
-      <section id="housing">
-        <h5>First Year Housing</h5>
-        <hr>
-
-        <div class="flex flex-wrap gap-4" style="padding:20px;">
-          <div class="flex-1 min-w-[min(400px,100%)]">
-            <p>Finding an apartment or house in the Bay Area can be stressful, but often times students will be able to find rent under $1000 per month. Keep in mind that the rent increases each year, with larger hikes in areas not protected by rent control.</p>
-            <p>Current students often report finding aparments on <a href="https://www.zillow.com/homes/">Zillow</a>, <a href="https://www.apartments.com/">Apartments.com</a>, <a href="https://sfbay.craigslist.org/search/berkeley-ca/apa#search=2~gallery~0">Craigslist</a> or even some Facebook groups.</p>
-            <p>Realtors and homeowners will often require you to fill out a rental application. While searching for housing, you should be prepared to have all such information on hand.</p>
-            
-            <p>These are some things we recommend to bring when house hunting:</p>
-            <ul class="list-disc list-outside space-y-2" style="padding-bottom:20px; padding-left:40px">
-              <li>Photo identification (driver's license or passport)</li>
-              <li>Credit report and/or credit history, if applicable</li>
-              <li>Proof of income</li>
-              <li>Bank account information</li>
-              <li>Personal references</li>
-              <li>Previous apartment information, if applicable (names, phone numbers, addresses)</li>
-              <li>Employment information (funding offer letter from UC Berkeley/UCSF)</li>
-              <li>Vehicle identification number, if applicable</li>
-            </ul>
-          </div>
-
-          <div class="flex-1 min-w-[min(400px,100%)]">
-            <img src="images/zillow.png" style="width:100%; padding:20px;">
-          </div>
-        </div>
-        
-      </section>
-
-      <div class="flex w-full flex-col">
-        <div class="divider"></div>
-      </div>
 
       <section id="classes">
         <h5>First Year Enrollment</h5>
@@ -187,129 +189,6 @@
 
         <div style="padding:20px">
           <p class="hint">You can find classes past students have taken to fulfill their major and minor requirements under <a href="#">Course Information [UnderConstruction].</a></p>
-        </div>
-      </section>
-
-      <div class="flex w-full flex-col">
-        <div class="divider"></div>
-      </div>
-
-      <section id="residency">
-        <h5>California Residency & Driver's License</h5>
-        <hr>
-
-        <div style="padding:20px">
-          <p>The UC schools are public research universities, and as such, tuition is dependent on the student’s residency status. If you are a US citizen or permanent resident, you are expected to become a resident of California as soon as possible and prior to the Fall of your second year. To do so you must satisfy the “Physical Presence” and “Intent to Remain in California” requirements by the residence determination date, which is the first day of instruction.</p>
-          <p>The following list is a rough outline of what needs to be completed to gain California residency.</p>
-
-          <ul class="ul-text">
-            <li>
-              File a Statement of Legal Residence (SLR) immediately through
-              <a class="link link-info" href="https://calcentral.berkeley.edu/dashboard">CalCentral</a>
-              or the
-              <a class="link link-info" href="https://saa.ucsf.edu/studentportal/">UCSF Student Portal</a>.
-            </li>
-            <li>
-              Collect documents showing "Physical Presence" and "Intent to Remain in California":
-              <ul class="list-disc list-outside ml-6 mt-2 space-y-1">
-                <li>Evidence of Arrival (Airline tickets, gas receipts)</li>
-                <li>California Driver's License</li>
-                <li>California Voter Registration</li>
-                <li>Bank statements and rental agreements in California</li>
-                <li>Tax forms from the prior year (Federal and state)</li>
-              </ul>
-            </li>
-          </ul>
-
-          <p>For more detailed information, please see Berkeley's <a class="link link-info" href="https://registrar.berkeley.edu/residency/residency-requirements-graduate-students/">Office of the Registrar</a> or UCSF's <a class="link link-info" href="https://registrar.ucsf.edu/registration/residency">Office of the Registrar.</a></p>
-          
-          <div class="card bg-base-200 shadow-sm">
-            <div class="card-body">
-              <h2 class="card-title">International Students</h2>
-              <p>If you are an international student, you will not be able to become a California Resident for tuition purposes. However you do have to make sure that you have a social security number (SSN). Although the International Office may tell you that you only need an ITIN, just get an SSN to make your own life easier in terms of employment, getting a phone plan, internet plan, or opening a bank account. Contact the department administrator for a letter confirming your employment and start your application as soon as possible. For more detailed information, please see Berkeley’s <a class="link link-info" href="https://internationaloffice.berkeley.edu/living/ssnapply">International Office</a> or UCSF's <a class="link link-info" href="https://isso.ucsf.edu/social-security-number-ssn">International Students and Scholars Office</a>.</p>
-            </div>
-          </div>
-        </div>
-
-        
-        <h5>Navigating the DMV</h5>
-        <hr>
-        <div style="padding-left:20px; padding-right:20px; padding-top:20px">
-          <p><b>Appointments</b>: The DMV allows for <a class="link link-info" href="https://www.dmv.ca.gov/portal/dmv/dmv/appointments">online scheduling</a> of appointments up to three (3) months in advance. However, depending on the day, walk-in appointments may still be served more quickly than appointments. If you find it challenging to schedule an appointment, it may be worthwhile to take a day to complete your business as a walk-in.</p>
-        </div>
-        <div class="flex flex-wrap gap-6" style="padding-left:20px; padding-right:20px">
-          <div class="flex-1" style="min-width: 280px;">
-            <p><b>Real ID</b>: Starting Oct. 1, 2020, a regular California driver’s license or ID card won’t be accepted as a valid form of federal identification. Only Real ID will be accepted at federal courthouses, military bases, and airports. You can upgrade your current driver's lisence to a Real ID or obtain a new one through bringing the following items to your appointment:</p>
-            <ul class="ul-text" style="padding-bottom:0px">
-              <li>Proof of Identity (Passport, Birth Certificate)</li>
-              <li>Proof of Social Security Number</li>
-              <li>Two (2) Proofs of Residency (Lease agreement, paycheck with address, utility bills, bank statement, etc.)</li>
-            </ul>
-          </div>
-
-          <div class="flex-1" style="min-width: 340px">
-            <div class="hover-3d">
-              <!-- content -->
-              <figure class="max-w-100 rounded-2xl">
-                <img src="images/license.webp" style="width:90%;  padding:10px;">
-              </figure>
-              <!-- 8 empty divs needed for the 3D effect -->
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            
-          </div>
-        </div>
-
-        <div style="padding-left: 20px; padding-right: 20px; padding-top: 20px">
-          <p><b>Driving Test</b>: If you already hold a valid license from another state, visit a DMV location and take the CA written test and vision test. If you pass these, the driving test is generally waived and a CA license will be granted and your former state’s license will be nullified. If you only hold a valid license from another country, you must also take the driving skills test. A Driving Test requires a specific appointment at the DMV, which are frequently booked up. For the best results, book your appointment early and/or call the DMV to check for open appointments due to last minute cancellations.</p>
-        </div>
-
-        <div class="card bg-base-200 shadow-sm">
-          <div class="card-body">
-            <div style="padding-top: 10px">
-              <p class="large-p"><b>Locations</b>: Most field offices are open Monday to Saturday, 8AM - 5PM.</p>
-            </div>
-
-            <div class="row-content flex flex-wrap gap-2" style="padding-left:10px; padding-right: 10px; padding-bottom: 20px;">
-              <div class="flex-1 min-w-[160px]">
-                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=599">Daly City</a></b></p>
-                <p class="p-no-margin">1500 Sullivan Ave.</p>
-                <p class="p-no-margin">Daly City, CA 94015</p>
-                <p class="p-no-margin">+1 (800) 777-0133</p>
-              </div>
-              <div class="flex-1 min-w-[160px]">
-                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=556">El Cerrito</a></b></p>
-                <p class="p-no-margin">6400 Manila Ave.</p>
-                <p class="p-no-margin">El Cerrito, CA 94530</p>
-                <p class="p-no-margin">+1 (800) 777-0133</p>
-              </div>
-              <div class="flex-1 min-w-[160px]">
-                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=504">Oakland</a></b></p>
-                <p class="p-no-margin">5300 Claremont Ave.</p>
-                <p class="p-no-margin">Oakland, CA 94618</p>
-                <p class="p-no-margin">+1 (800) 777-0133</p>
-              </div>
-              <div class="flex-1 min-w-[160px]">
-                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=604">Oakland Coliseum</a></b></p>
-                <p class="p-no-margin">501 85th Ave.</p>
-                <p class="p-no-margin">Oakland, CA 94621</p>
-                <p class="p-no-margin">+1 (800) 777-0133</p>
-              </div>
-              <div class="flex-1 min-w-[160px]">
-                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=503">San Francisco</a></b></p>
-                <p class="p-no-margin">1377 Fell St.</p>
-                <p class="p-no-margin">San Francisco, CA 94117</p>
-                <p class="p-no-margin">+1 (800) 777-0133</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       

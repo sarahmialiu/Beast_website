@@ -53,6 +53,12 @@ body {
 html, body {
   height: auto;
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 p {
@@ -166,6 +172,7 @@ title {
   background-color: var(--color-base-000);
   color: var(--color-secondary);
 }
+
 
 /* Three.js canvas */
 canvas {
