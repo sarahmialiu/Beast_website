@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:css": "tailwindcss -i ./src/input.css -o ./style.css"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
