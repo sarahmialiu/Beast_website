@@ -307,3 +307,36 @@ hr {
     max-width: 340px;
   }
 }
+
+/* 1. Force the page content to respect boundaries and wrap long URLs/words */
+.page-content {
+  width: 100%;
+  min-width: 0; /* Crucial: stops flexbox from overflowing */
+  overflow-wrap: break-word; /* Forces long text to break onto the next line */
+  word-wrap: break-word;
+}
+
+/* 2. Ensure the main layout flex container never exceeds the screen width */
+.flex.items-start {
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* 3. Mobile-specific overrides */
+@media (max-width: 740px) {
+  /* Shrink the massive hero title so it fits on phone screens */
+  .hero-content h1.text-5xl {
+    font-size: 2rem !important; 
+    line-height: 2.25rem !important;
+  }
+
+  /* Reduce heavy side paddings to give text room to breathe */
+  section {
+    padding: 24px 16px !important;
+  }
+  
+  /* Prevent nested cards and lists from eating up all the screen width */
+  .card-body {
+    padding: 16px !important;
+  }
+}
