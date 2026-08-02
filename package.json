@@ -12,7 +12,12 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "tailwindcss": "^4.3.0",
     "three": "^0.182.0",
     "vite": "^7.2.7"
+  },
+  "devDependencies": {
+    "daisyui": "^5.7.9"
   }
 }

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="beastwebsite">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Directory</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+
+      <button class = "navbar-btn" popovertarget="a1">Academics</button>
+      <div id="a1" popover>
+        <ul class="menu">
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
+          <li><a href="academics_teaching.html">Teaching</a></li>
+          <li><a href="forms.html">Forms</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
+      <div id="a2" popover>
+        <ul class="menu">
+          <li><a>Enterprise</a></li>
+          <li><a>CRM software</a></li>
+          <li><a>Security</a></li>
+          <li><a>Consulting</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a5">About</button>
+      <div id="a5" popover>
+        <ul class="menu">
+          <li><a>Beast</a></li>
+          <li><a>Positions</a></li>
+          <li><a href="directory.html">Student Directory</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <button class="btn sm:hidden" popovertarget="my-megamenu-1">Menu</button> -->
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+<div class="page-container">
+  <div class="breadcrumbs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>Directory</li>
+    </ul>
+  </div>
+
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">Directory</a></li>
+      <li style="padding: 10px 20px">
+        <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+                >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+                </g>
+            </svg>
+            <input type="search" id="directory-search" class="grow" placeholder="Search" />
+        </label>
+      </li>
+    </ul>
+
+    <!-- Main -->
+    <div class="page-content">
+        <section id="directory">
+            <h5>Beast Student Directory</h5>
+            <hr>
+
+            <div style="padding:20px">
+                <p>Welcome to the Beast Student Directory! Here, you will find information about current active student members of the 
+                    Bioengineering Association of Students (BEAST). If you have any questions or need to get in touch with a specific student, 
+                    please feel free to reach out to the program administration or your faculty advisor.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-6" style="padding-left:10px; padding-right: 10px; padding-bottom: 20px;">
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/eze-ukabiala.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Eze Ukabiala</h2>
+                    <p>Beast Co-President</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Ramos-Drew.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Drew Ramos</h2>
+                    <p>Beast Co-President</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/KoikeY.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Yuko Koike</h2>
+                    <p>Treasurer</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/kono-emilie.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Emilie Kono</h2>
+                    <p>Diversity, Equity and Inclusion Committee, Admissions Committee, BioE Student Talks Coordinator</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Duong-Fiona.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Fiona Duong</h2>
+                    <p>Diversity, Equity and Inclusion Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Yeh-Yu-Tung.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Yu-Tung Yeh</h2>
+                    <p>Diversity, Equity and Inclusion Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/schoen-devin.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Devin Schoen</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Sim-Esther.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Esther Sim</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/rong-yvonne.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Yvonne Rong</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Ortiz-Jessica.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Jessica Ortiz</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/buttrey-kira.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Kira Buttrey</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Ametepe-Brenda.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Brenda Ametepe</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/wasinger-sarah.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Sarah Wasinger</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Pongos_Alvince.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Alvince Pongos</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Julio A. Rivera de Jesus</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Velazquez-Jazmin.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Jazmin Velazquez</h2>
+                    <p>Admissions Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Bolene-Michaelanne.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Michael Anne Bolene</h2>
+                    <p>Retreat Committee, Head Peer Advisor</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Luis Sandoval</h2>
+                    <p>Retreat Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Rajshree Chettiyar</h2>
+                    <p>Retreat Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Uma Paithankar</h2>
+                    <p>Retreat Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Lydon-Samantha.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Samantha Lydon</h2>
+                    <p>Retreat Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Aditya Behal</h2>
+                    <p>Retreat Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Pardo-Lucas.png" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Lucas Pardo</h2>
+                    <p>Visit Weekend Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Rubin-Samuel.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Sam Rubin</h2>
+                    <p>Visit Weekend Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Corinne Martin</h2>
+                    <p>Visit Weekend Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/mowry-shea.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Shea Mowry</h2>
+                    <p>Visit Weekend Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Nguyen-Vi.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Vi Ha Nguyen</h2>
+                    <p>Visit Weekend Committee, Industry & Alumni Liaison</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/zhang-margaret.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Margaret Zhang</h2>
+                    <p>Visit Weekend Committee, Internal Networking Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Brodeth-Adriann.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Adriann Brodeth</h2>
+                    <p>Visit Weekend Committee, Internal Networking Committee, BMES Liaison</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Mittal-Smiti.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Smiti Mittal</h2>
+                    <p>Advocacy, Communications and Outreach Committee, Head Peer Advisor</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Teerith Pascricha</h2>
+                    <p>Advocacy, Communications and Outreach Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Tsai-Jennifer.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Jennifer Tsai</h2>
+                    <p>Advocacy, Communications and Outreach Committee, Diversity, Equity and Inclusion Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/bernal-angelica.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Angelica Bernal</h2>
+                    <p>Advocacy, Communications and Outreach Committee, Diversity, Equity and Inclusion Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Steven Robles Blasini</h2>
+                    <p>Advocacy, Communications and Outreach Committee, Diversity, Equity and Inclusion Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/liu-sarah.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Sarah Mia Liu</h2>
+                    <p>Internal Networking Committee, Webmaster</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Ghenand-Omkar.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Omkar Ghenand</h2>
+                    <p>Internal Networking Committee</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Teerith Pasricha</h2>
+                    <p>Head Peer Advisor</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/jamieson-julia.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Julia Jamieson</h2>
+                    <p>Head Peer Advisor</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Liam Bartie</h2>
+                    <p>Graduate Assembly Representative</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/Bombosch-Juliane.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Juliane Bombosch</h2>
+                    <p>Graduate Assembly Representative</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-[162px] card bg-base-100 w-48 shadow-sm directory-card">
+                    <figure><img src="images/headshots/placeholder.webp" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title">Uma Paithankar</h2>
+                    <p>Industry & Alumni Liaison</p>
+                    <div class="card-actions justify-end"></div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-000 w-48 ">
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-000 w-48">
+                </div>
+                <div class="flex-1 min-w-[162px] card bg-base-000 w-48">
+                </div>
+            </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <h6 class="footer-title">BioEngineering Association of STudents.</h6>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="#about.html">About Us</a>
+    <a class="link link-hover" href="#contact.html">Contact</a>
+    <a class="link link-hover" href="#directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="#credits.html">Credits</a>
+  </nav>
+</footer>
+
+
+<script>
+  const searchInput = document.getElementById('directory-search');
+  const cards = document.querySelectorAll('.directory-card');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+
+    cards.forEach(card => {
+      const name = card.querySelector('.card-title')?.textContent.toLowerCase() || '';
+      const role = card.querySelector('.card-body p')?.textContent.toLowerCase() || '';
+      const matches = name.includes(query) || role.includes(query);
+      card.style.display = matches ? '' : 'none';
+    });
+  });
+</script>
+
+
+</body>
+</html>

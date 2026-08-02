@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEAST</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-D0DTfmnJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BP8tRcG5.css">
+</head>
+
+<body>
+<div class="topbar" style="background-image: none;">
+  <div id="home-button">beast</div>
+  <div id="burger">☰</div>
+
+  <div id="buttons">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="forms.html">forms</a>
+      </button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="academics.html">academics</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">First Year</a>
+        <a href="#">Second Year</a>
+        <a href="#">Courses</a>
+        <a href="#">Teaching</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="extracurriculars.html">extracurriculars</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="dei.html">DEI</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="faqs.html">FAQs</a>
+      </button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="about.html">about</a> <span class="carrot">▸</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="about.html#officers">BEAST</a>
+        <a href="about.html#position-descriptions">Position Descriptions</a>
+        <a href="about.html#students">Student Directory</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded')
+
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', e => {
+        if (
+          link.hostname === window.location.hostname &&
+          !link.hasAttribute('target')
+        ) {
+          e.preventDefault()
+          document.body.classList.remove('loaded')
+
+          setTimeout(() => {
+            window.location.href = link.href
+          }, 250)
+        }
+      })
+    })
+  })
+
+  const burger = document.getElementById('burger');
+  const buttons = document.getElementById('buttons');
+
+  burger.addEventListener('click', () => {
+    buttons.classList.toggle('active');
+  });
+
+  // Mobile dropdown toggles
+  document.querySelectorAll('#buttons .dropdown').forEach(dropdown => {
+    const btn = dropdown.querySelector('.dropbtn');
+    btn.addEventListener('click', e => {
+      e.preventDefault(); // prevent navigation if button is link
+      dropdown.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>

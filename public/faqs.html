@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="beastwebsite">
 
 
 <head>
@@ -16,322 +16,484 @@
 
 <body>
 
-<div class="topbar">
-  <img class="responsive" src="images/trees.png" alt="header-img">
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
 
-  <div id="home-button"><a href="index.html">beast</a></div>
-  <div id="burger">☰</div>
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
 
-  <div id="buttons">
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="forms.html">forms</a>
-      </button>
-    </div>
+      <button class = "navbar-btn" popovertarget="a1">Academics</button>
+      <div id="a1" popover>
+        <ul class="menu">
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
+          <li><a href="academics_teaching.html">Teaching</a></li>
+          <li><a href="forms.html">Forms</a></li>
+        </ul>
+      </div>
 
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="academics.html">academics</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">First Year</a>
-        <a href="#">Second Year</a>
-        <a href="#">Courses</a>
-        <a href="#">Teaching</a>
+      <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
+      <div id="a2" popover>
+        <ul class="menu">
+          <li><a>Enterprise</a></li>
+          <li><a>CRM software</a></li>
+          <li><a>Security</a></li>
+          <li><a>Consulting</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a5">About</button>
+      <div id="a5" popover>
+        <ul class="menu">
+          <li><a>Beast</a></li>
+          <li><a>Positions</a></li>
+          <li><a href="directory.html">Student Directory</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a>Contact</a></li>
+        </ul>
       </div>
     </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="extracurriculars.html">extracurriculars</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="dei.html">DEI</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="faqs.html">FAQs</a>
-      </button>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="about.html">about</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="about.html#officers">BEAST</a>
-        <a href="about.html#position-descriptions">Position Descriptions</a>
-        <a href="about.html#students">Student Directory</a>
-        <a href="about.html#contact">Contact</a>
-      </div>
-    </div>
-
+    <!-- <button class="btn sm:hidden" popovertarget="my-megamenu-1">Menu</button> -->
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
   </div>
 </div>
+
 
 <div class="page-container">
-  <!-- Sidebar -->
-  <nav class="sidebar">
-    <inpage-link class="sidebar-title" href="#">FAQs</inpage-link>
-    <inpage-link class="sidebar-option" href="#beast">About Beast</inpage-link>
-    <inpage-link class="sidebar-option" href="#services">Campus Services</inpage-link>
-    <inpage-link class="sidebar-option" href="#advising">Advising</inpage-link>
-    <inpage-link class="sidebar-option" href="#courses">Coursework</inpage-link>
-    <inpage-link class="sidebar-option" href="#quals">Qualifying Exam</inpage-link>
-    <inpage-link class="sidebar-option" href="#dissertation">Dissertation Committee and Defense</inpage-link>
-    <inpage-link class="sidebar-option" href="#life">Life Outside the Program</inpage-link>
-  </nav>
-
-  <!-- Main -->
-  <div class="page-content">
-    <section id="beast">
-      <h5>About Beast</h5>
-      <hr>
-      <h4>What is BEAST?</h4>
-      <p>The BioEngineering Association of STudents. Every student is automatically a member of BEAST. Its purpose is to facilitate student involvement and leadership in areas ranging from social activities to prospective student visit weekends, from running the annual retreat to organizing BEST (the BioEngineering Student Talks). There are several elected positions, but the structure is informal and anyone wishing to volunteer with any activity is welcome.</p>
-    
-      <h3>What is the purpose of the BEAST website?</h3>
-      <p>This website is a forum and repository of information for students in the Berkeley-UCSF Graduate Program in Bioengineering. You can find contact information for current students, suggested course lists from a variety of students, and a chunk of departmental paperwork you will need to fill out through your time in the program</p>
-    
-      <h3>How do I become a BEAST officer?</h3>
-      <p>Nominations and elections to choose BEAST officers occur each year in the fall.</p>
-    
-      <h3>What is the difference between Faculty, Research and Peer Advisors?</h3>
-      <p>Your faculty advisor helps with choosing courses, making sure you are progressing well within the program (they help you fill out an annual progress report), and answer general questions about the program. Your research advisor is your principal investigator. Your peer advisor is an older student who is there to answer your questions and help you settle into the program.</p>
-    </section>
-
-    <section id="services">
-      <h5>Campus Services</h5>
-      <hr>
-      <h4>How do I get my student ID/replace my student ID?</h4>
-      <p><strong>UCSF:</strong> On the first day of BioE orientation, you will go to the UCSF police office to get your ID. Arrangements have been made to pay for your ID. If you lose your ID, you can get a replacement UCSF IDs from the Police Department for a fee. You can call the ID section at (415) 476-7065 for more information about the cost and hours of operations.</p>
-      <p><strong>UCB:</strong> Cal IDs can be obtained at the Cal One office right by Sproul and Zellerbach Hall. you can get a replacement for a fee. Make sure to pick up your EasyPass afterwards as well so you can ride AC transit for free (Berkeley ID required to pickup/replace).</p>
-    
-      <h3>What is the web page for the e-mail system?</h3>
-      <p><strong>UCSF:</strong> <a href="http://mail.ucsf.edu/">http://mail.ucsf.edu/</a></p>
-      <p><strong>UCB:</strong> <a href="http://bmail.berkeley.edu/">http://bmail.berkeley.edu/</a></p>
-
-      <h3>Do I have to pay the membership fee to use gyms?</h3>
-      <p> No. You can show your UCSF ID and study list to enter the UCB recreation center and vice versa with the exception of the summer term. In fact, you have access to any UC gym with either of your UC IDs thanks to the Reciprocity Agreement.</p>
-    </section>
-    
-    <section id="advising">
-      <h5>Advising</h5>
-      <hr>
-      <h4>My graduate group advisor isn’t in my area of interest and they weren’t able to recommend classes. What should I do??</h4>
-      <p>Look on the the BEAST wiki for the [UnderConstruction] in your area of interest. You can also reach out and contact other grad students to answer any other questions you may have.</p>
-
-      <h3>What is the purpose of my BEAST peer advisor?</h3>
-      <p>Your BEAST peer advisor is assigned to you before you come to orientation and there to help you with your transition into grad school. During your first year, we’re sure you’ll have tons of questions about how to access resources and make useful contacts. Be sure to contact your peer advisor for help.</p>
-
-      <h3>What are the responsibilities of the primary graduate group advisors and program administrators?</h3>
-      <p>Rocio and Victoria are the program administrators at UCB and UCSF respectively who help out grad students with various grad student issues. If you have any questions about advising, course requirements, funding, or contacting a professor for a rotation, they are the ladies to talk to. If you have questions about anything else, they will do their best to either answer your question or point you in the right direction.</p>
-
-      <h5>Program Requirements</h5>
-      <hr>
-      <h4>Is it required that I rotate with three different labs?</h4>
-      <p>You are required to complete three rotations during your first year. However, if you find a lab you truly enjoy, the department may allow you to commit to a lab early. Three rotations are strongly recommended as this is the only chance you have to explore the many labs the BioE graduate group has to offer.</p>
-
-      <h3>What are the differences between satisfying major, minor, and area requirements?</h3>
-      <p>Area requirements are general bioengineering requirements that all students must complete. The requirements include Physiology, Biology, Chemistry, Math, Statistics, and general Engineering courses. If you have taken some of these courses in undergrad, you may be able to apply them towards your area requirements. Your major field of study requirement consists of 16 semester units of graduate level courses that will be in your field of expertise. Your minor requirements consists of 8 semester units of graduate level courses.For more information, check out the [UnderConstruction] page.</p>
-
-      <h3>Where can I find information about quals requirements and how to choose committee members?</h3>
-      <p>Take a look at the Bioengineering handbook, the Second Year Information page, and the Qualifying Exam and Dissertation page. [UnderConstruction]</p>
-
-      <h3>Where can I find my required forms?</h3>
-      <p>A: Try the Bioengineering handbook, the Academic Resource page relevant to you, or the sidebar link that literally says Required Forms and Documentation. [UnderConstruction]</p>
-    </section>
-
-    <section id="courses">
-      <h5>Coursework</h5>
-      <hr>
-      <p>[UnderConstruction]</p>
-
-      <h3>What are the different levels of courses?</h3>
-      <p>At Berkeley, 1-99 is lower division, 100-199 is upper division, 200-299 is graduate level, 300-399 is professional.</p>
-
-      <h3>How do the credit units transfer between UCSF and UCB?</h3>
-      <p>A: 1.5 Quarter Units (UCSF) = 1 Semester Unit (UCB)</p>
-
-      <h3>How many courses should I take at a time?</h3>
-      <p>A: There is no “official” answer to this question. Each person will give you a slightly different answer. Some folks like to “front load” their courses and try to get most (if not all) done in the first two years. If this is the case, you will most likely be taking about 6-9 units a semester.</p>
-      <p>In your first year, you will be doing research rotations AND taking classes. That being said, don’t overload yourself. The course requirements are pretty flexible and meant to complement your research; you have your entire PhD to finish the course requirements. Remember: if a course doesn’t seem worthwhile to you, your time, or your research, then either don’t take it or, if you are already in it, drop it! No one is really forcing you to take a class except yourself.</p>
-
-      <h3>What is the difference between satisfying major, minor, and area requirements?</h3>
-      <p>A: Area requirements are general bioengineering requirements that all students must complete. The requirements include Physiology, Biology, Chemistry, Math, Statistics, and general Engineering courses. If you have taken some of these courses in undergrad, you may be able to apply them towards your area requirements. Your major field of study requirement consists of 16 semester units of graduate level courses that will be in your field of expertise. Your minor requirements consists of 8 semester units of graduate level courses. For more information, check out the [UnderConstruction] page.</p>
-
-      <h3>What are credit requirements for enrollment?</h3>
-      <p>If you are UC Berkeley-based, you should register for 12 units at Berkeley. If you are UCSF-based and UC Berkeley funded (ie, Berkeley mentor) you will need to enroll in 12 units of research (299) with that faculty member. If you are UC Berkeley-based but working in a UCSF lab, you must register also for 8 units of research at UCSF.
-
-      <h3>What are dummy courses and how do I sign up for them?</h3>
-      <p>Dummy courses are what you sign up for if you aren’t taking any courses at either Berkeley or UCSF. If you are UCSF-based and UCSF funded – taking no courses at Berkeley, enroll in courses based on the emails Sarah-Jane and Kristin send regarding the 299 courses each semester.</p>
-    </section>
-
-    <section id="quals">
-      <h5>Qualifying Exam</h5>
-      <hr>
-      <h4>Where can I find information about quals requirements and how to choose committee members?</h4>
-      <p>Take a look at the Bioengineering handbook, the Second Year Information page, and the Qualifying Exam and Dissertation page. [UnderConstruction]</p>
-
-      <h3>How can I find out if a professor is on the Academic Senate?</h3>
-      <p>For UCSF, see the UCSF Academic Senate Membership website. For UCB, see the UCB Academic Senate Membership website. It’s also a good idea to double-check by asking the professor in question.</p>
-
-      <h3>What are the requirements for my quals committee members?</h3>
-      <p>See the Bioengineering handbook, the Second Year Information page, and the Qualifying Exam and Dissertation page.</p>
-
-      <h3>What is the expected scope of my quals proposal?</h3>
-      <p>Your proposed project should last 6-12 months. Your qualifying exam is not expected to cover the entirety of your thesis work.</p>
-
-      <h3>Do I need preliminary data for my quals proposal?</h3>
-      <p>Preliminary data is NOT a requirement. However, students *sometimes* find it easier to support their hypotheses and choice of projects when they have a small set of pilot data to show their committee. If one chooses to include “expected results,” be *sure* to label them as such. Never present hypothetical data in a way that implies that they are real.</p>
-
-      <h3>What do I do if one of my committee members cannot make it to the meeting?</h3>
-      <p>The short answer is that you must reschedule. According to UCB Graduate Degree policy, if any committee member cannot attend, the exam should be rescheduled or the committee reconstituted. The Graduate Division can expedite reconstitution of committees under these circumstances. If you have a (one) committee member who is not on campus, they may participate through a conference call, videoconferencing, Skype, or other media with prior approval from the Associate Dean for Degrees.</p>
-
-      <h3>Where can I practice for quals?</h3>
-      <p>Present at a BEST! Contact your friendly neighborhood BEST Coordinators according to current BEAST Officers.</p>
-    </section>
-
-    <section id="dissertation"></section>
-      <h5>Dissertation Committee and Defense</h5>
-      <hr>
-      <h4>It is difficult to schedule a meeting with all five members of my dissertation committee. On the dissertation committee form, there are only 3 lines for signature… does that imply that it’s ok to have only 3 of the 5 members there?</h4>
-      <p>It is the consensus of the graduate advisors that you are best served when you have a full committee meeting. If that looks impossible, then a meeting with the signing members, or as many as you can get. It is hard to get them all together, we know. But it is very useful to you. Do your best.</p>
-    </section>
-    
-    <section id="life">
-      <h5>Life Outside the Program</h5>
-      <hr>
-      <h4>Where should I live?</h4>
-      <p>That depends on what you are looking for and what you can afford. This Housing Guide for finding a place to live in and around the East Bay from Rocio is a good place to start. You may also want to check out the Rent Map, look at the bus lines available through AC Transit, as well as consider whether you will own a car. Feel free to also reach out to older students for more insight!</p>
-
-      <h3>How do I get around the Bay Area?</h3>
-      <p>This is the Bay Area, home of Uber, Lyft, and all the different motorbikes, electric bikes, and electric scooters (please wear a helmet). Furthermore, you can rent cars through Zipcar, Budget, and Gig cars with discounts as a student. BART can take through the city, Caltrain down to South Bay, Megabus up to Sacramento, and there are even buses to Lake Tahoe for some powder. Of course, you can drive your own car or ride your own motorcycle. Feel free to also reach out to older students for more tips and tricks of getting around!</p>
-
-      <h3>How do I do taxes?</h3>
-      <p>That is a question that we are not allowed to officially answer. However, unofficially, we can direct to our Tax Information page [UnderConstruction]. There are also resources available through Berkeley (international) and UCSF (international) that you can reference. Finally, the official source is to go to the IRS website for filing federal taxes and the California Franchise Tax Board for filing state taxes.</p>
-
-      <h3>I have a legal question.</h3>
-      <p>IANAL, but there are resources available through UC Berkeley and UCSF. Last we checked, these include free legal consultation for students.</p>
-
-      <h3>I am having difficulties adjusting to grad school, dealing with family or relationships, sexual orientation or identity, coping with personal crises. I’d like to speak with someone confidentially. Where should I go?</h3>
-      <p>You have access to counselors through student health at both <a href="https://uhs.berkeley.edu/counseling">Berkeley</a> and <a href="https://studentmentalhealth.ucsf.edu/">UCSF</a>. There are also more resources for specific challenges you may be facing, here are a couple to get you started:</p>
-      <ul>
-        <li><a href="https://lgbtq.ucsf.edu/">UCSF LGBTQ+ Resource Center</a></li>
-        <li><a href="https://uhs.berkeley.edu/counseling/urgent">UC Berkeley Mental Health Crisis Resources</a></li>
-        <li><a href="https://uhs.berkeley.edu/socialservices">UC Berkeley Social Services Counseling</a></li>
-        <li><a href="https://studentaffairs.berkeley.edu/ombuds-office-for-students-postdoctoral-appointees/">UC Berkeley</a> and <a href="https://ombuds.ucsf.edu/">UCSF</a> Ombuds Offices</li>
-        <li><a href="#">Other Resources</a> [UnderConstruction]</li>
-      </ul>
-    
-    </section>
+  <div class="breadcrumbs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>FAQs</li>
+    </ul>
   </div>
+
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">FAQs</a></li>
+      <li><a href="#beast" class="menu-item">About Beast</a></li>
+      <li><a href="#services" class="menu-item">Campus Services</a></li>
+      <li><a href="#advising" class="menu-item">Advising</a></li>
+      <li><a href="#courses" class="menu-item">Coursework</a></li>
+      <li><a href="#quals" class="menu-item">Qualifying Exam</a></li>
+      <li><a href="#dissertation" class="menu-item">Dissertation Committee</a></li>
+      <li><a href="#life" class="menu-item">Life Outside the Program</a></li>
+    </ul>
+
+    <!-- Main -->
+    <div class="page-content">
+      <section id="beast">
+        <h5>About Beast</h5>
+        <hr>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-1-toggle" type="checkbox" class="peer" />
+          <label for="collapse-1-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What is BEAST?</div>
+          <div class="collapse-content text-md z-1">
+              The BioEngineering Association of STudents. Every student is automatically a member of BEAST. Its purpose is to facilitate student involvement and leadership in areas ranging from social activities to prospective student visit weekends, from running the annual retreat to organizing BEST (the BioEngineering Student Talks). There are several elected positions, but the structure is informal and anyone wishing to volunteer with any activity is welcome.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-2-toggle" type="checkbox" class="peer" />
+          <label for="collapse-2-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What is the purpose of the BEAST website?</div>
+          <div class="collapse-content text-md z-1">
+              This website is a forum and repository of information for students in the Berkeley-UCSF Graduate Program in Bioengineering. You can find contact information for current students, suggested course lists from a variety of students, and a chunk of departmental paperwork you will need to fill out through your time in the program
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-3-toggle" type="checkbox" class="peer" />
+          <label for="collapse-3-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">How do I become a BEAST officer?</div>
+          <div class="collapse-content text-md z-1">
+              Nominations and elections to choose BEAST officers occur each year in the fall.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-4-toggle" type="checkbox" class="peer" />
+          <label for="collapse-4-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What is the difference between Faculty, Research and Peer Advisors?</div>
+          <div class="collapse-content text-md z-1">
+              Your faculty advisor helps with choosing courses, making sure you are progressing well within the program (they help you fill out an annual progress report), and answer general questions about the program. Your research advisor is your principal investigator. Your peer advisor is an older student who is there to answer your questions and help you settle into the program.
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h5>Campus Services</h5>
+        <hr>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-5-toggle" type="checkbox" class="peer" />
+          <label for="collapse-5-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">How do I get my student ID/replace my student ID?</div>
+          <div class="collapse-content text-md z-1">
+            <p><strong>UCSF:</strong> On the first day of BioE orientation, you will go to the UCSF police office to get your ID. Arrangements have been made to pay for your ID. If you lose your ID, you can get a replacement UCSF IDs from the Police Department for a fee. You can call the ID section at (415) 476-7065 for more information about the cost and hours of operations.</p>
+            <p><strong>UCB:</strong> Cal IDs can be obtained at the Cal One office right by Sproul and Zellerbach Hall. you can get a replacement for a fee. Make sure to pick up your EasyPass afterwards as well so you can ride AC transit for free (Berkeley ID required to pickup/replace).</p>
+          </div>
+        </div>
+        
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-5-toggle" type="checkbox" class="peer" />
+          <label for="collapse-5-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What is the web page for the e-mail system?</div>
+          <div class="collapse-content text-md z-1">
+              <p><strong>UCSF:</strong> <a class="link link-info" href="http://mail.ucsf.edu/">http://mail.ucsf.edu/</a></p>
+              <p><strong>UCB:</strong> <a class="link link-info" href="http://bmail.berkeley.edu/">http://bmail.berkeley.edu/</a></p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-6-toggle" type="checkbox" class="peer" />
+          <label for="collapse-6-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Do I have to pay the membership fee to use gyms?</div>
+          <div class="collapse-content text-md z-1">
+              No. You can show your UCSF ID and study list to enter the UCB recreation center and vice versa with the exception of the summer term. In fact, you have access to any UC gym with either of your UC IDs thanks to the Reciprocity Agreement.
+          </div>
+        </div>
+      </section>
+      
+      <section id="advising">
+        <h5>Advising</h5>
+        <hr>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-7-toggle" type="checkbox" class="peer" />
+          <label for="collapse-7-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">My graduate group advisor isn't in my area of interest and they weren't able to recommend classes. What should I do?</div>
+          <div class="collapse-content text-md z-1">
+            Look on the the BEAST wiki for the [UnderConstruction] in your area of interest. You can also reach out and contact other grad students to answer any other questions you may have.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-7-toggle" type="checkbox" class="peer" />
+          <label for="collapse-7-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What is the purpose of my BEAST peer advisor?</div>
+          <div class="collapse-content text-md z-1">
+              Your BEAST peer advisor is assigned to you before you come to orientation and there to help you with your transition into grad school. During your first year, we're sure you'll have tons of questions about how to access resources and make useful contacts. Be sure to contact your peer advisor for help.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-8-toggle" type="checkbox" class="peer" />
+          <label for="collapse-8-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What are the responsibilities of the primary graduate group advisors and program administrators?</div>
+          <div class="collapse-content text-md z-1">
+              Rocio and Victoria are the program administrators at UCB and UCSF respectively who help out grad students with various grad student issues. If you have any questions about advising, course requirements, funding, or contacting a professor for a rotation, they are the ladies to talk to. If you have questions about anything else, they will do their best to either answer your question or point you in the right direction.
+          </div>
+        </div>
+      </section>
+
+      <section id="requirements">
+        <h5>Program Requirements</h5>
+        <hr>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-9-toggle" type="checkbox" class="peer" />
+          <label for="collapse-9-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Is it required that I rotate with three different labs?</div>
+          <div class="collapse-content text-md z-1">
+              You are required to complete three rotations during your first year. However, if you find a lab you truly enjoy, the department may allow you to commit to a lab early. Three rotations are strongly recommended as this is the only chance you have to explore the many labs the BioE graduate group has to offer.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-9-toggle" type="checkbox" class="peer" />
+          <label for="collapse-9-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What are the differences between satisfying major, minor, and area requirements?</div>
+          <div class="collapse-content text-md z-1">
+              Area requirements are general bioengineering requirements that all students must complete. The requirements include Physiology, Biology, Chemistry, Math, Statistics, and general Engineering courses. If you have taken some of these courses in undergrad, you may be able to apply them towards your area requirements. Your major field of study requirement consists of 16 semester units of graduate level courses that will be in your field of expertise. Your minor requirements consists of 8 semester units of graduate level courses. For more information, check out the [UnderConstruction] page.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-10-toggle" type="checkbox" class="peer" />
+          <label for="collapse-10-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Where can I find information about quals requirements and how to choose committee members?</div>
+          <div class="collapse-content text-md z-1">
+              Take a look at the Bioengineering handbook, the Second Year Information page, and the Qualifying Exam and Dissertation page. [UnderConstruction]
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-11-toggle" type="checkbox" class="peer" />
+          <label for="collapse-11-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Where can I find my required forms?</div>
+          <div class="collapse-content text-md z-1">
+              Try the Bioengineering handbook, the Academic Resource page relevant to you, or the sidebar link that literally says Required Forms and Documentation. [UnderConstruction]
+          </div>
+        </div>
+      </section>
+
+      <section id="courses">
+        <h5>Coursework</h5>
+        <hr>
+        <p>[UnderConstruction]</p>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-12-toggle" type="checkbox" class="peer" />
+          <label for="collapse-12-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What are the different levels of courses?</div>
+          <div class="collapse-content text-md z-1">
+              At Berkeley, 1-99 is lower division, 100-199 is upper division, 200-299 is graduate level, 300-399 is professional.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-13-toggle" type="checkbox" class="peer" />
+          <label for="collapse-13-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">How do the credit units transfer between UCSF and UCB?</div>
+          <div class="collapse-content text-md z-1">
+              1.5 Quarter Units (UCSF) = 1 Semester Unit (UCB)
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-14-toggle" type="checkbox" class="peer" />
+          <label for="collapse-14-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">How many courses should I take at a time?</div>
+          <div class="collapse-content text-md z-1">
+              <p>There is no "official" answer to this question. Each person will give you a slightly different answer. Some folks like to "front load" their courses and try to get most (if not all) done in the first two years. If this is the case, you will most likely be taking about 6-9 units a semester.</p>
+              <p>In your first year, you will be doing research rotations AND taking classes. That being said, don't overload yourself. The course requirements are pretty flexible and meant to complement your research; you have your entire PhD to finish the course requirements. Remember: if a course doesn't seem worthwhile to you, your time, or your research, then either don't take it or, if you are already in it, drop it! No one is really forcing you to take a class except yourself.</p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-15-toggle" type="checkbox" class="peer" />
+          <label for="collapse-15-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What is the difference between satisfying major, minor, and area requirements?</div>
+          <div class="collapse-content text-md z-1">
+              Area requirements are general bioengineering requirements that all students must complete. The requirements include Physiology, Biology, Chemistry, Math, Statistics, and general Engineering courses. If you have taken some of these courses in undergrad, you may be able to apply them towards your area requirements. Your major field of study requirement consists of 16 semester units of graduate level courses that will be in your field of expertise. Your minor requirements consists of 8 semester units of graduate level courses. For more information, check out the [UnderConstruction] page.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-16-toggle" type="checkbox" class="peer" />
+          <label for="collapse-16-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What are credit requirements for enrollment?</div>
+          <div class="collapse-content text-md z-1">
+              If you are UC Berkeley-based, you should register for 12 units at Berkeley. If you are UCSF-based and UC Berkeley funded (ie, Berkeley mentor) you will need to enroll in 12 units of research (299) with that faculty member. If you are UC Berkeley-based but working in a UCSF lab, you must register also for 8 units of research at UCSF.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-17-toggle" type="checkbox" class="peer" />
+          <label for="collapse-17-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What are dummy courses and how do I sign up for them?</div>
+          <div class="collapse-content text-md z-1">
+              Dummy courses are what you sign up for if you aren't taking any courses at either Berkeley or UCSF. If you are UCSF-based and UCSF funded – taking no courses at Berkeley, enroll in courses based on the emails Sarah-Jane and Kristin send regarding the 299 courses each semester.
+          </div>
+        </div>
+      </section>
+
+      <section id="quals">
+        <h5>Qualifying Exam</h5>
+        <hr>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-18-toggle" type="checkbox" class="peer" />
+          <label for="collapse-18-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Where can I find information about quals requirements and how to choose committee members?</div>
+          <div class="collapse-content text-md z-1">
+              Take a look at the Bioengineering handbook, the Second Year Information page, and the Qualifying Exam and Dissertation page. [UnderConstruction]
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-18-toggle" type="checkbox" class="peer" />
+          <label for="collapse-18-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">How can I find out if a professor is on the Academic Senate?</div>
+          <div class="collapse-content text-md z-1">
+              For UCSF, see the UCSF Academic Senate Membership website. For UCB, see the UCB Academic Senate Membership website. It's also a good idea to double-check by asking the professor in question.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-19-toggle" type="checkbox" class="peer" />
+          <label for="collapse-19-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What are the requirements for my quals committee members?</div>
+          <div class="collapse-content text-md z-1">
+              See the Bioengineering handbook, the Second Year Information page, and the Qualifying Exam and Dissertation page.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-20-toggle" type="checkbox" class="peer" />
+          <label for="collapse-20-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What is the expected scope of my quals proposal?</div>
+          <div class="collapse-content text-md z-1">
+              Your proposed project should last 6-12 months. Your qualifying exam is not expected to cover the entirety of your thesis work.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-21-toggle" type="checkbox" class="peer" />
+          <label for="collapse-21-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Do I need preliminary data for my quals proposal?</div>
+          <div class="collapse-content text-md z-1">
+              Preliminary data is NOT a requirement. However, students *sometimes* find it easier to support their hypotheses and choice of projects when they have a small set of pilot data to show their committee. If one chooses to include "expected results," be *sure* to label them as such. Never present hypothetical data in a way that implies that they are real.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-22-toggle" type="checkbox" class="peer" />
+          <label for="collapse-22-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">What do I do if one of my committee members cannot make it to the meeting?</div>
+          <div class="collapse-content text-md z-1">
+              The short answer is that you must reschedule. According to UCB Graduate Degree policy, if any committee member cannot attend, the exam should be rescheduled or the committee reconstituted. The Graduate Division can expedite reconstitution of committees under these circumstances. If you have a (one) committee member who is not on campus, they may participate through a conference call, videoconferencing, Skype, or other media with prior approval from the Associate Dean for Degrees.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-23-toggle" type="checkbox" class="peer" />
+          <label for="collapse-23-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Where can I practice for quals?</div>
+          <div class="collapse-content text-md z-1">
+              Present at a BEST! Contact your friendly neighborhood BEST Coordinators according to current BEAST Officers.
+          </div>
+        </div>
+      </section>
+
+      <section id="dissertation">
+        <h5>Dissertation Committee</h5>
+        <hr>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-24-toggle" type="checkbox" class="peer" />
+          <label for="collapse-24-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">It is difficult to schedule a meeting with all five members of my dissertation committee. On the dissertation committee form, there are only 3 lines for signature… does that imply that it's ok to have only 3 of the 5 members there?</div>
+          <div class="collapse-content text-md z-1">
+              It is the consensus of the graduate advisors that you are best served when you have a full committee meeting. If that looks impossible, then a meeting with the signing members, or as many as you can get. It is hard to get them all together, we know. But it is very useful to you. Do your best.
+          </div>
+        </div>
+      </section>
+      
+      <section id="life">
+        <h5>Life Outside the Program</h5>
+        <hr>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:20px;">
+          <input id="collapse-25-toggle" type="checkbox" class="peer" />
+          <label for="collapse-25-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">Where should I live?</div>
+          <div class="collapse-content text-md z-1">
+              That depends on what you are looking for and what you can afford. This Housing Guide [Under Construction] for finding a place to live in and around the East Bay from Rocio is a good place to start. You may also want to check out the Rent Map, look at the bus lines available through AC Transit, as well as consider whether you will own a car. Feel free to also reach out to older students for more insight!
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-26-toggle" type="checkbox" class="peer" />
+          <label for="collapse-26-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">How do I get around the Bay Area?</div>
+          <div class="collapse-content text-md z-1">
+              This is the Bay Area, home of Uber, Lyft, and all the different motorbikes, electric bikes, and electric scooters (please wear a helmet). Furthermore, you can rent cars through Zipcar, Budget, and Gig cars with discounts as a student. BART can take through the city, Caltrain down to South Bay, Megabus up to Sacramento, and there are even buses to Lake Tahoe for some powder. Of course, you can drive your own car or ride your own motorcycle. Feel free to also reach out to older students for more tips and tricks of getting around!
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-27-toggle" type="checkbox" class="peer" />
+          <label for="collapse-27-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">How do I do taxes?</div>
+          <div class="collapse-content text-md z-1">
+              That is a question that we are not allowed to officially answer. However, unofficially, we can direct to our Tax Information page [UnderConstruction]. There are also resources available through Berkeley (international) and UCSF (international) that you can reference. Finally, the official source is to go to the IRS website for filing federal taxes and the California Franchise Tax Board for filing state taxes.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-28-toggle" type="checkbox" class="peer" />
+          <label for="collapse-28-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">I have a legal question.</div>
+          <div class="collapse-content text-md z-1">
+              IANAL, but there are resources available through UC Berkeley and UCSF. Last we checked, these include free legal consultation for students.
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300" style="margin-top:10px;">
+          <input id="collapse-29-toggle" type="checkbox" class="peer" />
+          <label for="collapse-29-toggle" class="fixed inset-0 hidden peer-checked:block"></label>
+          <div class="collapse-title font-semibold">I am having difficulties adjusting to grad school, dealing with family or relationships, sexual orientation or identity, coping with personal crises. I'd like to speak with someone confidentially. Where should I go?</div>
+          <div class="collapse-content text-md z-1">
+              <p>You have access to counselors through student health at both <a class="link link-info" href="https://uhs.berkeley.edu/counseling">Berkeley</a> and <a class="link link-info" href="https://studentmentalhealth.ucsf.edu/">UCSF</a>. There are also more resources for specific challenges you may be facing, here are a couple to get you started:</p>
+              <ul style="padding-left:40px">
+                <li><a class="link link-info" href="https://lgbtq.ucsf.edu/">UCSF LGBTQ+ Resource Center</a></li>
+                <li><a class="link link-info" href="https://uhs.berkeley.edu/counseling/urgent">UC Berkeley Mental Health Crisis Resources</a></li>
+                <li><a class="link link-info" href="https://uhs.berkeley.edu/socialservices">UC Berkeley Social Services Counseling</a></li>
+                <li><a class="link link-info" href="https://studentaffairs.berkeley.edu/ombuds-office-for-students-postdoctoral-appointees/">UC Berkeley</a> and <a class="link link-info" href="https://ombuds.ucsf.edu/">UCSF</a> Ombuds Offices</li>
+                <li><a class="link link-info" href="#">Other Resources</a> [UnderConstruction]</li>
+              </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  
 
 </div>
 
-<footer class="footer">
-  <div class="w3-main w3-row-padding" style="max-width:1500px;margin-left:50px" id="footer-content">
-    <div class="w3-half w3-padding">
-      <h3 style="color: rgb(177, 177, 177); line-height: 1; margin-top: 0px;">BioEngineering Association of STudents</h3>
-      <p style="color: rgb(177, 177, 177);">The BioEngineering Association of STudents (BEAST) is the graduate student organization for the UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide resources and information for current and prospective students.</p>
-      <p style="color: rgb(177, 177, 177);">&copy; 2022 BEAST. All rights reserved.</p>
-    </div>
-    <div class="w3-half w3-padding">
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:35px; margin-right:60px; text-align:right;"><b><a href="#">Contact</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://x.com/BioE_Beast">Twitter</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="#">Credits</a></b></p>
-    </div>
-  </div>
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <h6 class="footer-title">BioEngineering Association of STudents.</h6>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="#about.html">About Us</a>
+    <a class="link link-hover" href="#contact.html">Contact</a>
+    <a class="link link-hover" href="#directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="#credits.html">Credits</a>
+  </nav>
 </footer>
-
-
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('loaded')
-
-    document.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', e => {
-        if (
-          link.hostname === window.location.hostname &&
-          !link.hasAttribute('target')
-        ) {
-          e.preventDefault()
-          document.body.classList.remove('loaded')
-
-          setTimeout(() => {
-            window.location.href = link.href
-          }, 400)
-        }
-      })
-    })
-  })
-
-  const burger = document.getElementById('burger');
-  const buttons = document.getElementById('buttons');
-
-  burger.addEventListener('click', () => {
-    buttons.classList.toggle('active');
-  });
-
-  window.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("loaded");
-  });
-
-  document.querySelectorAll('#buttons button').forEach(button => {
-    button.addEventListener('click', e => {
-      const link = button.querySelector('a'); // get the <a> inside the button
-      if (!link) return;
-
-      // only internal pages, not external
-      if (link.hostname === window.location.hostname) {
-        e.preventDefault();
-
-        // fade out
-        document.body.classList.remove('loaded');
-
-        setTimeout(() => {
-          // navigate to new page
-          window.location.href = link.href;
-        }, 300); // match CSS fade duration
-      }
-    });
-  });
-
-  document.querySelectorAll('inpage-link[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-
-      const href = link.getAttribute('href');
-      if (href === '#') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        return;
-      }
-
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
-
-      target.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-
-
-</script>
 
 
 </body>

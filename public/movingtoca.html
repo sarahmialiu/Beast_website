@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="beastwebsite">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beast - Academics</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+
+      <button class = "navbar-btn" popovertarget="a1">Academics</button>
+      <div id="a1" popover>
+        <ul class="menu">
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
+          <li><a href="academics_teaching.html">Teaching</a></li>
+          <li><a href="forms.html">Forms</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
+      <div id="a2" popover>
+        <ul class="menu">
+          <li>
+            <a href="movingtoca.html">Moving to the Bay</a>
+            <ul>
+              <li><a href="movingtoca.html#housing">Housing</a></li>
+              <li><a href="movingtoca.html#residency">CA Residency</a></li>
+              <li><a href="movingtoca.html#dmv">The DMV</a></li>
+            </ul>
+          </li>
+          <li><a>CRM software</a></li>
+          <li><a>Security</a></li>
+          <li><a>Consulting</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a5">About</button>
+      <div id="a5" popover>
+        <ul class="menu">
+          <li><a>Beast</a></li>
+          <li><a>Positions</a></li>
+          <li><a>Student Directory</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <button class="btn sm:hidden" popovertarget="my-megamenu-1">Menu</button> -->
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+<div class="page-container">
+  <div
+    id = "welcome"
+    class="hero min-h-[75vh]"
+    style="background-image: url('images/coittower.webp');"
+  >
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-2xl">
+        <h1 class="mb-5 text-5xl font-bold">Welcome to the Bay Area!</h1>
+        <p class="mb-5">
+          Congrats, you now get to live in the best state. However, that doesn't make the moving process any easier. This page is designed 
+          to help you navigate the first year as a Bay Area resident, from finding housing to wrestling with the DMV.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="breadcrumbs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>Moving to the Bay</li>
+    </ul>
+  </div>
+
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">Moving to the Bay</a></li>
+      <li><a href="#housing" class="menu-item">Housing</a></li>
+      <li><a href="#residency" class="menu-item">CA Residency</a></li>
+      <li><a href="#dmv" class="menu-item">The DMV</a></li>
+    </ul>
+    
+    <!-- Main -->
+    <div class="page-content">
+      <section id="housing">
+        <h5>Housing</h5>
+        <hr>
+
+        <div class="flex flex-wrap gap-4" style="padding:20px;">
+          <div class="flex-1 min-w-[400px]">
+            <p>Finding an apartment or house in the Bay Area can be stressful, but often times students will be able to find rent under $1000 per month. Keep in mind that the rent increases each year, with larger hikes in areas not protected by rent control.</p>
+            <p>Current students often report finding aparments on <a href="https://www.zillow.com/homes/">Zillow</a>, <a href="https://www.apartments.com/">Apartments.com</a>, <a href="https://sfbay.craigslist.org/search/berkeley-ca/apa#search=2~gallery~0">Craigslist</a> or even some Facebook groups.</p>
+            <p>Realtors and homeowners will often require you to fill out a rental application. While searching for housing, you should be prepared to have all such information on hand.</p>
+            
+            <p>These are some things we recommend to bring when house hunting:</p>
+            <ul class="list-disc list-outside space-y-2" style="padding-bottom:20px; padding-left:40px">
+              <li>Photo identification (driver's license or passport)</li>
+              <li>Credit report and/or credit history, if applicable</li>
+              <li>Proof of income</li>
+              <li>Bank account information</li>
+              <li>Personal references</li>
+              <li>Previous apartment information, if applicable (names, phone numbers, addresses)</li>
+              <li>Employment information (funding offer letter from UC Berkeley/UCSF)</li>
+              <li>Vehicle identification number, if applicable</li>
+            </ul>
+          </div>
+
+          <div class="flex-1 min-w-[400px]">
+            <img src="images/zillow.png" style="width:100%; padding:20px;">
+          </div>
+        </div>
+
+        <hr>
+
+        <div style="padding:20px">
+          <p>Here are some examples of housing that current students have found in the past, collected from Beast Peer Advising. 
+            Please note that these are just examples and housing prices in San Francisco and the Bay Area fluctuate frequently.</p>
+          
+          <!-- name of each tab group should be unique -->
+          <div class="tabs tabs-lift">
+            <input type="radio" name="my_tabs_3" class="tab" aria-label="2025" />
+            <div class="tab-content bg-base-100 border-base-300 p-6">
+              <div class="overflow-x-auto h-128 w-full table-container">
+                <table class="table table-xs table-pin-rows" style="background-color: white;">
+                  <thead>
+                    <tr>
+                      <th>Zip Code</th>
+                      <th>Intersection</th>
+                      <th>Rent</th>
+                      <th>Bedrooms</th>
+                      <th>Occupants</th>
+                      <th>Housing Type</th>
+                      <th>Commute Method</th>
+                      <th>Commute Time</th>
+                      <th>Comments</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>94609</td>
+                      <td>66th and Telegraph</td>
+                      <td>$986</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bike</td>
+                      <td>20 min</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94703</td>
+                      <td>Alcatraz & Sacramento</td>
+                      <td>$1,295</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Motorcycle</td>
+                      <td>30–35 min</td>
+                      <td>Relatively friendly area, apartments tend to run a little small.</td>
+                    </tr>
+                    <tr>
+                      <td>94708</td>
+                      <td>—</td>
+                      <td>$1,750</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>AC Transit Bus (65, 67)</td>
+                      <td>~10 min to downtown/campus</td>
+                      <td>Bus ride from downtown/campus is short, but some Berkeley lines to residential areas run only on limited weekday schedules — check frequency and alternative routes. North Berkeley/Berkeley Hills is quiet, mostly long-term residents; nice but fewer amenities and less commuter-friendly without a car.</td>
+                    </tr>
+                    <tr>
+                      <td>94704</td>
+                      <td>Derby and Regent</td>
+                      <td>$1,790</td>
+                      <td>6</td>
+                      <td>8</td>
+                      <td>Shared house (co-op, I-house, etc.)</td>
+                      <td>Walk</td>
+                      <td>15 min</td>
+                      <td>Has a backyard and back patio. Nice park on the block.</td>
+                    </tr>
+                    <tr>
+                      <td>94017</td>
+                      <td>—</td>
+                      <td>$1,869</td>
+                      <td>Studio (UCSF Mission Bay Tidelands Apartment)</td>
+                      <td>1</td>
+                      <td>University housing</td>
+                      <td>Walk to UCSF Mission Bay</td>
+                      <td>10 min</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94704</td>
+                      <td>Henry & Berkeley Way</td>
+                      <td>$1,495 (incl. parking)</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walk</td>
+                      <td>20 min walk to Stanley; ~1 hr to Mission Bay by BART; ~1:15 to Parnassus by BART</td>
+                      <td>Easy walking distance to BART, Berkeley, and Trader Joe's, but area doesn't feel super safe/clean and can be noisy.</td>
+                    </tr>
+                    <tr>
+                      <td>94107</td>
+                      <td>Minnesota & Mariposa</td>
+                      <td>$1,688</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>University housing</td>
+                      <td>Walk</td>
+                      <td>8 min</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94609</td>
+                      <td>Telegraph and 60th</td>
+                      <td>$1,400</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>AC Transit Bus</td>
+                      <td>20 min</td>
+                      <td>Super nice neighborhood! Walkable from Rockridge and Temescal downtowns (great coffee, food). Quieter and roomier than downtown Berkeley. Convenient for managing Berkeley and UCSF commute in the first year.</td>
+                    </tr>
+                    <tr>
+                      <td>94107</td>
+                      <td>King Street / 7th Street</td>
+                      <td>$1,900</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walk / Bike</td>
+                      <td>7 min</td>
+                      <td>Short commute is the big benefit.</td>
+                    </tr>
+                    <tr>
+                      <td>94107</td>
+                      <td>18th and Minnesota St</td>
+                      <td>$1,688</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>University housing</td>
+                      <td>Walking</td>
+                      <td>10 min</td>
+                      <td>Dogpatch is great!</td>
+                    </tr>
+                    <tr>
+                      <td>94117 (moved from Berkeley 94703)</td>
+                      <td>Fulton and Masonic</td>
+                      <td>$1,700</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bus or walking</td>
+                      <td>Parnassus: 15 min bus / ~35 min walk; Mission Bay: ~35–40 min bus/shuttle; Berkeley: ~1 hr bus + BART</td>
+                      <td>No on-site laundry (common in NoPa) — uses laundromat. Lovely neighborhood, close to groceries, parks, bars/restaurants. Great for Parnassus commute, slightly less convenient but still good for Mission Bay.</td>
+                    </tr>
+                    <tr>
+                      <td>94703 (moved from Berkeley to SF, lived 1 yr)</td>
+                      <td>McGee and Allston</td>
+                      <td>$1,400</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walk to UC Berkeley; BART/bus/metro to UCSF</td>
+                      <td>Berkeley: 30 min walk; Mission Bay: ~1 hr 10 min; Parnassus: ~1 hr 10 min</td>
+                      <td>Housing in Berkeley much less competitive than SF — found a place easily with affordable rent, in-unit washer/dryer/dishwasher. Great for first-year Berkeley classes/rotations, long/tiring commute to UCSF rotations. Beautiful, peaceful, quiet neighborhood near Berkeley Marina and hills hiking.</td>
+                    </tr>
+                    <tr>
+                      <td>94117</td>
+                      <td>Clayton and Waller</td>
+                      <td>$1,442.42</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walking</td>
+                      <td>15 min walk to Parnassus; 30 min shuttle to Mission Bay; ~1 hr transit or 45 min drive to Berkeley</td>
+                      <td>Super walkable (grocery, parks, restaurants/shops), but street parking is tough and garage parking expensive. Recommends Haight-Ashbury for Parnassus labs; harder commute if at Mission Bay.</td>
+                    </tr>
+                    <tr>
+                      <td>94107</td>
+                      <td>Harrison and 4th</td>
+                      <td>$1,370</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bike</td>
+                      <td>30 min to Parnassus; 5 min to Mission Bay; 1 hr to UCB</td>
+                      <td>Whole Foods half a block away, 15 min walk to Powell Station, mostly sunny weather.</td>
+                    </tr>
+                    <tr>
+                      <td>94117</td>
+                      <td>Waller & Steiner</td>
+                      <td>$1,490</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bike</td>
+                      <td>15 min to Mission Bay</td>
+                      <td>Incredible area! Most houses are multi-bedroom with roommates.</td>
+                    </tr>
+                    <tr>
+                      <td>94706</td>
+                      <td>San Pablo and Solano</td>
+                      <td>$1,775</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bus</td>
+                      <td>25 min (Berkeley), 70 min (UCSF)</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <input type="radio" name="my_tabs_3" class="tab" aria-label="2026" checked="checked" />
+            <div class="tab-content bg-base-100 border-base-300 p-6">
+              <div class="overflow-x-auto h-128 w-full table-container">
+                <table class="table table-xs table-pin-rows" style="background-color: white;">
+                  <thead>
+                    <tr>
+                      <th>Zip Code</th>
+                      <th>Intersection</th>
+                      <th>Rent</th>
+                      <th>Bedrooms</th>
+                      <th>Occupants</th>
+                      <th>Housing Type</th>
+                      <th>Commute Method</th>
+                      <th>Commute Time</th>
+                      <th>Comments</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>94609</td>
+                      <td>Telegraph and 60th</td>
+                      <td>$1,400</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>AC Transit</td>
+                      <td>15 min bus + 15 min walk</td>
+                      <td>No dishwasher, but in-unit laundry. Super nice area in terms of safety, trees/greenery, and walkability from Rockridge and Temescal downtown areas.</td>
+                    </tr>
+                    <tr>
+                      <td>94158</td>
+                      <td>Nelson Rising Lane and 3rd St</td>
+                      <td>$1,244</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>University housing</td>
+                      <td>Public Transportation</td>
+                      <td>Downtown Berkeley: 1 hr 20 min to Stanley Hall; Mission Bay: none; Parnassus: 30 min</td>
+                      <td>Don't have to pay any utilities.</td>
+                    </tr>
+                    <tr>
+                      <td>94107</td>
+                      <td>Tidelands</td>
+                      <td>$1,870</td>
+                      <td>Studio</td>
+                      <td>1</td>
+                      <td>University housing</td>
+                      <td>—</td>
+                      <td>—</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>97403</td>
+                      <td>Prince and California</td>
+                      <td>$1,375</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Berkeley: Bike/Bus; UCSF: BART/Muni</td>
+                      <td>Berkeley: 20 min; UCSF (Mission Bay or Parnassus): 65 min</td>
+                      <td>Lots of families, not many Berkeley students. Great corner shops and convenience stores within walking distance. Berkeley Bowl and Ashby BART very accessible. Most diverse neighborhood I've ever lived in (in a good way!)</td>
+                    </tr>
+                    <tr>
+                      <td>94709</td>
+                      <td>Oxford-Hearst</td>
+                      <td>$1,569</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bus</td>
+                      <td>50 / 5 min</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94608</td>
+                      <td>54th and Adeline</td>
+                      <td>$2,100</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Car</td>
+                      <td>20 min</td>
+                      <td>Includes utilities. Not the best area (high traffic, somewhat loud nighttime activity) but safe during the day especially.</td>
+                    </tr>
+                    <tr>
+                      <td>94705</td>
+                      <td>Ashby Avenue and Pine Avenue</td>
+                      <td>$1,570</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walking or walking+bus</td>
+                      <td>20–30 min</td>
+                      <td>I feel quite safe in this neighborhood. There are a lot of families living around us.</td>
+                    </tr>
+                    <tr>
+                      <td>94703</td>
+                      <td>McGee/Allston</td>
+                      <td>$1,492</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walk or bus</td>
+                      <td>15 min walk to edge of campus, 25–30 min walk to lab at UCB or ~20 min walk + bus; ~1 hr to UCSF Mission Bay (BART + bus)</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94109</td>
+                      <td>Post/Leavenworth</td>
+                      <td>$1,945</td>
+                      <td>0 (studio)</td>
+                      <td>1</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Muni T line / walking</td>
+                      <td>30 min</td>
+                      <td>Everything is close and convenient. People are nervous about downtown due to visible homelessness/crime, but never feels unsafe in Lower Nob Hill. Worst you'll see is trash on the sidewalk — worth it to be near dozens of great food spots and concert venues. Typical commute: 10 min walk to Union Sq T stop + 15 min ride to Mission Bay.</td>
+                    </tr>
+                    <tr>
+                      <td>94107</td>
+                      <td>Minnesota Street + 18th Street</td>
+                      <td>$1,087.50</td>
+                      <td>2 (listed as one-bedroom, but has an additional room)</td>
+                      <td>2</td>
+                      <td>University housing</td>
+                      <td>Walking + Muni bus/rail</td>
+                      <td>5–10 min</td>
+                      <td>Aside from UCSF housing, Mission Bay isn't super affordable, but it's a clean and safe neighborhood if you can get a spot despite smaller apartment sizes. Proximal to many transit lines (22 bus, MUNI T) and easy commute to work. Accessible grocery options via transit (walkable: Gus's, Safeway; commutable: Trader Joe's on Market, Costco).</td>
+                    </tr>
+                    <tr>
+                      <td>94706</td>
+                      <td>Gooding Way</td>
+                      <td>$1,500 (+ ~$100 parking)</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>University housing</td>
+                      <td>Car</td>
+                      <td>UCB: 15–20 min; UCSF: 30 min–1 hr</td>
+                      <td>Lives in University Village Albany. Not furnished, no microwave, no laundry machine in apt but laundry room 2–3 min walk away, no dishwasher, comes with storage. Very nice community, much larger apt than SF units. Some homeless population nearby, otherwise super safe and clean.</td>
+                    </tr>
+                    <tr>
+                      <td>94158</td>
+                      <td>4th and Channel</td>
+                      <td>N/A</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>—</td>
+                      <td>—</td>
+                      <td>—</td>
+                      <td>Mission Bay is a great neighborhood and perfect for graduate students!</td>
+                    </tr>
+                    <tr>
+                      <td>94703</td>
+                      <td>MLK and Francisco</td>
+                      <td>$1,333 (+ $35 parking)</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bus/walk</td>
+                      <td>15 min</td>
+                      <td>Easy access to 52/18/27 buses in Berkeley. Loves the patio with bay views.</td>
+                    </tr>
+                    <tr>
+                      <td>94122</td>
+                      <td>10th and Irving</td>
+                      <td>$1,235</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walk to Parnassus, UCSF shuttle to Mission Bay, Muni/BART to Berkeley</td>
+                      <td>Parnassus: 15 min; Mission Bay: 45–60 min; Berkeley: 60–80 min</td>
+                      <td>Good public transit options — N line (~30 min ride downtown or the beach) and 6/7/43/44 bus lines. Right by Golden Gate Park, close to food/bars, friendly commute to Parnassus.</td>
+                    </tr>
+                    <tr>
+                      <td>94706</td>
+                      <td>San Pablo and Solano</td>
+                      <td>$1,775</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bus</td>
+                      <td>Berkeley: 25 min; UCSF: 70 min</td>
+                      <td>Very accessible via bus/BART, many grocery stores nearby, nice downtown areas suitable for walks, many community events nearby.</td>
+                    </tr>
+                    <tr>
+                      <td>94130</td>
+                      <td>Bruton St</td>
+                      <td>$3,700</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>Apartment</td>
+                      <td>Own car</td>
+                      <td>UCSF: 20 min; Berkeley: 40 min</td>
+                      <td>New apartment, quiet neighbors.</td>
+                    </tr>
+                    <tr>
+                      <td>94608</td>
+                      <td>53rd St, MLK</td>
+                      <td>$1,400</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Motorcycle</td>
+                      <td>45 min</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94709</td>
+                      <td>Scenic Ave and Hilgard Ave</td>
+                      <td>~$1,470</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc. or Facebook group)</td>
+                      <td>Walk (UCB); Walk + BART + bus/Muni (UCSF)</td>
+                      <td>Stanley: 15 min; UCSF Mission Bay: 1.25–1.5 hr</td>
+                      <td>Quiet, residential neighborhood.</td>
+                    </tr>
+                    <tr>
+                      <td>94703</td>
+                      <td>Grant St and Addison St</td>
+                      <td>$1,380</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>BART</td>
+                      <td>20 min walk to UC Berkeley; ~1 hr BART + Muni to UCSF Mission Bay/Parnassus</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94709</td>
+                      <td>Bonita and Berryman</td>
+                      <td>$1,200</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bike</td>
+                      <td>Berkeley: 7 min; UCSF: 1 hr</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94017</td>
+                      <td>Minnesota & 18th Street, San Francisco</td>
+                      <td>$1,667</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>University housing</td>
+                      <td>Walk</td>
+                      <td>10 min</td>
+                      <td>Lives in the Dogpatch/Mission Bay neighborhoods in the Tidelands. Dogpatch is charming, nice community with small businesses. Neighborhood is rapidly growing, right next to the bay. Great for overall health — daily walks along the water. Close to Potrero Hill (great restaurants, small businesses, downtown SF views). Stores are a bit pricey, nearest grocery store is a 10 min walk. UCSF housing building a new in-house convenience store.</td>
+                    </tr>
+                    <tr>
+                      <td>94158</td>
+                      <td>4th & Nelson Rising Lane</td>
+                      <td>$1,800</td>
+                      <td>0; studio</td>
+                      <td>1</td>
+                      <td>University housing</td>
+                      <td>Walk/public transit</td>
+                      <td>Mission Bay: 5 min; Parnassus: 30 min; Berkeley: 1–1.5 hr</td>
+                      <td>Clean, safe. Food desert — difficult to buy groceries. More expensive part of town.</td>
+                    </tr>
+                    <tr>
+                      <td>94705</td>
+                      <td>Deakin St and Webster St</td>
+                      <td>$1,100</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bus and walking</td>
+                      <td>Berkeley: 30 min; UCSF: 1.5 hr</td>
+                      <td>In-unit washer.</td>
+                    </tr>
+                    <tr>
+                      <td>94110</td>
+                      <td>Bryant St and 25th St</td>
+                      <td>$1,595</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>UCSF Shuttle, BART</td>
+                      <td>Mission Bay: 15–20 min; Berkeley: 1 hr</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94704</td>
+                      <td>Dana & Parker</td>
+                      <td>$1,200</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Walking</td>
+                      <td>20 min</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94706</td>
+                      <td>Ohlone Ave and San Pablo Ave</td>
+                      <td>$1,077.50</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>University housing</td>
+                      <td>Bus</td>
+                      <td>20–30 min</td>
+                      <td>University Village — family friendly environment, Sprouts nearby, gym available.</td>
+                    </tr>
+                    <tr>
+                      <td>94703</td>
+                      <td>Grant St and Addison St</td>
+                      <td>$1,235</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>BART + Muni / or Bike</td>
+                      <td>1 hr</td>
+                      <td>Has dishwasher, laundry in building, 10 min walk to Downtown BART.</td>
+                    </tr>
+                    <tr>
+                      <td>94108</td>
+                      <td>Pine and Mason</td>
+                      <td>$1,795</td>
+                      <td>Studio</td>
+                      <td>1</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>The T / BART</td>
+                      <td>Mission Bay: 35 min; Berkeley: 55 min</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>94117</td>
+                      <td>Fulton and Masonic</td>
+                      <td>$1,700</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>Home/apartment (Marketplace, Airbnb, Craigslist, etc.)</td>
+                      <td>Bus, walk</td>
+                      <td>Parnassus (daily commute): 12 min; Mission Bay: 45 min; Berkeley: 1 hr</td>
+                      <td>No on-site laundry (common in the area) — uses laundromat two blocks away, clean and reliable but a little expensive. NoPa is one of the best neighborhoods for living without a car — tons of central bus lines nearby. Two bus lines run straight to the medical sciences building for Parnassus commute. Walkable, clean, safe, close to Panhandle and Alamo Square parks.</td>
+                    </tr>
+                    <tr>
+                      <td>94158</td>
+                      <td>MB Housing</td>
+                      <td>$1,250</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>University housing</td>
+                      <td>Walk, BART + Muni + AC Transit</td>
+                      <td>5 min / 1.25 hr</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+                
+      </section>
+
+      <div class="flex w-full flex-col">
+        <div class="divider"></div>
+      </div>
+
+      <section id="residency">
+        <h5>California Residency</h5>
+        <hr>
+
+        <div style="padding:20px">
+          <p>The UC schools are public research universities, and as such, tuition is dependent on the student’s residency status. If you are a US citizen or permanent resident, you are expected to become a resident of California as soon as possible and prior to the Fall of your second year. To do so you must satisfy the “Physical Presence” and “Intent to Remain in California” requirements by the residence determination date, which is the first day of instruction.</p>
+          <p>The following list is a rough outline of what needs to be completed to gain California residency.</p>
+
+          <ul class="ul-text">
+            <li>
+              File a Statement of Legal Residence (SLR) immediately through
+              <a class="link link-info" href="https://calcentral.berkeley.edu/dashboard">CalCentral</a>
+              or the
+              <a class="link link-info" href="https://saa.ucsf.edu/studentportal/">UCSF Student Portal</a>.
+            </li>
+            <li>
+              Collect documents showing "Physical Presence" and "Intent to Remain in California":
+              <ul class="list-disc list-outside ml-6 mt-2 space-y-1">
+                <li>Evidence of Arrival (Airline tickets, gas receipts)</li>
+                <li>California Driver's License</li>
+                <li>California Voter Registration</li>
+                <li>Bank statements and rental agreements in California</li>
+                <li>Tax forms from the prior year (Federal and state)</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p>For more detailed information, please see Berkeley's <a class="link link-info" href="https://registrar.berkeley.edu/residency/residency-requirements-graduate-students/">Office of the Registrar</a> or UCSF's <a class="link link-info" href="https://registrar.ucsf.edu/registration/residency">Office of the Registrar.</a></p>
+          
+          <div class="card bg-base-200 shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title">International Students</h2>
+              <p>If you are an international student, you will not be able to become a California Resident for tuition purposes. However you do have to make sure that you have a social security number (SSN). Although the International Office may tell you that you only need an ITIN, just get an SSN to make your own life easier in terms of employment, getting a phone plan, internet plan, or opening a bank account. Contact the department administrator for a letter confirming your employment and start your application as soon as possible. For more detailed information, please see Berkeley’s <a class="link link-info" href="https://internationaloffice.berkeley.edu/living/ssnapply">International Office</a> or UCSF's <a class="link link-info" href="https://isso.ucsf.edu/social-security-number-ssn">International Students and Scholars Office</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="flex w-full flex-col">
+        <div class="divider"></div>
+      </div>
+
+      <section id="dmv">
+        <h5>Navigating the DMV</h5>
+        <hr>
+        <div style="padding-left:20px; padding-right:20px; padding-top:20px"
+          <p><b>Appointments</b>: The DMV allows for <a class="link link-info" href="https://www.dmv.ca.gov/portal/dmv/dmv/appointments">online scheduling</a> of appointments up to three (3) months in advance. However, depending on the day, walk-in appointments may still be served more quickly than appointments. If you find it challenging to schedule an appointment, it may be worthwhile to take a day to complete your business as a walk-in.</p>
+        </div>
+        <div class="flex flex-wrap gap-6" style="padding-left:20px; padding-right:20px">
+          <div class="flex-1" style="min-width: 280px;">
+            <p><b>Real ID</b>: Starting Oct. 1, 2020, a regular California driver’s license or ID card won’t be accepted as a valid form of federal identification. Only Real ID will be accepted at federal courthouses, military bases, and airports. You can upgrade your current driver's lisence to a Real ID or obtain a new one through bringing the following items to your appointment:</p>
+            <ul class="ul-text" style="padding-bottom:0px">
+              <li>Proof of Identity (Passport, Birth Certificate)</li>
+              <li>Proof of Social Security Number</li>
+              <li>Two (2) Proofs of Residency (Lease agreement, paycheck with address, utility bills, bank statement, etc.)</li>
+            </ul>
+          </div>
+
+          <div class="flex-1" style="min-width: 340px">
+            <div class="hover-3d">
+              <!-- content -->
+              <figure class="max-w-100 rounded-2xl">
+                <img src="images/license.webp" style="width:90%;  padding:10px;">
+              </figure>
+              <!-- 8 empty divs needed for the 3D effect -->
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div style="padding-left: 20px; padding-right: 20px; padding-top: 20px">
+          <p><b>Driving Test</b>: If you already hold a valid license from another state, visit a DMV location and take the CA written test and vision test. If you pass these, the driving test is generally waived and a CA license will be granted and your former state’s license will be nullified. If you only hold a valid license from another country, you must also take the driving skills test. A Driving Test requires a specific appointment at the DMV, which are frequently booked up. For the best results, book your appointment early and/or call the DMV to check for open appointments due to last minute cancellations.</p>
+        </div>
+
+        <div class="card bg-base-200 shadow-sm">
+          <div class="card-body">
+            <div style="padding-top: 10px">
+              <p class="large-p"><b>Locations</b>: Most field offices are open Monday to Saturday, 8AM - 5PM.</p>
+            </div>
+
+            <div class="row-content flex flex-wrap gap-2" style="padding-left:10px; padding-right: 10px; padding-bottom: 20px;">
+              <div class="flex-1 min-w-[160px]">
+                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=599">Daly City</a></b></p class="p-no-margin">
+                <p class="p-no-margin">1500 Sullivan Ave.</p class="p-no-margin">
+                <p class="p-no-margin">Daly City, CA 94015</p class="p-no-margin">
+                <p class="p-no-margin">+1 (800) 777-0133</p class="p-no-margin">
+              </div>
+              <div class="flex-1 min-w-[160px]">
+                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=556">El Cerrito</a></b></p class="p-no-margin">
+                <p class="p-no-margin">6400 Manila Ave.</p class="p-no-margin">
+                <p class="p-no-margin">El Cerrito, CA 94530</p class="p-no-margin">
+                <p class="p-no-margin">+1 (800) 777-0133</p class="p-no-margin">
+              </div>
+              <div class="flex-1 min-w-[160px]">
+                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=504">Oakland</a></b></p class="p-no-margin">
+                <p class="p-no-margin">5300 Claremont Ave.</p class="p-no-margin">
+                <p class="p-no-margin">Oakland, CA 94618</p class="p-no-margin">
+                <p class="p-no-margin">+1 (800) 777-0133</p class="p-no-margin">
+              </div>
+              <div class="flex-1 min-w-[160px]">
+                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=604">Oakland Coliseum</a></b></p class="p-no-margin">
+                <p class="p-no-margin">501 85th Ave.</p class="p-no-margin">
+                <p class="p-no-margin">Oakland, CA 94621</p class="p-no-margin">
+                <p class="p-no-margin">+1 (800) 777-0133</p class="p-no-margin">
+              </div>
+              <div class="flex-1 min-w-[160px]">
+                <p class="p-no-margin"><b><a href="https://www.dmv.ca.gov/portal/dmv/detail/fo/offices/fieldoffice?number=503">San Francisco</a></b></p class="p-no-margin">
+                <p class="p-no-margin">1377 Fell St.</p class="p-no-margin">
+                <p class="p-no-margin">San Francisco, CA 94117</p class="p-no-margin">
+                <p class="p-no-margin">+1 (800) 777-0133</p class="p-no-margin">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <h6 class="footer-title">BioEngineering Association of STudents.</h6>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="#about.html">About Us</a>
+    <a class="link link-hover" href="#contact.html">Contact</a>
+    <a class="link link-hover" href="#directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="#credits.html">Credits</a>
+  </nav>
+</footer>
+
+
+
+</body>
+</html>
