@@ -53,6 +53,10 @@ body {
 html, body {
   height: auto;
   scroll-behavior: smooth;
+  margin: 0;
+}
+
+.page-wrapper {
   max-width: 100%;
   overflow-x: hidden;
 }

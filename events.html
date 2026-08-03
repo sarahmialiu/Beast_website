@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="beastwebsite">
+
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BEAST</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>FAQs</title>
+  <link rel="stylesheet" href="/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body style="height:100%; overflow:hidden" >
 
-<div class="navbar" style="box-shadow: none">
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
     <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
       <span class="megamenu-active"></span>
 
@@ -88,10 +94,9 @@
           <li><a>Contact</a></li>
         </ul>
       </div>
-
     </div>
-
-    <button class="btn btn-ghost sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+    
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
       <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
         <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
       </svg>
@@ -102,60 +107,65 @@
   </div>
 </div>
 
-<!-- Dark overlay -->
-<div class="absolute inset-0 w-full h-full" style="background-color: rgba(0,0,0,0.4); z-index: 5;"></div>
 
-<div class="hero min-h-screen relative overflow-hidden">
-  <!-- Three.js will mount its canvas here -->
-  <div id="threejs-container" class="absolute inset-0 w-full h-full"></div>
+<div class="page-container">
+  <div class="breadcrumbs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>Upcoming Events</li>
+    </ul>
+  </div>
 
-  <div class="hero-content text-center text-neutral-content relative z-10">
-    <div class="max-w-xl mb-24">
-      <h1 class="mb-5 text-8xl font-bold">beast</h1>
-      <p class="mb-5 text-2xl">Welcome to the Bioengineering Association of Students website! Feel free to take a look around. Stay a while. Buy me a drink ;). What? who said that</p>
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px; background-color: #f9fafb;">
+    </ul>
+    
+    <!-- Main -->
+    <div class="page-content">
+      <section id="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=54n7vklvsivifsqr5slu6j6f2k%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+          style="border: 0" 
+          width="800" 
+          height="600" 
+          frameborder="0" 
+          scrolling="no">
+        </iframe>
+      </section>
     </div>
   </div>
+
+  
+
 </div>
 
-<script type="module" src="/main.js"></script>
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <h6 class="footer-title">BioEngineering Association of STudents.</h6>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="#about.html">About Us</a>
+    <a class="link link-hover" href="#contact.html">Contact</a>
+    <a class="link link-hover" href="#directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="#credits.html">Credits</a>
+  </nav>
+</footer>
 
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('loaded')
-
-    document.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', e => {
-        if (
-          link.hostname === window.location.hostname &&
-          !link.hasAttribute('target')
-        ) {
-          e.preventDefault()
-          document.body.classList.remove('loaded')
-
-          setTimeout(() => {
-            window.location.href = link.href
-          }, 250)
-        }
-      })
-    })
-  })
-
-  const burger = document.getElementById('burger');
-  const buttons = document.getElementById('buttons');
-
-  burger.addEventListener('click', () => {
-    buttons.classList.toggle('active');
-  });
-
-  // Mobile dropdown toggles
-  document.querySelectorAll('#buttons .dropdown').forEach(dropdown => {
-    const btn = dropdown.querySelector('.dropbtn');
-    btn.addEventListener('click', e => {
-      e.preventDefault(); // prevent navigation if button is link
-      dropdown.classList.toggle('active');
-    });
-  });
-</script>
 
 </body>
 </html>

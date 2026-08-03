@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="beastwebsite">
 
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forms</title>
+  <title>beast - Forms</title>
   <link rel="stylesheet" href="/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,230 +16,258 @@
 
 <body>
 
-<div class="topbar">
-  <img class="responsive" src="images/trees.png" alt="header-img">
-
-  <div id="home-button"><a href="index.html">beast</a></div>
-  <div id="burger">☰</div>
-
-  <div id="buttons">
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="forms.html">forms</a>
-      </button>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="academics.html">academics</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">First Year</a>
-        <a href="#">Second Year</a>
-        <a href="#">Courses</a>
-        <a href="#">Teaching</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="extracurriculars.html">extracurriculars</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="dei.html">DEI</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="faqs.html">FAQs</a>
-      </button>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <a href="about.html">about</a> <span class="carrot">▸</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="about.html#officers">BEAST</a>
-        <a href="about.html#position-descriptions">Position Descriptions</a>
-        <a href="about.html#students">Student Directory</a>
-        <a href="about.html#contact">Contact</a>
-      </div>
-    </div>
-
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
   </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+
+      <button class = "navbar-btn" popovertarget="a1">Academics</button>
+      <div id="a1" popover>
+        <ul class="menu">
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
+          <li><a href="academics_teaching.html">Teaching</a></li>
+          <li><a href="forms.html">Forms</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
+      <div id="a2" popover>
+        <ul class="menu">
+          <li>
+            <a href="movingtoca.html">Moving to the Bay</a>
+            <ul>
+              <li><a href="movingtoca.html#housing">Housing</a></li>
+              <li><a href="movingtoca.html#residency">CA Residency</a></li>
+              <li><a href="movingtoca.html#dmv">The DMV</a></li>
+            </ul>
+          </li>
+          <li><a>CRM software</a></li>
+          <li><a>Security</a></li>
+          <li><a>Consulting</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a3">News & Events</button>
+      <div id="a3" popover>
+        <ul class="menu">
+          <li><a href="news.html">BioE News</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="photos.html">Photo Album</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a5">About</button>
+      <div id="a5" popover>
+        <ul class="menu">
+          <li><a>Beast</a></li>
+          <li><a>Positions</a></li>
+          <li><a href="directory.html">Student Directory</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <button class="btn sm:hidden" popovertarget="my-megamenu-1">Menu</button> -->
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Forms</li>
+  </ul>
 </div>
 
 <div class="page-container">
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">Forms</a></li>
+      <li style="padding: 10px 20px">
+        <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+                >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+                </g>
+            </svg>
+            <input type="search" id="form-search" class="grow" placeholder="Search" />
+        </label>
+      </li>
+    </ul>
 
-  <!-- Sidebar -->
-  <nav class="sidebar">
-    <inpage-link class="sidebar-title" href="#">forms</inpage-link>
-  </nav>
+    <!-- Main -->
+    <div class="page-content">
+      <section id="forms">
+        <h5>BioE Student Forms</h5>
+        <hr>
 
-  <div class="page-content" style="padding-top: 100px">
-    <div class="row-content">
-      <div class="w3-quarter">
-        <a href="pdfs/2025-2026BioEHandbook.pdf" target="_blank">
-          <img src="pdfs/thumbnails/2025-2026BioEHandbook.png" alt="Handbook PNG" style="width:100%">
-        </a>
-        <h2>2025-2026 BioE Student Handbook</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/AnnualProgressReportPreCandidacy.pdf" target="_blank">
-          <img src="pdfs/thumbnails/AnnualProgressReportPreCandidacy.png" alt="ProgReportPre PNG" style="width:100%">
-        </a>
-        <h2>Annual Progress Report (Pre-Candidacy)</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/AnnualProgressReportPostCandidacy.pdf" target="_blank">
-          <img src="pdfs/thumbnails/AnnualProgressReportPostCandidacy.png" alt="ProgReportPost PNG" style="width:100%">
-        </a>
-        <h2>Annual Progress Report (Post-Candidacy)</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/RotationAuthorization2025-26.pdf" target="_blank">
-          <img src="pdfs/thumbnails/RotationAuthorization2025-26.png" alt="RotAuth PNG" style="width:100%">
-        </a>
-        <h2>Rotation Authorization</h2>
-      </div>
-    </div>
+        <div style="padding:20px">
+            <p>Here is a cache of all the forms you currently need through your BioE PhD journey. All forms can also be found at the back of the BioE Student Handbook. </p>
+            <p>Last Updated: 08/2026.</p>
+        </div>
 
-    <div class="row-content">
-      <div class="w3-quarter">
-        <a href="pdfs/RotationEvaluation2025-26.pdf" target="_blank">
-          <img src="pdfs/thumbnails/RotationEvaluation2025-26.png" alt="RotEval PNG" style="width:100%">
-        </a>
-        <h2>Rotation Evaluation</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/ProgramOfStudy.pdf" target="_blank">
-          <img src="pdfs/thumbnails/ProgramOfStudy.png" alt="ProgOfStudy PNG" style="width:100%">
-        </a>
-        <h2>Program of Study: Major and Minor Declaration</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/AreaRequirements.pdf" target="_blank">
-          <img src="pdfs/thumbnails/AreaRequirements.png" alt="AreaRequirements PNG" style="width:100%">
-        </a>
-        <h2>Program of Study: Area Requirements</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/MentorCommitment.pdf" target="_blank">
-          <img src="pdfs/thumbnails/MentorCommitment.png" alt="MentorCommitment PNG" style="width:100%">
-        </a>
-        <h2>Research Mentor/Dissertation Chair Commitment</h2>
-      </div>
-    </div>
+        <hr>
 
-    <div class="row-content">
-      <div class="w3-quarter">
-        <a href="pdfs/QualsCommitteeWorksheet.pdf" target="_blank">
-          <img src="pdfs/thumbnails/QualsCommitteeWorksheet.png" alt="QualsCommitteeWorksheet PNG" style="width:100%">
-        </a>
-        <h2>Qualifying Examination Committee Worksheet</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/DissertationCommitteeWorksheet.pdf" target="_blank">
-          <img src="pdfs/thumbnails/DissertationCommitteeWorksheet.png" alt="CommitteePlanning PNG" style="width:100%">
-        </a>
-        <h2>Dissertation Committee Worksheet</h2>
-      </div>
-      <div class="w3-quarter">
-        <a href="pdfs/DissertationCommitteeUpdate.pdf" target="_blank">
-          <img src="pdfs/thumbnails/DissertationCommitteeUpdate.png" alt="CommitteeUpdate PNG" style="width:100%">
-        </a>
-        <h2>Dissertation Committee Update</h2>
-      </div>
+        <div class="flex flex-wrap gap-6 justify-center" style="padding-left:10px; padding-right: 10px; padding-bottom: 20px; padding-top: 40px;">
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/2025-2026BioEHandbook.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/2025-2026BioEHandbook.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">2025-2026 BioE Student Handbook</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/AnnualProgressReportPreCandidacy.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/AnnualProgressReportPreCandidacy.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Annual Progress Report (Pre-Candidacy)</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/AnnualProgressReportPostCandidacy.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/AnnualProgressReportPostCandidacy.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Annual Progress Report (Post-Candidacy)</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/RotationAuthorization2025-26.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/RotationAuthorization2025-26.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Rotation Authorization</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/RotationEvaluation2025-26.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/RotationEvaluation2025-26.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Rotation Evaluation</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/ProgramOfStudy.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/ProgramOfStudy.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Program of Study: Major and Minor Declaration</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/AreaRequirements.pdf" target="_blank" class="w-full flex flex-col items-center">
+              <img src="pdfs/thumbnails/AreaRequirements.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Program of Study: Area Requirements</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/MentorCommitment.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/MentorCommitment.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Research Mentor/Dissertation Chair Commitment</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/QualsCommitteeWorksheet.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/QualsCommitteeWorksheet.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Qualifying Examination Committee Worksheet</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/DissertationCommitteeWorksheet.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/DissertationCommitteeWorksheet.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Dissertation Committee Worksheet</p>
+            </a>
+          </div>
+          <div class="carousel-item relative min-w-[min(162px,100%)]">
+            <a href="pdfs/DissertationCommitteeUpdate.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/DissertationCommitteeUpdate.png" class="w-full rounded-box" />
+              <p class="text-center text-md mt-2">Dissertation Committee Update</p>
+            </a>
+          </div>
+        </div>
+
+      </section>
     </div>
   </div>
 
 </div>
 
-<footer class="footer">
-  <div class="w3-main w3-row-padding" style="max-width:1500px;margin-left:50px" id="footer-content">
-    <div class="w3-half w3-padding">
-      <h3 style="color: rgb(177, 177, 177); line-height: 1; margin-top: 0px;">BioEngineering Association of STudents</h3>
-      <p style="color: rgb(177, 177, 177);">The BioEngineering Association of STudents (BEAST) is the graduate student organization for the UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide resources and information for current and prospective students.</p>
-      <p style="color: rgb(177, 177, 177);">&copy; 2022 BEAST. All rights reserved.</p>
-    </div>
-    <div class="w3-half w3-padding">
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:35px; margin-right:60px; text-align:right;"><b><a href="#">Contact</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://x.com/BioE_Beast">Twitter</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a></b></p>
-      <p style="color: rgb(177, 177, 177); line-height:1; margin-top:0px; margin-right:60px; text-align:right;"><b><a href="#">Credits</a></b></p>
-    </div>
-  </div>
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <h6 class="footer-title">BioEngineering Association of STudents.</h6>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="#about.html">About Us</a>
+    <a class="link link-hover" href="#contact.html">Contact</a>
+    <a class="link link-hover" href="#directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="#credits.html">Credits</a>
+  </nav>
 </footer>
 
+
 <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('loaded')
+  const searchInput = document.getElementById('form-search');
+  const cards = document.querySelectorAll('.carousel-item');
 
-    document.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', e => {
-        if (
-          link.hostname === window.location.hostname &&
-          !link.hasAttribute('target')
-        ) {
-          e.preventDefault()
-          document.body.classList.remove('loaded')
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
 
-          setTimeout(() => {
-            window.location.href = link.href
-          }, 400)
-        }
-      })
-    })
-  })
-
-  const burger = document.getElementById('burger');
-  const buttons = document.getElementById('buttons');
-
-  burger.addEventListener('click', () => {
-    buttons.classList.toggle('active');
-  });
-
-  // Mobile dropdown toggles
-  document.querySelectorAll('#buttons .dropdown').forEach(dropdown => {
-    const btn = dropdown.querySelector('.dropbtn');
-    btn.addEventListener('click', e => {
-      e.preventDefault(); // prevent navigation if button is link
-      dropdown.classList.toggle('active');
+    cards.forEach(card => {
+      const name = card.querySelector('p')?.textContent.toLowerCase() || '';
+      const role = card.querySelector('.card-body p')?.textContent.toLowerCase() || '';
+      const matches = name.includes(query) || role.includes(query);
+      card.style.display = matches ? '' : 'none';
     });
   });
-
-  document.querySelectorAll('inpage-link[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-
-      const href = link.getAttribute('href');
-      if (href === '#') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        return;
-      }
-
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
-
-      target.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-
 </script>
 
 

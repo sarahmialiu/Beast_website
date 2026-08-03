@@ -28,10 +28,31 @@
       <button class = "navbar-btn" popovertarget="a1">Academics</button>
       <div id="a1" popover>
         <ul class="menu">
-          <li><a href="academics_firstyear.html">First Year</a></li>
-          <li><a href="quals.html">Qualifying Exam</a></li>
-          <li><a href="dissertation.html">Dissertation</a></li>
-          <li><a href="academics_courses.html">Courses</a></li>
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
           <li><a href="academics_teaching.html">Teaching</a></li>
           <li><a href="forms.html">Forms</a></li>
         </ul>
@@ -40,10 +61,26 @@
       <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
       <div id="a2" popover>
         <ul class="menu">
-          <li><a>Enterprise</a></li>
+          <li>
+            <a href="movingtoca.html">Moving to the Bay</a>
+            <ul>
+              <li><a href="movingtoca.html#housing">Housing</a></li>
+              <li><a href="movingtoca.html#residency">CA Residency</a></li>
+              <li><a href="movingtoca.html#dmv">The DMV</a></li>
+            </ul>
+          </li>
           <li><a>CRM software</a></li>
           <li><a>Security</a></li>
           <li><a>Consulting</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a3">News & Events</button>
+      <div id="a3" popover>
+        <ul class="menu">
+          <li><a href="news.html">BioE News</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="photos.html">Photo Album</a></li>
         </ul>
       </div>
 
@@ -70,33 +107,32 @@
   </div>
 </div>
 
-
-<div class="page-container">
-  <div
-    id = "welcome"
-    class="hero min-h-[75vh]"
-    style="background-image: url('images/chalktalk.png');"
-  >
-    <div class="hero-overlay"></div>
-    <div class="hero-content text-neutral-content text-center">
-      <div class="max-w-2xl">
-        <h1 class="mb-5 text-5xl font-bold">Qualifying Exam</h1>
-        <p class="mb-5">
-          Unlike some programs in UCB or UCSF, our graduate program does not require preliminary exams, and 
-          both UCB and UCSF Graduate Divisions do not require a dissertation defense. However, we still need 
-          to take a qualifying exam and file a dissertation in order to graduate with a Ph.D. degree.
-        </p>
-      </div>
+<div
+  id = "welcome"
+  class="hero min-h-[75vh]"
+  style="background-image: url('images/chalktalk.png');"
+>
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-2xl">
+      <h1 class="mb-5 text-5xl font-bold">Qualifying Exam</h1>
+      <p class="mb-5">
+        Unlike some programs in UCB or UCSF, our graduate program does not require preliminary exams, and 
+        both UCB and UCSF Graduate Divisions do not require a dissertation defense. However, we still need 
+        to take a qualifying exam and file a dissertation in order to graduate with a Ph.D. degree.
+      </p>
     </div>
   </div>
+</div>
 
-  <div class="breadcrumbs">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>Qualifying Exam</li>
-    </ul>
-  </div>
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Qualifying Exam</li>
+  </ul>
+</div>
 
+<div class="page-container">
   <div class="flex items-start gap-6" style="padding-top:40px;">
     <!-- Sidebar -->
     <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
