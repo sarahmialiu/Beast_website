@@ -79,6 +79,7 @@ p {
   text-align: center;
   font-size: large;
   color: var(--color-secondary);
+  font-style:italic;
 }
 
 h5 {

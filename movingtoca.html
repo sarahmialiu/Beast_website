@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>beast - Academics</title>
+  <title>beast - Living in the Bay</title>
   <link rel="stylesheet" href="/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,7 @@
           <li>
             <a href="quals.html">Qualifying Exam</a>
             <ul>
+              <li><a href="quals.html#about">About the Exam</a></li>
               <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
               <li><a href="quals.html#exam">Exam Content</a></li>
               <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
@@ -53,25 +54,22 @@
               <li><a href="dissertation.html#interview">Exit Interviews</a></li>
             </ul>
           </li>
-          <li><a href="academics_teaching.html">Teaching</a></li>
+          <li><a href="courses.html">Courses</a></li>
           <li><a href="forms.html">Forms</a></li>
         </ul>
       </div>
 
-      <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
+      <button class = "navbar-btn" popovertarget="a2">Student Life</button>
       <div id="a2" popover>
         <ul class="menu">
           <li>
-            <a href="movingtoca.html">Moving to the Bay</a>
+            <a href="movingtoca.html">Living in the Bay</a>
             <ul>
               <li><a href="movingtoca.html#housing">Housing</a></li>
               <li><a href="movingtoca.html#residency">CA Residency</a></li>
               <li><a href="movingtoca.html#dmv">The DMV</a></li>
             </ul>
           </li>
-          <li><a>CRM software</a></li>
-          <li><a>Security</a></li>
-          <li><a>Consulting</a></li>
         </ul>
       </div>
 
@@ -95,7 +93,7 @@
         </ul>
       </div>
     </div>
-    <!-- <button class="btn sm:hidden" popovertarget="my-megamenu-1">Menu</button> -->
+    
     <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
       <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
         <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
@@ -127,7 +125,7 @@
 <div class="breadcrumbs">
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li>Moving to the Bay</li>
+    <li>Living in the Bay</li>
   </ul>
 </div>
 
@@ -173,14 +171,111 @@
           </div>
         </div>
 
+        <div style="padding:40px; padding-top:10px">
+          <p class="hint">There is no limit on the amount of rent a landlord may first charge the tenant when renting a vacant unit. The annual allowable rent increase is approximately ~5%. As such, leases that started further in the past often correspond to lower rent.</p>
+        </div>
+
+        <hr>
+
+        <p class="large-p" style="padding:20px">To get you started on your apartment hunt journey, here's some resources complied by students and the schools over the years.</p>
+        
+        <div class="carousel carousel-center rounded-box bg-base-200 space-x-4 p-4 carousel-wide" >
+          <div class="carousel-item">
+            <a href="pdfs/PMB-Housing-Guide-2018-2019.pdf" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/PMB-Housing-Guide.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">Housing guide from Rocio on finding a place to live in around the East Bay</p>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="pdfs/Sample-Rental-Application.pdf" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/RentalApp.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">An example rental application and agreement</p>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+              <a href="https://campuslifeserviceshome.ucsf.edu/housing" target="_blank" class="w-full">
+                <figure class="flex flex-col items-center gap-2">
+                  <img src="pdfs/thumbnails/ucsfhousing.png" class="rounded-box w-full h-auto object-cover" />
+                  <figcaption class="text-sm text-base-content text-center">UCSF On-Campus Housing Portal</figcaption>
+                </figure>
+              </a>
+            </figure>
+          </div>
+          <div class="carousel-item">
+              <a href="https://housing.berkeley.edu/explore-housing-options/housing-by-user-type/graduate-students/" target="_blank" class="w-full">
+                <figure class="flex flex-col items-center gap-2">
+                  <img src="pdfs/thumbnails/berkeleyhousing.png" class="rounded-box w-full h-auto object-cover" />
+                  <figcaption class="text-sm text-base-content text-center">UC Berkeley Graduate Student Housing</figcaption>
+                </figure>
+              </a>
+            </figure>
+          </div>
+        </div>
+
+        <div class="carousel w-full carousel-narrow">
+          <div id="slide1" class="carousel-item relative w-full min-w-[min(400px,100%)]">
+            <a href="pdfs/PMB-Housing-Guide-2018-2019.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/PMB-Housing-Guide.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">Housing guide from Rocio on finding a place to live in around the East Bay</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide6" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <a href="pdfs/Sample-Rental-Application.pdf" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/RentalApp.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">An example rental application and agreement</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <a href="https://campuslifeserviceshome.ucsf.edu/housing" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/ucsfhousing.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">UCSF On-Campus Housing Portal</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <a href="https://housing.berkeley.edu/explore-housing-options/housing-by-user-type/graduate-students/" target="_blank" class="w-full">
+              <img src="pdfs/thumbnails/berkeleyhousing.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">UC Berkeley Graduate Student Housing</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <h5 style="margin-top:40px">Rent Map</h5>
         <hr>
 
         <div style="padding:20px">
           <p>Here are some examples of housing that current students have found in the past, collected from Beast Peer Advising. 
             Please note that these are just examples and housing prices in San Francisco and the Bay Area fluctuate frequently.</p>
           
-          <!-- name of each tab group should be unique -->
-          <div class="tabs tabs-lift">
+          <div class="flex justify-center" style="padding:20px">
+            <iframe 
+              src="https://www.google.com/maps/d/u/1/embed?mid=1NjOgSv2P5usmoejvqxrc3fcDhC2Kh8M&ehbc=2E312F&noprof=1" 
+              width="640" 
+              height="480">
+            </iframe>
+          </div>  
+          
+
+          <div class="tabs tabs-lift" style="margin-top: 20px">
             <input type="radio" name="my_tabs_3" class="tab" aria-label="2025" />
             <div class="tab-content bg-base-100 border-base-300 p-6">
               <div class="overflow-x-auto h-128 w-full table-container">
