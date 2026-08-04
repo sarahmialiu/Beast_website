@@ -447,7 +447,7 @@ const positions = [];
 for (let i = 0; i < particleCount; i++) {
   // Random positions inside a rectangular "beam"
   const x = (Math.random() - 0.25) * 1; // width of beam
-  const y = Math.random() * 3 - 0.5;         // height: 0 → 3
+  const y = Math.random() * 3 - 0.5; // height: 0 → 3
   const z = (Math.random()) * 0.5; // depth
   positions.push(x, y, z);
 }
@@ -458,7 +458,7 @@ const material = new THREE.PointsMaterial({
   color: 0xffffff,
   size: 0.02,
   transparent: true,
-  opacity: 0.05,
+  opacity: 0.1,
 });
 
 const particles = new THREE.Points(geometry, material);

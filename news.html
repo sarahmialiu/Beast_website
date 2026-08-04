@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>beast - Events</title>
+  <title>beast - News</title>
   <link rel="stylesheet" href="/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,7 +110,7 @@
 <div class="breadcrumbs">
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li>Upcoming Events</li>
+    <li>BioE News</li>
   </ul>
 </div>
 
@@ -120,7 +120,7 @@
   <div class="flex items-start gap-6" style="padding-top:40px;">
     <!-- Sidebar -->
     <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
-      <li><a href="#welcome" class="menu-title">Events</a></li>
+      <li><a href="#welcome" class="menu-title">News</a></li>
       <li style="padding: 10px 20px">
         <label class="input">
             <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -135,7 +135,7 @@
                 <path d="m21 21-4.3-4.3"></path>
                 </g>
             </svg>
-            <input type="search" id="events-search" class="grow" placeholder="Search" />
+            <input type="search" id="news-search" class="grow" placeholder="Search" />
         </label>
       </li>
     </ul>
@@ -143,7 +143,7 @@
     <!-- Main -->
     <div class="page-content">
       <section id="calendar">
-        <h5>Upcoming Beast Events!</h5>
+        <h5>News from Beast!</h5>
         <hr>
 
         <ul class="list" style="margin-top: 20px; margin-bottom: 20px;">      
@@ -170,21 +170,15 @@
 
         <hr>
 
-        <div class="flex justify-center" style="margin-top:40px; margin-bottom: 40px;">
-          <iframe src="https://calendar.google.com/calendar/embed?src=54n7vklvsivifsqr5slu6j6f2k%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-            style="border: 0" 
-            width="800" 
-            height="600" 
-            frameborder="0" 
-            scrolling="no">
-          </iframe>
+        <div class="join flex justify-center" style="margin:40px">
+          <button class="join-item btn btn-active">1</button>
+          <button class="join-item btn">2</button>
+          <button class="join-item btn">3</button>
+          <button class="join-item btn">4</button>
         </div>
+
       </section>
 
-      <section id="past_events">
-        <h5>Past Events</h5>
-        <hr>
-      </section>
     </div>
   </div>
 
@@ -221,7 +215,7 @@
 </footer>
 
 <script>
-  const searchInput = document.getElementById('events-search');
+  const searchInput = document.getElementById('news-search');
   const cards = document.querySelectorAll('.list-row');
 
   searchInput.addEventListener('input', () => {
