@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="beastwebsite">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beast - Budgeting Resources</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+
+      <button class = "navbar-btn" popovertarget="a1">Academics</button>
+      <div id="a1" popover>
+        <ul class="menu">
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#about">About the Exam</a></li>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="forms.html">Forms</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a2">Student Life</button>
+      <div id="a2" popover>
+        <ul class="menu">
+          <li>
+            <a href="movingtoca.html">Living in the Bay</a>
+            <ul>
+              <li><a href="movingtoca.html#housing">Housing</a></li>
+              <li><a href="movingtoca.html#residency">CA Residency</a></li>
+              <li><a href="movingtoca.html#dmv">The DMV</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="budgeting.html">Budgeting Resources</a>
+          </li>
+          <li>
+            <a href="taxes.html">Taxes</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a3">News & Events</button>
+      <div id="a3" popover>
+        <ul class="menu">
+          <li><a href="news.html">BioE News</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="photos.html">Photo Album</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a5">About</button>
+      <div id="a5" popover>
+        <ul class="menu">
+          <li><a>Beast</a></li>
+          <li><a>Positions</a></li>
+          <li><a href="directory.html">Student Directory</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Budgeting Resources</li>
+  </ul>
+</div>
+
+<div class="page-container">
+
+
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">Resources</a></li>
+      <li style="padding: 10px 20px">
+        <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+                >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+                </g>
+            </svg>
+            <input type="search" id="budgeting-search" class="grow" placeholder="Search" />
+        </label>
+      </li>
+    </ul>
+    
+    <!-- Main -->
+    <div class="page-content">
+      <section id="calendar">
+        <h5>Budgeting & Personal Finance Resources</h5>
+        <hr>
+
+        <div style="padding:20px">
+          <p>
+            Living in the Bay Area can be expensive when you're competing for rent with 6-figure-salaried tech bros.
+            Below, we've compiled a non-exhaustive list of resources that may be helpful to you for saving money in graduate school, 
+            from paying off undergraduate student loans to personal budgeting via Excel.
+          </p>
+          <p class="hint">
+            Please reach out to the current Beast Webmaster if you know any additional resources that would be helpful to other students!
+          </p>
+        </div>
+
+        <ul class="list" id="budgeting-list" style="margin-top: 20px; margin-bottom: 20px;">      
+          <li class="list-row" data-page="1">
+            <div><a href="https://docs.google.com/spreadsheets/d/1eoD28u0NFAd87jzUTd-CxWIMsu-1b4eAg8g2Uvka5y0/edit?gid=0#gid=0"><img class="size-36" src="images/thumbnails/samplebudget.png"/></a></div>
+            <div>
+              <a href="https://docs.google.com/spreadsheets/d/1eoD28u0NFAd87jzUTd-CxWIMsu-1b4eAg8g2Uvka5y0/edit?gid=0#gid=0"><p class="large-p" style="text-align: left;">Sample Student Budget</p></a>
+              <p>Created by a former student, this budget template can help you calculate how much your cost of living might be during graduate school.</p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="1">
+            <div><a href="https://basicneeds.berkeley.edu/"><img class="size-36" src="images/thumbnails/berkbasicneeds.png"/></a></div>
+            <div>
+              <a href="https://basicneeds.berkeley.edu/"><p class="large-p" style="text-align: left;">UC Berkeley Basic Needs</p></a>
+              <p>The Basic Needs Center team is committed to addressing students’ basic needs, including food security, housing security, 
+                and financial stability. All enrolled students including undergraduate, graduate, international and undocumented students 
+                are eligible for Basic Needs Center resources and services.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="1">
+            <div><a href="https://basicneeds.ucsf.edu/"><img class="size-36" src="images/thumbnails/ucsfbasicneeds.png"/></a></div>
+            <div>
+              <a href="https://basicneeds.ucsf.edu/"><p class="large-p" style="text-align: left;">UCSF Basic Needs for Students</p></a>
+              <p>Through a robust model of prevention, intervention, and emergency relief, Basic Needs connects students to critical on- and off-campus resources and provides educational opportunities for students to take personal responsibility for their wellness.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="1">
+            <div><a href="https://finaid.ucsf.edu/financial-literacy"><img class="size-36" src="images/thumbnails/ucsffinancialservices.png"/></a></div>
+            <div>
+              <a href="https://finaid.ucsf.edu/financial-literacy"><p class="large-p" style="text-align: left;">UCSF Student Financial Services</p></a>
+              <p>The UCSF Student Financial Services division offers services to manage student debt, create spending plans, and connect individuals with aid offered by UCSF.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><img class="size-36" src="images/thumbnails/baypass.png"/></a></div>
+            <div>
+              <a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><p class="large-p" style="text-align: left;">UCSF BayPass</p></a>
+              <p>
+                In Spring 2024, UCSF invited students to join the UCSF BayPass pilot program, providing unlimited travel on any service that uses Clipper (except historic San Francisco Cable Cars, parking, BayWheels and BikeLink). To receive the Clipper BayPass, students must enroll a Clipper card serial number with the program.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://travel.ucop.edu/connexxus/"><img class="size-36" src="images/thumbnails/connexuc.png"/></a></div>
+            <div>
+              <a href="https://travel.ucop.edu/connexxus/"><p class="large-p" style="text-align: left;">ConnexUC</p></a>
+              <p>ConnexUC is the UC's preferred travel platform. ConnexUC negotiates discounts and rewards with major airlines, lodging properties, car rental companies, rail and travel agencies on behalf of UC employees.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://haas.berkeley.edu/undergrad/academics/courses/special-topics-business-administration-courses/"><img class="size-36" src="images/thumbnails/haascourses.png"/></a></div>
+            <div>
+              <a href="https://haas.berkeley.edu/undergrad/academics/courses/special-topics-business-administration-courses/"><p class="large-p" style="text-align: left;">Haas Personal Finance Courses</p></a>
+              <p>According to other students, Fred Selinger is a fun lectuerer, and there’s a course specifically tailored for grad students and that's just 2 hours commitment per week.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://www.businessinsider.com/guides/deals/best-student-discounts"><img class="size-36" src="images/thumbnails/businsider.png"/></a></div>
+            <div>
+              <a href="https://www.businessinsider.com/guides/deals/best-student-discounts"><p class="large-p" style="text-align: left;">Student Discounts</p></a>
+              <p>
+                This article from Business Insider lists which brands run student deals.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <hr>
+
+        <div class="join flex justify-center" id="pagination" style="margin:40px">
+          <button class="join-item btn btn-primary">1</button>
+          <button class="join-item btn btn-outline">2</button>
+          <button class="join-item btn btn-outline btn-disabled">3</button>
+          <button class="join-item btn btn-outline btn-disabled">4</button>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+  
+
+</div>
+
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <h6 class="footer-title">BioEngineering Association of STudents.</h6>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="#about.html">About Us</a>
+    <a class="link link-hover" href="#contact.html">Contact</a>
+    <a class="link link-hover" href="#directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="#credits.html">Credits</a>
+    <a class="link link-hover" href="#fun.html">Sarah's Corner</a>
+  </nav>
+</footer>
+
+<script>
+  const searchInput = document.getElementById('budgeting-search');
+  const cards = document.querySelectorAll('.list-row');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      const matches = text.includes(query);
+      card.style.display = matches ? '' : 'none';
+    });
+  });
+
+  const list = document.getElementById('budgeting-list');
+  const allItems = Array.from(list.querySelectorAll('.list-row'));
+  const paginationContainer = document.getElementById('pagination');
+
+  // Figure out how many pages exist from data-page attributes
+  const pageNumbers = [...new Set(allItems.map(item => item.dataset.page))].sort((a, b) => a - b);
+
+  let currentPage = '1';
+
+  function renderPage(page) {
+    currentPage = page;
+    allItems.forEach(item => {
+      item.style.display = (item.dataset.page === page) ? '' : 'none';
+    });
+    renderPaginationButtons();
+  }
+
+  function renderPaginationButtons() {
+    paginationContainer.innerHTML = '';
+    pageNumbers.forEach(num => {
+      const btn = document.createElement('button');
+      btn.textContent = num;
+      btn.className = 'join-item btn ' + (num === currentPage ? 'btn-primary' : 'btn-outline');
+      btn.addEventListener('click', () => renderPage(num));
+      paginationContainer.appendChild(btn);
+    });
+  }
+
+  renderPage('1'); // show page 1 on load
+</script>
+
+</body>
+</html>
