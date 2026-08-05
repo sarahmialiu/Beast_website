@@ -22,64 +22,96 @@
   </div>
 
   <div class="navbar-end">
-    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
+    <div class="megamenu max-sm:megamenu-vertical megamenu-full" id="my-megamenu-1" popover>
       <span class="megamenu-active"></span>
-
-      <button class = "navbar-btn" popovertarget="a1">Academics</button>
-      <div id="a1" popover>
-        <ul class="menu">
-          <li>
-            <a href="academics_firstyear.html">First Year</a>
-            <ul>
-              <li><a href="academics_firstyear.html#classes">Classes</a></li>
-              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
-              <li><a href="academics_firstyear.html#forms">Forms</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="quals.html">Qualifying Exam</a>
-            <ul>
-              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
-              <li><a href="quals.html#exam">Exam Content</a></li>
-              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
-              <li><a href="quals.html#forms">Forms</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="dissertation.html">Dissertation</a>
-            <ul>
-              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
-              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
-              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
-            </ul>
-          </li>
-          <li><a href="academics_teaching.html">Teaching</a></li>
-          <li><a href="forms.html">Forms</a></li>
-        </ul>
+ 
+      <button popovertarget="d1">Academics</button>
+      <div id="d1" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="academics_firstyear.html">First Year</a>
+              <ul>
+                <li><a href="academics_firstyear.html#classes">Classes</a></li>
+                <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+                <li><a href="academics_firstyear.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="quals.html">Qualifying Exam</a>
+              <ul>
+                <li><a href="quals.html#about">About the Exam</a></li>
+                <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+                <li><a href="quals.html#exam">Exam Content</a></li>
+                <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+                <li><a href="quals.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="dissertation.html">Dissertation</a>
+              <ul>
+                <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+                <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+                <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="courses.html">Course Information</a>
+              <ul>
+                <li><a href="courses.html#area">Area Requirements</a></li>
+                <li><a href="courses.html#major">Major & Minor</a></li>
+                <li><a href="courses.html#recommendations">Course Reviews</a></li>
+              </ul>
+            </li>
+            <li><a href="forms.html">Forms</a></li>
+          </ul>
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+        </div>
       </div>
-
-      <button class = "navbar-btn" popovertarget="a2">Extracurriculars</button>
-      <div id="a2" popover>
-        <ul class="menu">
-          <li><a>Enterprise</a></li>
-          <li><a>CRM software</a></li>
-          <li><a>Security</a></li>
-          <li><a>Consulting</a></li>
-        </ul>
+ 
+      <button popovertarget="d2">Student Life</button>
+      <div id="d2" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="movingtoca.html">Living in the Bay</a>
+              <ul>
+                <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#residency">CA Residency</a></li>
+                <li><a href="movingtoca.html#dmv">The DMV</a></li>
+              </ul>
+            </li>
+            <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li><a href="taxes.html">Taxes</a></li>
+          </ul>
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+        </div>
       </div>
-
-      <button class = "navbar-btn" popovertarget="a5">About</button>
-      <div id="a5" popover>
-        <ul class="menu">
-          <li><a>Beast</a></li>
-          <li><a>Positions</a></li>
-          <li><a href="directory.html">Student Directory</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a>Contact</a></li>
-        </ul>
+ 
+      <button popovertarget="d3">News & Events</button>
+      <div id="d3" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal style="align-items:start"">
+            <li><a href="news.html">BioE News</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="photos.html">Photo Album</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <button popovertarget="d4">About</button>
+      <div id="d4" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="beast.html">Beast</a></li>
+            <li><a href="directory.html">Student Directory</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!-- <button class="btn sm:hidden" popovertarget="my-megamenu-1">Menu</button> -->
+
     <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
       <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
         <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
@@ -89,21 +121,22 @@
       </svg>
     </button>
   </div>
+
 </div>
 
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>FAQs</li>
+  </ul>
+</div>
 
 <div class="page-container">
-  <div class="breadcrumbs">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>FAQs</li>
-    </ul>
-  </div>
 
   <div class="flex items-start gap-6" style="padding-top:40px;">
     <!-- Sidebar -->
     <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
-      <li><a href="#welcome" class="menu-title">FAQs</a></li>
+      <li><a href="#beast" class="menu-title">FAQs</a></li>
       <li><a href="#beast" class="menu-item">About Beast</a></li>
       <li><a href="#services" class="menu-item">Campus Services</a></li>
       <li><a href="#advising" class="menu-item">Advising</a></li>
