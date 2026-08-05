@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="beastwebsite">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beast - Course Information</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical p-2" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+
+      <button class = "navbar-btn" popovertarget="a1">Academics</button>
+      <div id="a1" popover>
+        <ul class="menu">
+          <li>
+            <a href="academics_firstyear.html">First Year</a>
+            <ul>
+              <li><a href="academics_firstyear.html#classes">Classes</a></li>
+              <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+              <li><a href="academics_firstyear.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quals.html">Qualifying Exam</a>
+            <ul>
+              <li><a href="quals.html#about">About the Exam</a></li>
+              <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+              <li><a href="quals.html#exam">Exam Content</a></li>
+              <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+              <li><a href="quals.html#forms">Forms</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dissertation.html">Dissertation</a>
+            <ul>
+              <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+              <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+              <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="courses.html">Course Information</a>
+            <ul>
+              <li><a href="courses.html#area">Area Requirements</a></li>
+              <li><a href="courses.html#major">Major & Minor</a></li>
+              <li><a href="courses.html#recommendations">Course Reviews</a></li>
+            </ul>
+          </li>
+          <li><a href="forms.html">Forms</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a2">Student Life</button>
+      <div id="a2" popover>
+        <ul class="menu">
+          <li>
+            <a href="movingtoca.html">Living in the Bay</a>
+            <ul>
+              <li><a href="movingtoca.html#housing">Housing</a></li>
+              <li><a href="movingtoca.html#residency">CA Residency</a></li>
+              <li><a href="movingtoca.html#dmv">The DMV</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="budgeting.html">Budgeting Resources</a>
+          </li>
+          <li>
+            <a href="taxes.html">Taxes</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a3">News & Events</button>
+      <div id="a3" popover>
+        <ul class="menu">
+          <li><a href="news.html">BioE News</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="photos.html">Photo Album</a></li>
+        </ul>
+      </div>
+
+      <button class = "navbar-btn" popovertarget="a5">About</button>
+      <div id="a5" popover>
+        <ul class="menu">
+          <li><a>Beast</a></li>
+          <li><a>Positions</a></li>
+          <li><a href="directory.html">Student Directory</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Course Information</li>
+  </ul>
+</div>
+
+<div class="page-container">
+
+
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">Courses</a></li>
+      <li><a href="#area" class="menu-item">Area Requirements</a></li>
+      <li><a href="#major" class="menu-item">Major & Minor</a></li>
+      <li><a href="#recommendations" class="menu-item">Course Reviews</a></li>
+    </ul>
+    
+    <!-- Main -->
+    <div class="page-content">
+      <section id="welcome">
+        <h5>BioE Course Information</h5>
+        <hr>
+
+        <div style="padding:20px">
+          <p>
+            Students are required to complete a breadth requirement (Area Requirements) and a depth requirement (Major and Minor Area), and
+            maintain a minimum GPA of 3.0. This page is intended to help you find and pick the right classes
+            so that you can fulfill all program requirements before graduation.
+          </p>
+        </div>
+
+        <div class="card bg-base-200 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">PSA:</h2>
+            <p>
+              <b>It is important to register for classes as soon as possible to ensure timely payment of academic fees as well as your first stipend 
+              payment. </b>Berkeley registration for fall courses typically opens in mid July; UCSF registration typically opens in August. Check your 
+              CalCentral and UCSF student portal pages for enrollment dates. Check for emails from the administration at your home campus about how 
+              many units you must enroll in at each campus. 
+            </p>
+            <p>
+              Feel free to reach out to peer advisors with questions about what courses to sign up for, but <b>the most important thing is to register 
+              for the required amount of units ASAP</b>; you can easily add and drop courses throughout the beginning of the term. Additionally, don't 
+              worry if your desired Berkeley classes are full. Just register on the waitlist and make sure to show up for the first class sessions, 
+              as students are usually able to secure a spot in these classes even if they were full at registration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex w-full flex-col">
+        <div class="divider"></div>
+      </div>
+
+      <section id="area">
+        <h5>Area Requirements</h5>
+        <hr>
+
+        <div class="flex flex-wrap gap-4" style="padding:20px; padding-top:40px">
+          <div class="flex-1 min-w-[min(400px,100%)]">
+              <p>
+                Students must complete the Area Requirements listed below some time during their academic career in the program. Students may apply courses taken prior to entering the program (pending approval by their Graduate Adviser) or may be selected from appropriate offerings at Berkeley or UCSF. The Area Requirements Form must be updated annually with approving signatures to the Program Administrator on the Home Campus during the Spring Semester of the first two years.
+              </p>
+              <p><b>
+                Some of the courses used to satisfy Area Requirements may also be counted toward the Major or Minor 
+                Areas, but they must be taken while enrolled as a student in the program.
+              </p></b>
+          </div>
+
+          <div class="flex-1 min-w-[min(400px,100%)]">
+            <div class="overflow-x-auto w-full table-container rounded-box outline outline-primary flex items-center justify-center" style="padding: 20px">
+              <table class="table table-xs table-fixed w-full" style="background-color: white;">
+                <thead>
+                  <tr>
+                    <th>Area</th>
+                    <th>Semester Units</th>
+                    <th>Quarter Units</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Anatomy, Physiology and Biology</td>
+                    <td>9</td>
+                    <td>13.5</td>
+                  </tr>
+                  <tr>
+                    <td>Biochemistry, and Chemistry beyond General Chemistry</td>
+                    <td>3</td>
+                    <td>4.5</td>
+                  </tr>
+                  <tr>
+                    <td>Engineering and Computer Science</td>
+                    <td>7</td>
+                    <td>10.5</td>
+                  </tr>
+                  <tr>
+                    <td>Mathematics and Statistics</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p></p>
+
+            <div class="card bg-base-200 shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title">Note</h2>
+                <p>
+                  Area Requirements does NOT refer to the major and minor; if you come in with a B.S. in Bioengineering, you have probably already satisfied all of the Area Requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="flex w-full flex-col">
+        <div class="divider"></div>
+      </div>
+
+      <section id="major">
+        <h5>Major & Minor Requirements</h5>
+        <hr>
+
+        <div class="flex flex-wrap gap-4" style="padding:20px; padding-top:40px">
+          <div class="flex-1 min-w-[min(400px,100%)]">
+              <p>
+                Students must identify a Major and a Minor field in which the student will complete 16 Semester Units/24 Quarter Units and 8 Semester Units/12 Quarter Units respectively on a graded basis. This requirement is designed for students explore an area of interest in depth.
+              </p>
+
+              <div class="overflow-x-auto w-full table-container rounded-box outline outline-primary flex items-center justify-center" style="padding: 10px; margin-top:20px">
+              <table class="table table-sm table-fixed w-full" style="background-color: white;">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Semester Units</th>
+                    <th>Quarter Units</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Major</td>
+                    <td>16</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td>Minor</td>
+                    <td>8</td>
+                    <td>12</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="flex-1 min-w-[min(400px,100%)]" style="padding-left:20px">
+            <div class="card bg-base-200 shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title">Notes</h2>
+                <ul class="list-disc list-outside space-y-2" style="padding-bottom:20px; padding-left:40px">
+                  <li>Students who already hold a Master’s Degree or professional degree may use courses from their prior degree program toward their Minor field with approval from the Head Graduate Adviser. In this case, the Major field must be in an area complementary to the student’s prior training.</li>
+                  <li>Up to six (6) units of undergraduate upper division courses may be applied towards the Major area of study with approval from the Head Graduate Adviser.</li>
+                  <li>One course with the S/U option (rather than letter-graded) is acceptable for meeting the requirements of the Major Area if the student is able to present sufficient justification for the inclusion of the course and following approval from both the student’s Graduate Adviser and the Head Graduate Adviser.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="flex w-full flex-col">
+        <div class="divider"></div>
+      </div>
+
+      <section id="recommendations">
+        <h5>Course Reviews</h5>
+        <hr>
+
+        <div style="padding:20px">
+          <p>
+            To help you navigate which classes to select, Beast Peer Advising has been compiling a database of 
+            the classes that past BioE students have taken over the last several years. All these comments and reviews are from 
+            other students in the program, so it should give you a good idea of what types of classes are taken for different types 
+            of majors. 
+          </p><p>
+            Raw survey response data can be found 
+            <a class="link link-info" href="https://docs.google.com/spreadsheets/d/1LjGBRKM4V19A03DfVJc845NbcjysvulYOsoLMI2k8jY/edit?gid=0#gid=0">here (2021, 2022)</a>
+            , <a class="link link-info" href="https://docs.google.com/spreadsheets/d/1d9RRJP0a1RjAAHiRIHu3D3IFNsi_hym_8JWJKbtUFJ0/edit?gid=73351809#gid=73351809">here (2025)</a>
+            , and <a class="link link-info">here (2026)</a>.
+          </p>
+          <p class="hint">
+            Please note that course availability changes every quarter and semester and some courses are only offered every two years. Furthermore, course numbers and term availability may vary.
+          </p>
+        </div>
+
+        <div class="tabs tabs-lift" style="margin-top: 20px">
+          <input type="radio" name="my_tabs_3" class="tab" aria-label="2026" checked="checked" />
+          <div class="tab-content bg-base-100 border-base-300 p-6">
+            <div class="overflow-x-auto h-128 w-full table-container">
+              <table class="table table-xs table-pin-rows" style="background-color: white;">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Campus</th>
+                    <th>Professor</th>
+                    <th>Research Field</th>
+                    <th>Rating (1-5)</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>BioE 266</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Moriel Vandsburger</td>
+                    <td>Biomedical Imaging &amp; Instrumentation</td>
+                    <td>5</td>
+                    <td>Molecular imaging class. Oriented more towards undergrads, but is helpful if you want a survey into a broad topics on molecular and bio imaging techniques. It covers microscopy in 2ish weeks and delves into photoaccoustic and US based imaging as well in depth as well as a bit into CT/MRI. More application based than BIOE 265, but still worth taking for easy A and nice survey of material. Appreciated the content and homework's were coding and lit review based when I took it</td>
+                  </tr>
+                  <tr>
+                    <td>PH250W</td>
+                    <td>Fall, Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Adrienne Rain Mocello</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>3</td>
+                    <td>Useful if you want to learn more about statistical methods in epidemiology, online class at Berkeley through the school of Public Health, chill 3 credits with 3 online exams and extra credit opportunities</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE271</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Michael Yartsev</td>
+                    <td>Neural Systems &amp; Vision Science</td>
+                    <td>5</td>
+                    <td>Chill class overall, top 2 out of 3 exams counted, solo 5-6 min presentation over Zoom at the end of the course that's worth 40% of your grade, class times were 8 AM Tuesdays and Thursdays at Li Ka Shing for spring 2026 course offering, useful perspective about both neuroethology and systems neuroscience</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE212</td>
+                    <td>Winter (UCSF only)</td>
+                    <td>UCSF Mission Bay</td>
+                    <td>Reza Abbasi-Asl</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>5</td>
+                    <td>Great intro for deep learning, 3 HWs + final project, assignments are pretty chill, you get out of this course what you put in, for a more rigorous but much more time consuming intro to deep learning take CS289A at Berkeley</td>
+                  </tr>
+                  <tr>
+                    <td>NS201C</td>
+                    <td>Spring</td>
+                    <td>UCSF Mission Bay</td>
+                    <td>Kevin Yackle</td>
+                    <td>Neural Systems &amp; Vision Science</td>
+                    <td>4</td>
+                    <td>Good class to learn more about systems neuroscience breadth wise (very animal model focused though), lots of topics covered with rotating lecturers who are PIs at UCSF in various subfields, weekly problem sets that are informally graded with feedback from professors and TAs on how to improve your responses in future psets, very strict attendance wise (unexcused absences may result in failing the course) and very heavy class schedule wise (for spring 2026 course offering classes were up to 4 days a week from 9 to 11 AM in Mission Hall with 2 lectures and 2 discussions, for discussions you're expected to read the papers beforehand and explain panels of figures in the paper in class to other students and the professor), as long as you put in the effort and complete the assignments well grading is pretty relaxed, there are also 3 evening TA sessions (with food!) doing a deeper dive into select topics like optogenetics/neuromodulation</td>
+                  </tr>
+                  <tr>
+                    <td>NEUROSCI201A</td>
+                    <td>Fall</td>
+                    <td>UCSF Mission Bay</td>
+                    <td>Kevin Bender, Massimo Scanziani et al.</td>
+                    <td>Neural Systems &amp; Vision Science</td>
+                    <td>4</td>
+                    <td>Can be used for chemistry area req if needed</td>
+                  </tr>
+                  <tr>
+                    <td>NEU 250</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Yvette Fisher et al</td>
+                    <td>Neural Systems &amp; Vision Science</td>
+                    <td>5</td>
+                    <td>Great intro course. Students had to do a paper presentation once. Attendance taken. I'd recommend UCSF NS201A + Berkeley NEU 250 rather than UCSF neuro trilogy (201A/B/C) if you're more systems/computational</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE245</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Liana Lareau</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>5</td>
+                    <td>not too much work but useful</td>
+                  </tr>
+                  <tr>
+                    <td>CHEM 236</td>
+                    <td>Fall</td>
+                    <td>UC Berkeley</td>
+                    <td>Matthew Francis</td>
+                    <td>Biomaterials</td>
+                    <td>5</td>
+                    <td>Very useful course about bioconjugation and artificial biomolecule synthesis. Extremely well-taught by Matt Francis - the PSETs aren't too difficult, and he's incredibly helpful during office hours. The exams themselves are relatively straightforward, and the final projects can be very useful to your research (writing a mini-review article and conducting a small research project with the MGCF at Berkeley).</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 263</td>
+                    <td>Fall</td>
+                    <td>UC Berkeley</td>
+                    <td></td>
+                    <td>Immunology</td>
+                    <td>4</td>
+                    <td>Used this as my bio area requirement. There was no homework and you just had to study for the 2 exams + final project</td>
+                  </tr>
+                  <tr>
+                    <td>AICOMPDRUG</td>
+                    <td>Fall</td>
+                    <td>UCSF Mission Bay</td>
+                    <td>Brian Shoichet</td>
+                    <td></td>
+                    <td>5</td>
+                    <td>Great professor and really cool guest speakers</td>
+                  </tr>
+                  <tr>
+                    <td>EECS 289</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Jennifer Listgarten &amp; Alex Dimakis</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>5</td>
+                    <td>Very hard class (you need some more time for it since it is undergrad workload) but learned such a solid foundation of machine learning</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE212</td>
+                    <td>Winter (UCSF only)</td>
+                    <td>UCSF Mission Bay</td>
+                    <td></td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>5</td>
+                    <td>Cool guest speakers and easy machine learning class</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE242</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Teresa Head Gordon</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>2</td>
+                    <td>Wouldn't recommend this over other machine learning classes</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 252</td>
+                    <td>Fall</td>
+                    <td>UC Berkeley</td>
+                    <td>Syed Hossiany</td>
+                    <td>Translation</td>
+                    <td>5</td>
+                    <td>Easy, low commitment (though there's a lot to learn from it if you do put in the time!)</td>
+                  </tr>
+                  <tr>
+                    <td>MCELLBI C205</td>
+                    <td>Fall</td>
+                    <td>UC Berkeley</td>
+                    <td>Eric Betzig, Na Ji</td>
+                    <td>Biomedical Imaging &amp; Instrumentation</td>
+                    <td>5</td>
+                    <td>Quite a steep learning curve if you haven't taken optics in a while. Good survey of advanced imaging methods, and very relevant if your day to day project will involve microscopy! It's very easy to take the course easy and then struggle with the super heavy final project so definitely stay on top of lectures</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 211</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Sanjay Kumar</td>
+                    <td>Tissue Engineering &amp; Regenerative Medicine</td>
+                    <td>4</td>
+                    <td>Great exposure to mechanotransduction if you are new to the topic! Assignments are designed and graded in a fair, generous way</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 221L</td>
+                    <td>Fall</td>
+                    <td>UC Berkeley</td>
+                    <td>Dorian Liepmann</td>
+                    <td>BioMEMS/Nanotechnology</td>
+                    <td>5</td>
+                    <td>If you're interested in microfluidics, this course teaches you the full fabrication process, from CAD modeling to testing designs.</td>
+                  </tr>
+                  <tr>
+                    <td>MATSCI/BIOENG 216C</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Kevin Healy</td>
+                    <td>Biomaterials</td>
+                    <td>5</td>
+                    <td>This course operates in a journal club format where students present on relevant publications in biomaterials and lead a class discussion. Prof. Healy does a great job teaching students how to approach reading a publication.</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 253</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>David Kirn</td>
+                    <td>Bioentrepreneurship</td>
+                    <td>5</td>
+                    <td>Prof. Kirn provides a detailed introduction to careers in and the landscape of biotechnology, drawing from his extensive personal experience and background.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH W142</td>
+                    <td>Fall, Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Emily Place</td>
+                    <td>Statistics</td>
+                    <td>5</td>
+                    <td>This is a great introduction to statistical analysis and using R to conduct statistical tests and create graphs. The course is fully asynchronous.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <input type="radio" name="my_tabs_3" class="tab" aria-label="2025" />
+          <div class="tab-content bg-base-100 border-base-300 p-6">
+            <div class="overflow-x-auto h-128 w-full table-container">
+              <table class="table table-xs table-pin-rows" style="background-color: white;">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Campus</th>
+                    <th>Professor</th>
+                    <th>Research Field</th>
+                    <th>Rating (1-5)</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>EECS 225</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Miki Lustig</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>5</td>
+                    <td>The instructor Miki has an immense passion for MRI, and this class shows it off. Very engaging lectures and worth your time if you're at all interested in medical imaging, nuclear imaging, MR, or even compressed sensing or other EECS topics. The homeworks were approachable and meant to be instructive, and graded kindly. Miki's a goofy guy and sometimes expectations were unclear, but everyone did well and learned a lot along the way.</td>
+                  </tr>
+                  <tr>
+                    <td>ENGIN 183C - Transforming Brain Health with Neurotechnology: Challenge Lab</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Gail Gannon</td>
+                    <td>Neurotechnology and Entrepreneurship</td>
+                    <td>5</td>
+                    <td>Very interesting class, definitely recommend. You get to do your own neurotech startup project with a team in class, including making prototypes during the semester.</td>
+                  </tr>
+                  <tr>
+                    <td>LS 110 - Brilliance of Berkeley</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td></td>
+                    <td></td>
+                    <td>5</td>
+                    <td>Nobel Laurates and other prominent faculty in Berkeley give introductory lectures to their research. Very inspiring course. A great introduction to opportunities in UC Berkeley.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 290B - Healthcare Ethics</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley, Virtual</td>
+                    <td>Dr. Jodi Halpern</td>
+                    <td>Healthcare Ethics</td>
+                    <td>5</td>
+                    <td>Very interesting class on applying ethical tools and techniques in healthcare. Discusses emerging issues with ethical implications like AI, neurotechnology, genome editing. Also includes many practical hands on elements, and the class culminates with a poster presentation where you get to showcase the healthcare/technology+ethics project you have worked on during the class.</td>
+                  </tr>
+                  <tr>
+                    <td>PUBPOL 290</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Janet Napolitano</td>
+                    <td>National Security and Public Policy</td>
+                    <td>5</td>
+                    <td>Very inspiring and interesting class by former U.S. Cabinet Secretary and former Governor of Arizona Janet Napolitano on national security policy. Class included national security experts as guest speakers. You also get to work on a group research project and a term paper. Highly recommended class!</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 245</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Liana Lareau</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>5</td>
+                    <td>Kind of heavy on math - I found it doable because I had taken introductory ML before. Beautiful examples and explanations mapping ML to biological systems! More focussed on core concepts than things like LLMs but she does touch on those</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 245</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Liana Lareau</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>5</td>
+                    <td>Awesome class! Love professor lareau! The problem sets and exams were very difficult but it definitely felt well-worth it. Strong math background needed.</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 266</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Moriel Vandsburger</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>5</td>
+                    <td>Reasonable workload. Focused on application of imaging methods, which made it more interesting.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 244</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Lexin Li</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>5</td>
+                    <td>Project-based learning</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE C216</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Kevin Healy</td>
+                    <td>Biomaterials</td>
+                    <td>4</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 235</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Adam Arkin</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>4</td>
+                    <td>Interesting material and Adam is a good person to get to know if you're in this space. Easy to space out though - the whole class is driven by student presentations on papers. You get out of it what you want, and it can be quite chill lol</td>
+                  </tr>
+                  <tr>
+                    <td>BIO ENG 282</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Syed Hossainy</td>
+                    <td>Biomaterials</td>
+                    <td>4</td>
+                    <td>The lectures can be a bit disorganized or hard to follow, but Syed is very approachable and the grading is chill. Most of the grade comes from projects, but these can be a pretty straightforward walkthrough of a problem like the examples done in class. Overall, I learned a decent bit about transport phenomena, and the class was relaxed enough that it is a good option for people who need a lower-workload course to fill out credits.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 241</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Alejandro Schuler</td>
+                    <td>Machine Learning and Statistics</td>
+                    <td>4</td>
+                    <td>Very much "you get out what you put in". Pretty easy to do well in the course without really learning the material. Problem sets are all done in R (python is not an option) but prior knowledge of R isn't necessary.</td>
+                  </tr>
+                  <tr>
+                    <td>NEUR 201C</td>
+                    <td>Spring</td>
+                    <td>UCSF Mission Bay</td>
+                    <td>Different every lecture</td>
+                    <td>Neural Systems & Vision Science</td>
+                    <td>4</td>
+                    <td>Very broad overview of systems neuroscience. Assignment every 2 weeks. Not as coherent as 201B but still very entertaining, thought-provoking, and low-stakes.</td>
+                  </tr>
+                  <tr>
+                    <td>MCELLBI 206</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Andy Martin, Eva Nogales, Carlos Bustamante</td>
+                    <td>Biophysics/Biomechanics</td>
+                    <td>4</td>
+                    <td>The three professors we got (Martin, Nogales, Bustamante) are all leaders in their fields and are there to answer any questions you have about the material. The grading is quite gentle as long as you do all of the exams and the project at the end. I would recommend the class for anyone interested in an introduction to biophysics and relevant methods.</td>
+                  </tr>
+                  <tr>
+                    <td>EECS 290</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Chunlei Liu</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>3</td>
+                    <td>If you're interested in neuroanatomy or neuroimaging, with a focus on diffusion MRI or fMRI or other neuroimaging techniques (ECOG, CT) this class is useful. Homeworks are open ended and challenging (4 per semester) and lectures are dense research heavy topics. Taught more towards the EE side of things, but solid course if you're interested in the neuro side of imaging.</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 282</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Syed Hossainy</td>
+                    <td>Biophysics/Biomechanics</td>
+                    <td>2</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 282</td>
+                    <td>Spring</td>
+                    <td>UC Berkeley</td>
+                    <td>Syed Hossainy</td>
+                    <td>Drug delivery & Pharmacogenomics</td>
+                    <td>1</td>
+                    <td>Covers very basic mass transport equations and applies them towards drug delivery problems. The lectures are poorly planned, and the class lacks structure overall. The class considers high-level overviews of applied mass and heat transport problems and does not explore analytical methods to solve them.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <input type="radio" name="my_tabs_3" class="tab" aria-label="2022"  />
+          <div class="tab-content bg-base-100 border-base-300 p-6">
+            <div class="overflow-x-auto h-128 w-full table-container">
+              <table class="table table-xs table-pin-rows" style="background-color: white;">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Campus</th>
+                    <th>Professor</th>
+                    <th>Research Field</th>
+                    <th>Rating (1-5)</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PBHLTH 245 - Introduction to Multivariate Statistics</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Lexin Li</td>
+                    <td>Statistics</td>
+                    <td>3</td>
+                    <td>Course material is useful, lectures very dry, HW not too challenging, no exam</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 260F - Infectious Disease Research in Developing Countries</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Eva Harris</td>
+                    <td>Public Health</td>
+                    <td>5</td>
+                    <td>Really interesting course material for anyone in global health, covers ethics & logistics, readings for hw, project at the end, discussion based, lots of guest speakers</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 266B - Zoonotic Diseases</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Peter Dailey</td>
+                    <td>Public Health</td>
+                    <td>5</td>
+                    <td>Fascinating material, discussion based with readings and guest lectures, project at the end, good if you are interested in infectious diseases & public health</td>
+                  </tr>
+                  <tr>
+                    <td>CMPBIO C231 - Introduction to Computational Molecular and Cell Biology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Ian Holmes</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>3</td>
+                    <td>Lots of material covered in a short amount of time, useful topics & good overview of comp bio, homeworks were a bit unrelated to lectures at times, exam & project at the end and weekly hw, a little programming experience is helpful</td>
+                  </tr>
+                  <tr>
+                    <td>MCELLBI C205 - Modern Optical Microscopy for the Modern Biologist</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Robert Betzig</td>
+                    <td>BioMEMS/Nanotechnology</td>
+                    <td>5</td>
+                    <td>Great class for widefield fluorescence and super resolution microscopy. The final project might be challenging, but you get a chance to use the Mosaic</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 263 - Public Health Immunology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Sarah Stanley</td>
+                    <td>Immunology</td>
+                    <td>5</td>
+                    <td>If Sarah Stanley is teaching, take this! She is amazing and explains immunology so well. I still use the notes and what I learned in this class.</td>
+                  </tr>
+                  <tr>
+                    <td>PHARMGENOM 219 - Pharmacokinetic Modeling Minicourse</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>Rada Savic</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>4</td>
+                    <td>Minicourses were great! I love the format. This one had no hw, just workshop in class. Very practical course to learn NONMEM & R modelling for pharmacokinetics</td>
+                  </tr>
+                  <tr>
+                    <td>MCB 250 - Advanced Immunology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>David Raulet, Bill Sha, Michel Dupage</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>4</td>
+                    <td>low workload but lots of material covered, heavy emphasis on molecular biology methods/techniques, especially great survey of adaptive immunity</td>
+                  </tr>
+                  <tr>
+                    <td>PbHlth 263 - Public Health Immunology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Amy Garlin, Stephen Popper</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>4</td>
+                    <td>low workload, really great intro/primer to immunology but does not go into depth</td>
+                  </tr>
+                  <tr>
+                    <td>DATA C200 - Principles and Techniques of Data Science</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Anthony Joseph</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5</td>
+                    <td>Intense workload, but a great introduction to Python, data visualization, and basic machine learning concepts. Workload consists of a weekly programming assignments, 1 midterm, 1 final project, and a final. Would highly recommend for anyone with minimal programming experience and an interest in computational techniques that could be applied to large datasets.</td>
+                  </tr>
+                  <tr>
+                    <td>ENGIN 295 - Communications for Engineering Leaders</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Thomas Fitzpatrick & Susan Houlihan</td>
+                    <td></td>
+                    <td>5</td>
+                    <td>This is 1-unit class that's basically just two full days of public speaking workshops. Everyone in the class is so supportive, whether you are afraid of public speaking or someone who loves it! The class also encourages a lot of reflection about your career journey and goals. I would recommend taking it in the middle of your grad career, so you will have a better idea of your research directions but will still have time to implement the lessons and goals you gained from the course.</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 221 - Advanced BioMEMS and Bionanotechnology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Aaron Streets</td>
+                    <td>BioMEMS/Nanotechnology</td>
+                    <td>4</td>
+                    <td>This course had a midterm (maybe two? can't remember), a final project, and several problem sets. This class is a lot of work but you learn a lot from it, especially if you are interested in omics-based biotechnology. The project was probably the hardest part of the class because I got grouped with masters students that hardly did any work. Overall I would recommend to take this class if you're interested in single-cell sequencing or diagnostic type research.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 245 - Introduction to Multivariate Statistics</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Lexin Li</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5</td>
+                    <td>This is a super chill class that has like 5 fairly straightforward problem sets and then a final project that can be based on your current research or research from a rotation. Lexin is really sweet and helpful and its a good course to learn R for statistics and that basics of multivariate statistical tests, regression, and clustering. It is definitely an intro course, you won't find any intense derivations, stats or machine learning here. If you're looking for a slam dunk 4 semester units, this is the course for you.</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG C215 - Molecular Biomechanics and Mechanobiology of the Cell</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Mohammad Mofrad</td>
+                    <td>Biophysics/Biomechanics</td>
+                    <td>2</td>
+                    <td>This class was a little weird because it was entirely over Zoom during the pandemic and Mofrad did not have a GSI. The class literally consisted of a journal club presentation and FOUR papers, three of which had a 10 page minimum, one was like a 6 page minimum I think. Those were the only assignments but it was honestly so much work. Mofrad is a really nice guy and I am sure the class is better in person and in a different format, but it was definitely not fun when I took it over Zoom. It's a good class if you want to learn about protein modeling, nucleus, cytoskeleton, and membrane physics, and molecular biomechanics; I would only take it though if those things are heavily applicable to your research interests.</td>
+                  </tr>
+                  <tr>
+                    <td>DATA C200 - Principles and Techniques of Data Science</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Joseph Gonzalez and Andrew Bray</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5</td>
+                    <td>This is an excellent class if you want to learn the basics of Python programming and data science. It teaches you how to think like a data scientist and I found that approach helpful when I applied it to bioinformatics. I would say this class is a must-take if you have no Python experience and are looking to gain skills in Python. There are a TON of problem sets, a midterm, a final, and a final project. This class is a lot of work, but also a lot of fun; make sure that you find a good partner for the final project. Don't worry if your grade is terrible in the class, I think I got like a 40% on the final and still ended up with an A in the class because they curve it like crazy for grad students. Just be prepared that this class is all online and theres like 1000 students in the class; definitely take this class with cohort buddies if you can. Also lastly, there is not really any legit ML in this course but there is a lot of data cleaning, regression, and clustering.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 263 - Public Health Immunology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Amy Garlin and Stephen Popper</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>4</td>
+                    <td>This is a great course for learning the basics of immunology. It covers into decent detail both innate and adaptive immune systems. This class had two midterms and a final and I think that those were the only assignments, attendance was mandatory and you sometimes had to give little 5 minute group presentations in class about the material. Amy was an MD who was super duper sweet and knowledgeable, and Stephen was an HIV researcher/lecturer who was less helpful, haha. I think this is a must take if you are doing any immunoengineering or disease related research in which interactions with immune cells are important. Overall the class wasn't too hard and I learned a lot.</td>
+                  </tr>
+                  <tr>
+                    <td>NEUROSC C262 - Circuit and Systems Neurobiology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Dan Feldman and Yang Dan</td>
+                    <td>Neural Systems & Vision Science</td>
+                    <td>5</td>
+                    <td>Awesome course that dives deep into most corners of systems and circuit neuroscience. The class consists of student led and instructor moderated journal clubs on one day of the week and then instructor lectures on the other day of the week. You learn a lot about how circuit neuroscience hypotheses are derived, experiments are set up, and how confounding results are analyzed. Dan Feldman and Yang Dang are both super knowledgeable and were amazing at dissecting papers and helping the class think through why certain decisions were made in the papers we were reading. In the class you will have to present one 45 minute journal club presentation, one midterm, and then one final term paper of about 6 pages I think. You should definitely take this course if you are interested in anything related to circuit level or systems level neuroscience.</td>
+                  </tr>
+                  <tr>
+                    <td>Genetics 200A - Principles of Genetics</td>
+                    <td>Winter</td>
+                    <td>UCSF</td>
+                    <td>David Toczyski</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>4</td>
+                    <td>This was a good general overview of genetics and genetics techniques. The class is pretty chill and just consists of attending lectures, reading papers, and 4 small problem sets. Be prepared that this is a Tetrad course so like 90% of the class is in the tetrad program and they look down upon us humble bioengineers (jk the tetrad students are super nice and helpful). This class was most useful in helping me further understand how to effectively use and design driver lines, inducible promoters, and other genetic promoter systems. They go over yeast, bacteria, mouse, and human genetics. One of the coolest parts of this class were these mini groups where you and like 6 other students get to directly discuss papers with a couple of the UCSF professors for a few weeks. I think my professors were Barbara Panning and Su Guo, a there were like 8 other professors that did these mini groups.</td>
+                  </tr>
+                  <tr>
+                    <td>PMB220A - Microbial Genetics</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Taga</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>5</td>
+                    <td>Good amount of papers you will have to read within the 5 weeks of the course. But a good minicourse for background in microbial techniques/genetics.</td>
+                  </tr>
+                  <tr>
+                    <td>PMB220E - Microbial Physiology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>John Coates</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>5</td>
+                    <td>Focused on microbial metabolism, so may not be relevant to everyone. But definitely and interesting course and professor.</td>
+                  </tr>
+                  <tr>
+                    <td>BioEng C231 - Introduction to Computational Molecular and Cell Biology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Ian Holmes</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5</td>
+                    <td>The exams aren't very well written, and the time commitment each week is inconsistent. Still, amazing content! It's a class that teaches you the algorithms and methods applied in computational biology, NOT a class to tell you what tool to use for your data.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH C240C - Biostatistical Methods - Computational Statistics with Applications in Biology and Medicine</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Jingshen Wang</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>4</td>
+                    <td>When I first got to Berkeley, I struggled to find a statistics course that wasn't basic, but also wasn't going to leave me in the dust. This felt like the perfect intermediate course. I took it during zoomU, and I feel like the professor struggled with virtual classes. So I imagine that taking it in person would be slightly more difficult.</td>
+                  </tr>
+                  <tr>
+                    <td>BioEng 241 - Probabilistic Modeling in Computational Biology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Ian Holmes</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5</td>
+                    <td>Difficult content, but it's truly a "get out what you put in" kind of class. Because of the journal club portion, the class varies each iteration. Past themes were - 2021: computational epidemiology, 2022: machine learning for protein design.</td>
+                  </tr>
+                  <tr>
+                    <td>BioEng 245 - Introduction to Machine Learning for Computational Biology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Liana Lareau</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>4</td>
+                    <td>Great primer with heavy focus on application. This would be a good course to take before the Intro ML course in the EECS department (CS289).</td>
+                  </tr>
+                  <tr>
+                    <td>EECS 289 - Introduction to Machine Learning</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Jennifer Listgarten, Jitendra Malik</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5</td>
+                    <td>It'll kick your ass, but you'll come out with a strong mathematical and probabilistic intuition. It's very worthwhile if you're going to be designing your own ML methods.</td>
+                  </tr>
+                  <tr>
+                    <td>CS 289A - Intro to Machine Learning</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Jonathan Shewchuk</td>
+                    <td>Neural Systems & Vision Science</td>
+                    <td>5</td>
+                    <td>This 'introductory' course can be pretty advanced. It may be worth taking Data 200C prior to this for a proper introduction to ML.</td>
+                  </tr>
+                  <tr>
+                    <td>CMPBIO 275 - Computational Biology Seminar/Journal Club</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Rasmus Nielsen</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>3</td>
+                    <td>You attend every seminar for the computational biology department, and get an extra hour at the end to chat with the speakers. When it's not a seminar week, you read a paper. I thought the journal club portion was kinda hit or miss.</td>
+                  </tr>
+                  <tr>
+                    <td>CMPBIO 293 - Doctoral Seminar</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Nilah Ioannidis</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>3</td>
+                    <td>It's a required seminar for the designated emphasis in computational biology and genomics. Super easy, mostly worked in the back of the class during lectures.</td>
+                  </tr>
+                  <tr>
+                    <td>CS 288 - Natural Language Processing</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Dan Klein</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>3</td>
+                    <td>Content-wise, Dan is an amazing lecturer, and the homework is very instructional. However, the workload was incredibly unreasonable (I put 50+ hours into the first HW assignment). Also, if you're outside the EECS department, you had to get 100 on the first HW assignment, or you'd be kicked out of the course. So if you can come into a class and code a full-blown LSTM in pytorch, without any mistakes... congrats, you're allowed to stay. Truthfully, this course took a big toll on my mental health and wellbeing...</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE247 - Principles of Synthetic Biology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Adam Arkin</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>5</td>
+                    <td>High workload but great for building a foundation in synthetic Biology</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG C231 - Introduction to Computational Molecular and Cell Biology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Ian Holmes</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>3</td>
+                    <td>Homework problems involve writing python in Jupyter notebooks and feel very useful, but (open note) exams are tough and involve learning tons of terms and facts, as well as being fast with probability and math. A lot of time commitment and tough exams, but I learned a lot and it seems like the grades given were good.</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 235 - Frontiers in Microbial Systems Biology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Adam Arkin</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>2</td>
+                    <td>The class and slides are fairly disorganized so it's hard to complete the homeworks and exams (lot of self teaching), so I'm not sure how much I retained and felt lost a lot. But lectures are interesting and it is a low pressure class in terms of grades.</td>
+                  </tr>
+                  <tr>
+                    <td>CS 267 - Introduction to Machine Learning</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Listgarden et al.</td>
+                    <td>Machine Learning</td>
+                    <td>5</td>
+                    <td>Super useful if you are going to use machine learning or deep learning in your research. Workload depends on prior proficiency, but should be doable.</td>
+                  </tr>
+                  <tr>
+                    <td>CS 267 - Parallelism in Computing</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>The guy who wrote LAPACK</td>
+                    <td>HPC</td>
+                    <td>4</td>
+                    <td>Even if you are well acquainted with C/C++, data structures, and basic optimizations such as loop unrolling, cache utilization, and intrinsics the course will be hard. If you don't leech off of some of the exceptional CS students (it's mostly group projects), it's one of the hardest CS courses available period. It requires a significant time commitment even for people who do this for work/research due to the difficulty debugging parallel code with OpenMP, MPI, Cuda, etc. For one assignment, I had to spend 4 16-hour days to finish it up. You do learn a lot about those packages, basics of computer architecture, and code optimization/parallelism.</td>
+                  </tr>
+                  <tr>
+                    <td>DATA C100 - Principles and Techniques of Data Science</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Joey Gonzalez</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5</td>
+                    <td>Very useful to get a good overview of python, pandas, and a little bit of machine learning. I went into this course with pretty minimal coding experience and learned more than any other class I've taken in grad school, both general principles/concepts and practical skills I constantly apply to my research and data analysis. Its an undergrad course, so the workload is significant (1-2 assignments per week, plus a few projects) and the class size is massive, but I still highly recommend it!</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 221 - Advanced BioMEMS and Biotechnology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Streets</td>
+                    <td>BioMEMS/Nanotechnology</td>
+                    <td>4</td>
+                    <td>Content heavy class and does take a bit of time -- weekly hw and two exams and a final project. can be time consuming depending on how much of the content is review for you. I found it super helpful and interesting!</td>
+                  </tr>
+                  <tr>
+                    <td>BIOENG 202 - Cell Engineering</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Conboy</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>3</td>
+                    <td>Class goes over interesting content, not too much homework until the final project</td>
+                  </tr>
+                  <tr>
+                    <td>DATA C200 - Principles and Techniques of Data Science</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Josh Hug, Lisa Yan</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>3</td>
+                    <td>Good class, lot's of work super content heavy (weekly hw and optional labs, exams) but is good if you have some data science knowledge and would like a refresher. Kind of math heavy but I would recommend this if you are or aren't on the computational track. overall helpful.</td>
+                  </tr>
+                  <tr>
+                    <td>BIOE 221 - Tissue Mechanobiology</td>
+                    <td>Winter</td>
+                    <td>UCSF</td>
+                    <td>J. Lotz, T. Alliston, V. Weaver</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>4</td>
+                    <td>interesting content and lectures, no homework, final debate is a good review to incorporate class content</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <input type="radio" name="my_tabs_3" class="tab" aria-label="2021" />
+          <div class="tab-content bg-base-100 border-base-300 p-6">
+            <div class="overflow-x-auto h-128 w-full table-container">
+              <table class="table table-xs table-pin-rows" style="background-color: white;">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Campus</th>
+                    <th>Professor</th>
+                    <th>Research Field</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PH245 - Multivariate statistics</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Lexin Li</td>
+                    <td>Other - Statistics</td>
+                    <td>Good basic stats class, very practical. Great professor who takes time for questions, introduces concepts with context and immediate applications. Good introduction in using R programming, no exam and one final project.</td>
+                  </tr>
+                  <tr>
+                    <td>EE290P - Advanced topics in bioelectronics - Bioelectronic implants</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Rikky Muller</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Great class on electrically-active implanted medical devices; also learned a lot about FDA regulations for medical devices</td>
+                  </tr>
+                  <tr>
+                    <td>Nursing 291 - Applied Stat Methods For Longitudinal & Hierarchical Data</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td></td>
+                    <td>Other - Statistics</td>
+                    <td>Longitudinal data analysis; hands-on experience of analyzing repeated measures data, no exams</td>
+                  </tr>
+                  <tr>
+                    <td>BioE C265 - Principles of MRI</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Moriel Vandsburger</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Must-take for anyone doing MRI research. Not recommended otherwise as it's too specific otherwise - you're better suited to just taking BioE C261 instead. This course is a follow-up to BioE C261. Includes lab sections with MRI scanners.</td>
+                  </tr>
+                  <tr>
+                    <td>BI201 - Principles of MRI</td>
+                    <td>Fall</td>
+                    <td>UCSF</td>
+                    <td></td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Slightly shorter/less intense course on MRI as compared to Berkeley course (BioE265)</td>
+                  </tr>
+                  <tr>
+                    <td>MCB100B - Biochemistry</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td></td>
+                    <td>Other - Biochemistry</td>
+                    <td>In-depth biochem course for biochem undergrad majors</td>
+                  </tr>
+                  <tr>
+                    <td>CHEM135 - Chemical biology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Evan Miller</td>
+                    <td>Other - Biochemistry</td>
+                    <td>Upper-level undergrad course; it was a great class to fulfill chemistry area requirement; valuable for understanding fundamentals of macromolecular charge and structure. Evan Miller was an excellent professor and has served on quals committees</td>
+                  </tr>
+                  <tr>
+                    <td>CS289a - Introduction to Machine Learning</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Jonathan Shewchuk</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>Jonathan Shewchuk was an incredible professor - lectured well and gave clear explanations (probably not as good with different professors - I attended a lecture with Prof Sahai and it was extremely confusing). Great theoretical overview of lots of machine learning topics. Great fundamentals of the math in ML. Quite a large homework load. It is a very difficult course, but I learned so much & got a good grasp of the mathematical basis behind different machine learning algorithms.</td>
+                  </tr>
+                  <tr>
+                    <td>BioE221 - Tissue Mechanobiology</td>
+                    <td>Winter</td>
+                    <td>UCSF</td>
+                    <td>Tamara Alliston, Val Weaver, Jeff Lotz, Sophie Dumont, Aaron Fields</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>The professors are really excited to teach this class (so excited that they were willing to teach it in Mission Bay for us even though they're all based in Parnassus), it's a great overview of interesting topics that each professor is an expert in.</td>
+                  </tr>
+                  <tr>
+                    <td>BioE 221 - BioMEMS</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Aaron Streets</td>
+                    <td>BioMEMS/Nanotechnology</td>
+                    <td>It's a lot of work (homework most weeks, midterm, poster and final project), but you end up learning a lot about micro/nanofabrication techniques and applications!</td>
+                  </tr>
+                  <tr>
+                    <td>BioE 211 - Cell and Tissue Mechanotransduction</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Sanjay Kumar</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>It's a great intro to a research field that lots of people in our program work in, and you learn lots of cool things about cells!</td>
+                  </tr>
+                  <tr>
+                    <td>MCB240 - Advanced Genetic Analysis</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>MCB tag team</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>Teaches you how to properly apply genetic concepts to experiments well (rather than just memorizing/learning biology jargon)</td>
+                  </tr>
+                  <tr>
+                    <td>MCB250 - Advanced Immunology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td></td>
+                    <td>Other - Biology</td>
+                    <td>Nice overview of the native and adaptive immune system. "The best class I took in grad school". Emphasizes thinking about experiment design to answer scientific questions.</td>
+                  </tr>
+                  <tr>
+                    <td>BioE C250 - Nanomaterials in Medicine</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Phil Messersmith</td>
+                    <td>Biomaterials</td>
+                    <td>Covers many material characterization techniques. In the first 1/3 of the semester, Phil typically lectures; the later 2/3 of the semester consist of journal clubs/lit-review type classes. Good practice for writing proposals; has a mock study section which is helpful when thinking about how fellowships are reviewed.</td>
+                  </tr>
+                  <tr>
+                    <td>Chemistry 219 - Drug Discovery Minicourse</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>Michelle Arkin</td>
+                    <td>Drug delivery systems & Pharmacogenomics</td>
+                    <td>Intensive minicourse over 5 weeks worth 6 UCSF units. Brought in different experts in drug development to teach different components of drug design</td>
+                  </tr>
+                  <tr>
+                    <td>Biophysics 210 - Light Microscopy</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>Delaine Larsen</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Great course that includes both principles and hands-on experience with various forms of microscopy. Very useful course that directly improved my research</td>
+                  </tr>
+                  <tr>
+                    <td>Developmental an Stem Cell Biology 270 - Stem Cell Epigenetics Minicourse</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>Barbara Panning</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>Very interesting course about current topics in epigenetic regulation of stem cells. Barbara Panning was a great instructor.</td>
+                  </tr>
+                  <tr>
+                    <td>BioE247 - Principles of synthetic biology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Adam Arkin</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>Covers a lot of useful synthetic biology related tools and current literature. Not an easy class since co-listed with undergrads, but you get a lot of good, detailed knowledge about the field)</td>
+                  </tr>
+                  <tr>
+                    <td>BioE248 - Bioenergy and sustainable chemical synthesis</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>John Dueber</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>Great introduction to the field as a whole and how you can use synthetic biology and metabolic engineering in a number of fields. Not as detailed technically, but gives a great overview of the field and brings in a lot of guest speakers from industry that is great, class is easy but requires a decent bit of writing of guest reflections).</td>
+                  </tr>
+                  <tr>
+                    <td>CHMENG 274 - Biomolecular engineering</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Dave Schaffer</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>Very detailed from the chemistry side of entropy and enthalpy of proteins and cells, it goes into a lot of very technical detail about chemical engineering stuff and biology, also not an easy class, but you learn a lot)</td>
+                  </tr>
+                  <tr>
+                    <td>PlantBio220B - Genomics and computational biology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Deutschbauer</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>5 week 1.5 credit class part of PMB grad program but you learn a lot about sequencing and how to assemble genomes)</td>
+                  </tr>
+                  <tr>
+                    <td>PlantBio220E - Microbial physiology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Hans Carlson</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>You learn alot about all different types of metabolism and how it works within cells - highly recommend the class, super easy, only two short assignments and Hans is great).</td>
+                  </tr>
+                  <tr>
+                    <td>VisSci 265 - Intro to Neural Networks</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Bruno Olhausen</td>
+                    <td>Neural Systems & Vision Science</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>ENG295 - Communications for Engineering Leaders</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Susan Houlihan & Thomas Fitzpatrick</td>
+                    <td>Other - Communication</td>
+                    <td>2 day crash course in being an effective communicator</td>
+                  </tr>
+                  <tr>
+                    <td>EE247A - Intro to MEMS</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Greenspun</td>
+                    <td>BioMEMS/Nanotechnology</td>
+                    <td>Pretty solid intro to MEMS class, learned a lot, would come in handy if doing MEMS research</td>
+                  </tr>
+                  <tr>
+                    <td>BioE C261 - Medical Imaging Signals & Systems</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Steve Conolly</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Good introduction to fundamental imaging principles with a focus on the characteristics that make images clinically relevant. Very useful background knowledge of the most common imaging modalities (no ultrasound and optics, however) that sets the foundation for future classes. Great for ensuring you have the mathematical/signal processing chops to characterize and understand imaging system theory.</td>
+                  </tr>
+                  <tr>
+                    <td>BioE 241 - Metabolism and Magnetic Resonance Spectroscopy</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>John Kurhanewitcz</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Highly informative about MR spectroscopy and how to use it to study metabolism, with sessions in the NMR lab.</td>
+                  </tr>
+                  <tr>
+                    <td>COMPSCI 294-148 - Topics in machine learning, inverse problems, and data analysis in computation neuro and medical imaging / Deep unsupervised learning</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Miki Lustig & Chunlei Liu</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>If one wants to be serious about machine learning, you should take all your CS classes at berkeley, this one is of particularly high quality. Take with a buddy, these courses are a lot of work</td>
+                  </tr>
+                  <tr>
+                    <td>BMI 203 - Biocomputing Algorithms</td>
+                    <td>Winter</td>
+                    <td>UCSF</td>
+                    <td>Ryan Hernandez</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>Very thorough dive into designing algorithms, great for anyone doing computational biology method development</td>
+                  </tr>
+                  <tr>
+                    <td>BPS 272A - Advanced Drug Delivery</td>
+                    <td>Winter</td>
+                    <td>UCSF</td>
+                    <td>Frank Szoka</td>
+                    <td>Drug delivery systems & Pharmacogenomics</td>
+                    <td>Interesting overview of drug delivery field, consists of different weekly speakers and a final project with a partner. Weekly speakers are interesting because they are typically leaders in the field, either in academia or start-up founders in industry. They provide a real, and first-hand perspective on drug delivery techniques.</td>
+                  </tr>
+                  <tr>
+                    <td>EECS 227AT - Optimization Models in Engineering</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td></td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>Fundamentals of optimization, useful for any person adjacent to algorithms. Mathematical fundamentals surrounding any optimization problem, including but not limited to machine learning.</td>
+                  </tr>
+                  <tr>
+                    <td>EE240A - Analog Integrated Circuits</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td></td>
+                    <td>BioMEMS/Nanotechnology</td>
+                    <td>For if you are planning to do any silicon/wafer level design or work adjacent to it. Otherwise, still a good class to understand the limitations and design parameters around instrumentation and amplifier design. Warning: probably the heaviest work load of all the Berkeley courses I took.</td>
+                  </tr>
+                  <tr>
+                    <td>BioE C208 - Biological Performance of Materials</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Kevin Healy</td>
+                    <td>Biomaterials</td>
+                    <td>Good recap/overview of biomaterials and their various uses</td>
+                  </tr>
+                  <tr>
+                    <td>Epidemiology of Aging</td>
+                    <td>Winter</td>
+                    <td>UCSF</td>
+                    <td></td>
+                    <td>Other - Epidemiology</td>
+                    <td>Good class to back to clinical relevance of disease treatments, easy A</td>
+                  </tr>
+                  <tr>
+                    <td>BMS 270 - Genomics and NGS Applications in Microbiology</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>Charles Chiu</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>Great interactive coding class for all stages of coders (beginner to experienced)</td>
+                  </tr>
+                  <tr>
+                    <td>BP 219? - Biophysics: Modularity in Biology Minicourse</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>Wendall Lim & Hana El-Samad</td>
+                    <td>Systems & Synthetic Biology</td>
+                    <td>Great intro and exposure to modular systems and systems biology</td>
+                  </tr>
+                  <tr>
+                    <td>Development & Stem Cell Biology 257 - Development & Stem Cell Biology</td>
+                    <td>Fall</td>
+                    <td>UCSF</td>
+                    <td>Sarah Knox and Julie Sneddon</td>
+                    <td>Tissue Engineering & Regenerative Medicine</td>
+                    <td>Great class for intro to developmental biology and practice for proposal writing</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH275 - Current Topics in Vaccinology</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Lee Riley</td>
+                    <td>Drug delivery systems & Pharmacogenomics</td>
+                    <td>Great primer on how vaccines work at a global health scale and how they are developed/tested</td>
+                  </tr>
+                  <tr>
+                    <td>PHARMGENOM245A - Basic Principles of Pharmaceutical Sciences</td>
+                    <td>Fall</td>
+                    <td>UCSF</td>
+                    <td>Kathy Giacomini, Deanna Kroetz, Les Benet, and others</td>
+                    <td>Drug delivery systems & Pharmacogenomics</td>
+                    <td>Really great primer on PK/PD and ADME topics making it a foundational pick for people interested in drug delivery/pharmaceutical engineering. ESSENTIAL for anyone interested in drug delivery, and you learn from THE experts in the field (Kathy Giacomini, Les Benet, and Deanna Krotz). Just the vocabulary you learn is so important when talking about PK/PD, and it'll make you sound like you know what you're talking about when you go on job interviews</td>
+                  </tr>
+                  <tr>
+                    <td>MCB C261 - Cellular and Developmental Neurobiology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Hillel Adesnik & Stephen Brohawn</td>
+                    <td>Neural Systems & Vision Science</td>
+                    <td>Great discussion based course with lots of literature reading, good option for anyone interested in neurobiology at the cellular level</td>
+                  </tr>
+                  <tr>
+                    <td>BioE 245 - Machine Learning for Medical Imaging</td>
+                    <td>Spring</td>
+                    <td>UCSF</td>
+                    <td>Sri Nagarajan, Valentina Pedoia</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Great course to start off or continue in machine learning for anyone in medical imaging, class broken up into unsupervised ML and supervised ML sections, covers both theoretical and practical applications</td>
+                  </tr>
+                  <tr>
+                    <td>CSC200A - Principles and Techniques of Data Science</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Joey Gonzalez and Ani Adhikari</td>
+                    <td>Computational Biology & Bioinformatics</td>
+                    <td>This class gives a very useful overview of data science and python. The homework is very practical and useful, and there is a lot of guidance so even with very little programming experience it is not too hard to learn.</td>
+                  </tr>
+                  <tr>
+                    <td>PBHLTH 263 - Immunology</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Sarah Stanley</td>
+                    <td>Other - Biology</td>
+                    <td>I recommend this course purely for Sarah Stanley as a professor! She is a very good lecturer and does a good job of teaching the main principles without getting too bogged down in the specific details.</td>
+                  </tr>
+                  <tr>
+                    <td>BioE 168L - Practical light microscopy</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Dan Fletcher</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Gave a hands-on approach to teaching the basics of optics with labs that demonstrated the fundamentals very well.</td>
+                  </tr>
+                  <tr>
+                    <td>MCB C100A / CHEM C130A - Biophysical Chemistry: Physical Principles and the Molecules of Life</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td></td>
+                    <td>Other - Biochemistry</td>
+                    <td>Recommended to fulfill chemistry area requirement</td>
+                  </tr>
+                  <tr>
+                    <td>BioEng 252 - Clinical Needs-Based Therapy Solutions</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Syed Hossainy</td>
+                    <td>Other - Medical Devices</td>
+                    <td>Class with guest speakers from the medical devices field (both academia and industry), and group projects related to the speaker topics</td>
+                  </tr>
+                  <tr>
+                    <td>BioEng 253 - Biotechnology Entrepreneurship</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>David Kirn</td>
+                    <td>Other - Entrepreneurship</td>
+                    <td>Class with guest speakers from all aspects of biotech entrepreneurship (R&D, legal, business, academia...) and a group project</td>
+                  </tr>
+                  <tr>
+                    <td>Astron 250 - Python Computing for Data Science</td>
+                    <td>Spring</td>
+                    <td>Berkeley</td>
+                    <td>Josh Bloom</td>
+                    <td>Other - Data Processing</td>
+                    <td>Excellent, very practical overview of using Python tools for a variety of data processing tasks. Weekly homeworks take time but it's worth it; final project uses Python to do data processing for your own research</td>
+                  </tr>
+                  <tr>
+                    <td>MecEng C217 - Biomimetic Engineering</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Robert Full</td>
+                    <td>Biomaterials</td>
+                    <td>Fun class where you learn about biology-inspired engineering, and do a group project proposing a new biomimetic product idea</td>
+                  </tr>
+                  <tr>
+                    <td>CompSci 294 - Computational Imaging</td>
+                    <td>Fall</td>
+                    <td>Berkeley</td>
+                    <td>Ren Ng</td>
+                    <td>Biomedical Imaging & Instrumentation</td>
+                    <td>Covers various aspects of computational imaging and has a group project at the end. The math may seem intimidating at times, but it's OK, you can do it :) Especially good if you plan to work on designing microscope- or camera-based systems</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin-top:40px">
+
+        <p class="large-p" style="padding:20px">Additional Resources:</p>
+        
+        <div class="carousel carousel-center rounded-box bg-base-200 space-x-4 p-4 carousel-wide flex justify-center" >
+          <div class="carousel-item">
+            <a href="https://berkeleytime.com/" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="images/thumbnails/berkeleytime.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">Berkeleytime, student-maintained UC Berkeley course reviews</p>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.ratemyprofessors.com/search/professors/1072?q=*" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="images/thumbnails/ratemyprofessor.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">UC Berkeley Rate My Professor</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel w-full carousel-narrow">
+          <div id="slide1" class="carousel-item relative w-full min-w-[min(400px,100%)]">
+            <a href="https://berkeleytime.com/" target="_blank" class="w-full">
+              <img src="images/thumbnails/berkeleytime.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">Berkeleytime, student-maintained UC Berkeley course reviews</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <a href="https://www.ratemyprofessors.com/search/professors/1072?q=*" target="_blank" class="w-full">
+              <img src="images/thumbnails/ratemyprofessor.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">UC Berkeley Rate My Professor</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+    </div>
+  </div>
+
+  
+
+</div>
+
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <h6 class="footer-title">BioEngineering Association of STudents.</h6>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="#about.html">About Us</a>
+    <a class="link link-hover" href="#contact.html">Contact</a>
+    <a class="link link-hover" href="#directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="#credits.html">Credits</a>
+    <a class="link link-hover" href="#fun.html">Sarah's Corner</a>
+  </nav>
+</footer>
+
+
+</body>
+</html>
