@@ -96,10 +96,13 @@ h1 {
 }
 
 title {
-  /* font-family: "Jost", sans-serif; */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 72;
+}
+
+.footer aside .max-w-xl {
+  font-size: small;
 }
 
 .large-p {
@@ -308,7 +311,7 @@ hr {
     margin-right:0;
   }
   section {
-    padding: 16px;
+    padding: 8px;
   }
 
   .table-container {
