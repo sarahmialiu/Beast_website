@@ -169,8 +169,8 @@
         <h5>First Year Enrollment</h5>
         <hr>
 
-        <div class="flex flex-wrap gap-4" style="padding:20px;">
-          <div class="flex-1 min-w-[min(400px,100%)]" style="padding-top:20px">
+        <div class="flex flex-wrap gap-4 md:p-6 pb-0">
+          <div class="flex-1 min-w-[min(400px,100%)] pt-4">
             <p>Berkeley registration for fall courses typically opens in <b>mid July</b>; UCSF registration typically 
               opens in <b>August</b>. Check your <a href="https://calcentral.berkeley.edu/dashboard">CalCentral</a> and 
               <a href="https://saa.ucsf.edu/studentportal/">UCSF Student Portal</a> pages for enrollment dates. Berkeley 
@@ -182,7 +182,7 @@
             <p>We recommend that you check in with your faculty advisor as soon in the year as possible. They should able to offer guidance on which courses are the best fit for your proposed research area, and can also sign off on your previous coursework for counting towards the Area Requirements. Beast Peer Advisors are also available to help advise on classes that they may know about!</p>
           </div>
           
-          <div class="flex-1 min-w-[min(400px,100%)]">
+          <div class="flex-1 min-w-[min(400px,100%)] md:pt-10">
             <div class="card bg-base-200 shadow-sm">
               <div class="card-body">
                 <p class="large-p" style="text-align: left;">To maintain full-time student status in your first year:</p>
@@ -215,7 +215,7 @@
           </div>
         </div>
 
-        <div style="padding:20px">
+        <div class="py-4 md:py-0">
           <p class="hint">You can find classes past students have taken to fulfill their major and minor requirements under <a class="link link-info" href="courses.html#major">Course Information.</a></p>
         </div>
       </section>
@@ -224,7 +224,7 @@
         <h5>Research Rotations</h5>
         <hr>
         
-        <div style="padding:20px">
+        <div class="pt-4 md:p-6">
           <p>First year students will have the opportunity to do three rotations with <a class="link link-info" href="https://bioegrad.berkeley.edu/faculty">core Bioengineering faculty</a>. During your rotations, it's often advised that lab work should be prioritized over coursework, so that you can get the best sense of the lab and whether it would be a good fit.</p> 
           <p>Rotation arrangements and matching occurs throughout the whole year, even starting as early as July and August. Look out for emails from the program managers, which can give you a good timeline for when you should start reaching out to potential PIs. It's important to note that this rotation-matching process is <b>primarily driven by the student</b>, so make sure to be proactive about sending emails and setting up meeting times. Don't be discouraged if some PIs don't respond immediately. It's likely that your email was just lost among the countless emails that professors receive daily. Just send follow-up messages regularly. If possible, try to email professors with your corresponding @berkeley.edu or @ucsf.edu email address; some professors have spam filters set up to weed out anything from outside their home organization.</p>
           <p>In your first meeting with potential mentors, <b>ask about the lab's funding availability</b>. This can be phrased in questions such as "How many students do you intend on taking this year?" paired with "How many other students are planning to rotate?" Although professors really shouldn't be taking on rotation students they won't be able to fund, it's still important that you make sure your time isn't being wasted.</p>
@@ -290,68 +290,71 @@
         </div>
 
         <!-- Single-slide carousel w/ arrows - shown on smaller screens -->
-        <div class="carousel w-full carousel-narrow">
-          <div id="slide1" class="carousel-item relative w-full min-w-[min(400px,100%)]">
-            <a href="pdfs/RotationAuthorization2025-26.pdf" target="_blank" class="w-full">
-              <img src="pdfs/thumbnails/RotationAuthorization2025-26.png" class="w-full rounded-box" />
-              <p class="text-center text-sm mt-2">Rotation Authorization</p>
-            </a>
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide6" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+        <div class="p-8">
+          <div class="carousel w-full carousel-narrow">
+            <div id="slide1" class="carousel-item relative w-full min-w-[min(400px,100%)]">
+              <a href="pdfs/RotationAuthorization2025-26.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/RotationAuthorization2025-26.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Rotation Authorization</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide6" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <a href="pdfs/RotationEvaluation2025-26.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/RotationEvaluation2025-26.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Rotation Evaluation</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <a href="pdfs/AnnualProgressReportPreCandidacy.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/AnnualProgressReportPreCandidacy.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Annual Progress Report</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <a href="pdfs/ProgramOfStudy.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/ProgramOfStudy.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Major and Minor Declaration</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide5" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide5" class="carousel-item relative w-full">
+              <a href="pdfs/AreaRequirements.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/AreaRequirements.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Area Requirements</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide6" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide6" class="carousel-item relative w-full">
+              <a href="pdfs/MentorCommitment.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/MentorCommitment.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Mentor Commitment</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide5" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <a href="pdfs/RotationEvaluation2025-26.pdf" target="_blank" class="w-full">
-              <img src="pdfs/thumbnails/RotationEvaluation2025-26.png" class="w-full rounded-box" />
-              <p class="text-center text-sm mt-2">Rotation Evaluation</p>
-            </a>
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <a href="pdfs/AnnualProgressReportPreCandidacy.pdf" target="_blank" class="w-full">
-              <img src="pdfs/thumbnails/AnnualProgressReportPreCandidacy.png" class="w-full rounded-box" />
-              <p class="text-center text-sm mt-2">Annual Progress Report</p>
-            </a>
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <a href="pdfs/ProgramOfStudy.pdf" target="_blank" class="w-full">
-              <img src="pdfs/thumbnails/ProgramOfStudy.png" class="w-full rounded-box" />
-              <p class="text-center text-sm mt-2">Major and Minor Declaration</p>
-            </a>
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide5" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide5" class="carousel-item relative w-full">
-            <a href="pdfs/AreaRequirements.pdf" target="_blank" class="w-full">
-              <img src="pdfs/thumbnails/AreaRequirements.png" class="w-full rounded-box" />
-              <p class="text-center text-sm mt-2">Area Requirements</p>
-            </a>
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide6" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide6" class="carousel-item relative w-full">
-            <a href="pdfs/MentorCommitment.pdf" target="_blank" class="w-full">
-              <img src="pdfs/thumbnails/MentorCommitment.png" class="w-full rounded-box" />
-              <p class="text-center text-sm mt-2">Mentor Commitment</p>
-            </a>
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide5" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-        </div>
+        </div> 
+        
       </section>  
     </div>
   </div>

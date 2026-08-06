@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="beastwebsite">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Directory</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical megamenu-full" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+ 
+      <button popovertarget="d1">Academics</button>
+      <div id="d1" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="academics_firstyear.html">First Year</a>
+              <ul>
+                <li><a href="academics_firstyear.html#classes">Classes</a></li>
+                <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+                <li><a href="academics_firstyear.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="quals.html">Qualifying Exam</a>
+              <ul>
+                <li><a href="quals.html#about">About the Exam</a></li>
+                <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+                <li><a href="quals.html#exam">Exam Content</a></li>
+                <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+                <li><a href="quals.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="dissertation.html">Dissertation</a>
+              <ul>
+                <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+                <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+                <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="courses.html">Course Information</a>
+              <ul>
+                <li><a href="courses.html#area">Area Requirements</a></li>
+                <li><a href="courses.html#major">Major & Minor</a></li>
+                <li><a href="courses.html#recommendations">Course Reviews</a></li>
+              </ul>
+            </li>
+            <li><a href="forms.html">Forms</a></li>
+          </ul>
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+        </div>
+      </div>
+ 
+      <button popovertarget="d2">Student Life</button>
+      <div id="d2" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="movingtoca.html">Living in the Bay</a>
+              <ul>
+                <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#residency">CA Residency</a></li>
+                <li><a href="movingtoca.html#dmv">The DMV</a></li>
+              </ul>
+            </li>
+            <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li><a href="taxes.html">Taxes</a></li>
+          </ul>
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+        </div>
+      </div>
+ 
+      <button popovertarget="d3">News & Events</button>
+      <div id="d3" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal style="align-items:start"">
+            <li><a href="news.html">BioE News</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="photos.html">Photo Album</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <button popovertarget="d4">About</button>
+      <div id="d4" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="beast.html">Beast</a></li>
+            <li><a href="directory.html">Student Directory</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Photo Album</li>
+  </ul>
+</div>
+
+<div class="page-container">
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      
+    </ul>
+
+    <!-- Main -->
+    <div class="page-content">
+
+      <section id="directory">
+        <h5>Photo Album</h5>
+        <hr>
+        
+        <div style="padding:20px">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="grid gap-4">
+              <div class="hover-3d cursor-pointer" onclick="image_modal.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+
+              <div class="hover-3d cursor-pointer" onclick="image_modal_1.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_1" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+
+              <div class="hover-3d cursor-pointer" onclick="image_modal_2.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_2" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+            </div>
+            <div class="grid gap-4">
+              <div class="hover-3d cursor-pointer" onclick="image_modal_3.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_3" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+
+              <div class="hover-3d cursor-pointer" onclick="image_modal_4.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_4" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+
+              <div class="hover-3d cursor-pointer" onclick="image_modal_5.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_5" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+            </div>
+            <div class="grid gap-4">
+              <div class="hover-3d cursor-pointer" onclick="image_modal_6.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_6" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+
+              <div class="hover-3d cursor-pointer" onclick="image_modal_7.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_7" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+
+              <div class="hover-3d cursor-pointer" onclick="image_modal_8.showModal()">
+                <figure class="max-w-100 rounded-2xl">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" />
+                </figure>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+              <dialog id="image_modal_8" class="modal">
+                <div class="modal-box max-w-[95vw] w-auto p-0 bg-transparent shadow-none">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" class="max-h-[85vh] w-full h-auto rounded-2xl" />
+                  <p class="text-white text-center text-sm md:text-base px-4">
+                    BioEs on a lovely picnic!
+                  </p>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <p class="large-p" style="font-weight: 500; color: rgba(255, 255, 255, 0.524);">beast.</p>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="about.html">About Us</a>
+    <a class="link link-hover" href="about.html#contact">Contact</a>
+    <a class="link link-hover" href="directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="credits.html">Credits</a>
+    <a class="link link-hover" href="fun.html">Sarah's Corner</a>
+  </nav>
+</footer>
+
+
+</body>
+</html>

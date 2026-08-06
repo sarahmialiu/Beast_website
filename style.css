@@ -81,6 +81,8 @@ p {
   font-size: large;
   color: var(--color-secondary);
   font-style:italic;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h5 {
@@ -103,6 +105,10 @@ title {
 
 .footer aside .max-w-xl {
   font-size: small;
+}
+
+.directory-card .card-body p {
+  font-size: medium;
 }
 
 .large-p {
