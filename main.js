@@ -33,7 +33,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.physicallyCorrectLights = true;
-document.body.appendChild( renderer.domElement );
+document.getElementById('threejs-container').appendChild( renderer.domElement );
 
 // Composer
 const composer = new EffectComposer(renderer);
