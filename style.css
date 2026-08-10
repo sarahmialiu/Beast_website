@@ -46,6 +46,10 @@
   z-index: 0;
 }
 
+.hero.min-h-screen {
+  min-height: 100dvh; /* dynamic viewport height, updates as chrome shows/hides */
+}
+
 * {
   box-sizing: border-box;
 }
