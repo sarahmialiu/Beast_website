@@ -15,7 +15,7 @@
 <body>
 
 
-<div class="hero min-h-screen relative overflow-hidden">
+<div class="hero min-h-screen min-h-svh relative overflow-hidden">
   <!-- Three.js will mount its canvas here -->
   <div id="threejs-container" class="absolute inset-0 w-full h-full"></div>
   <!-- Dark overlay -->
@@ -184,7 +184,7 @@
 
       <hr>
 
-      <div class="grid grid-cols-2 gap-6 py-6 md:p-12">
+      <div class="grid grid-cols-2 gap-6 py-6 md:p-12 px-4">
         <div class="card bg-base-100 w-full h-24 md:h-48 shadow-sm overflow-hidden group relative">
           <a href="forms.html" class="absolute inset-0 flex items-center justify-center">
             <figure class="absolute inset-0">
@@ -289,8 +289,10 @@
       </div>
 
       <div id="calendar" class="py-6 md:py-8">
-        <h5>Upcoming Beast Events!</h5>
-        <hr>
+        <div class="px-4">
+          <h5>Upcoming Beast Events!</h5>
+          <hr>
+        </div>
 
         <ul class="list" style="margin-top: 20px; margin-bottom: 20px;">      
           <li class="list-row">
@@ -325,13 +327,13 @@
         </ul>
       </div>
 
-      <div class="mb-10 text-center">
+      <div class="mb-10 text-center px-4">
         <h5>Helpful Links</h5>
         <hr>
         <p class="max-w-2xl mx-auto" style="margin-top: 1rem; color: rgba(5, 32, 73, 0.8);"> Get some sage advice from older students, access years of BioE student data, plan your upcoming class semester, and find the resources you need quickly.</p>
       </div>
 
-      <div class="grid gap-6 md:grid-cols-3">
+      <div class="grid gap-6 md:grid-cols-3 px-4">
         <div class="card bg-base-200 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">First Year</h5>
