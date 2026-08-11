@@ -83,7 +83,12 @@
                 <li><a href="movingtoca.html#dmv">The DMV</a></li>
               </ul>
             </li>
-            <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li>
+              <a href="budgeting.html">Budgeting Resources</a>
+              <ul class="max-sm:hidden">
+                <li><a href="budgeting.html#calfresh">CalFresh</a></li>
+              </ul>
+            </li>  
             <li><a href="career.html">Career Development</a></li>
             <li><a href="taxes.html">Taxes</a></li>
           </ul>
@@ -134,8 +139,6 @@
 </div>
 
 <div class="page-container">
-
-
   <div class="flex items-start gap-6" style="padding-top:40px;">
     <!-- Sidebar -->
     <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
@@ -161,7 +164,7 @@
     
     <!-- Main -->
     <div class="page-content">
-      <section id="calendar">
+      <section id="resources">
         <h5>Budgeting & Personal Finance Resources</h5>
         <hr>
 
@@ -207,7 +210,7 @@
             </div>
           </li>
 
-          <li class="list-row" data-page="1">
+          <li class="list-row" data-page="2">
             <div><a href="https://finaid.ucsf.edu/financial-literacy"><img class="size-24 md:size-36" src="images/thumbnails/ucsffinancialservices.png"/></a></div>
             <div>
               <a href="https://finaid.ucsf.edu/financial-literacy"><p class="large-p" style="text-align: left;">UCSF Student Financial Services</p></a>
@@ -216,7 +219,7 @@
             </div>
           </li>
 
-          <li class="list-row" data-page="2">
+          <li class="list-row" data-page="1">
             <div><a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><img class="size-24 md:size-36" src="images/thumbnails/baypass.png"/></a></div>
             <div>
               <a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><p class="large-p" style="text-align: left;">UCSF BayPass</p></a>
@@ -264,6 +267,119 @@
           <button class="join-item btn btn-outline btn-disabled">4</button>
         </div>
 
+      </section>
+
+      <section id="calfresh">
+        <h5>CalFresh</h5>
+        <hr>
+
+        <div class="flex flex-wrap gap-4 pt-4 md:p-4 md:pt-6">
+          <div class="flex-1 min-w-[min(400px,100%)]">
+            <p class="large-p">To apply for CalFresh, start your application at <a class="link link-info" href="https://benefitscal.com/ApplyForBenefits/begin/ABOVR?lang=en">BenefitsCal</a>.</p>
+            <p>
+              <a class="link link-info" href="https://www.cdss.ca.gov/inforesources/calfresh">CalFresh</a> is California’s Supplemental Nutrition Assistance Program (SNAP), 
+              formerly known as food stamps. CalFresh is the largest food program in California and provides an essential hunger safety net. CalFresh is federally mandated 
+              and in California, is state-supervised and county-operated. The program issues monthly benefits on an Electronic Benefit Transfer (EBT) card, which can be used 
+              to purchased food at any grocery store or farmers market that accepts EBT cards.
+            </p>
+            
+            <p>
+              While CalFresh is primarily intended for low-income households, the UC Berkeley-UCSF Bioengineering program is also eligible for CalFresh through its status as
+              a <b>local program to increase employability (LPIE)</b>. This basically means that students in BioE are exempt from the standard income requirements that would otherwise
+              make them ineligible to recieve CalFresh benefits. To see a full list of all currently-eligible LPIEs, go <a class="link link-info" 
+              href="https://www.cdss.ca.gov/inforesources/calfresh-resource-center/policy">here</a>.
+            </p>
+
+            
+          </div>
+
+          <div class="flex-1 min-w-[min(400px,100%)] md:pt-4">
+            <div class="pt-0 pb-4 md:p-6 md:pt-0">
+              <div class="card bg-base-200 shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Tips for Getting CalFresh:</h2>
+                  <ul class="list-disc list-outside space-y-2" style="padding:20px; padding-top:0px">
+                    <li>
+                      BioE PhD students are considered <b>full-time students</b>, regardless of teaching appointments. 
+                      <ul class="list-disc list-outside ml-6 mt-2 space-y-1">
+                        <li>This means we are <i>not</i> working while attending school.</li>
+                        <li>The program stipend should be reported as financial aid.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Under "Student Exemptions," make sure to check "<b>Participating in a student employment training program</b>."
+                    </li>
+                    <li>
+                      Submitting as many documents as possible will help you substantiate your application.
+                      <ul class="list-disc list-outside ml-6 mt-2 space-y-1">
+                        <li>UC Berkeley-UCSF BioE Offer Letter</li>
+                        <li>Paystub from UCSF/Berkeley</li>
+                        <li>Lease Agreement</li>
+                        <li>Utility/Tuition Payments</li>
+                      </ul>
+                    </li>
+                    <li>
+                      There is no limit on how many times you can submit a CalFresh application, so if your case is denied the first time, it's worth trying to re-submit again.
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:p-6 md:pt-0">
+            <p class="hint">
+              While some students have recieved EBT benefits up to $298 a month, it's important to note that each application is processed separately, and that CalFresh case workers
+              may assign amounts differently depending on individual circumstances.
+            </p>
+          </div>
+        </div>
+        
+        <hr style="margin-top:40px">
+
+        <p class="large-p" style="padding:20px">Additional CalFresh Help:</p>
+        
+        <div class="carousel carousel-center rounded-box bg-base-200 space-x-4 p-4 carousel-wide flex justify-center" >
+          <div class="carousel-item">
+            <a href="https://basicneeds.berkeley.edu/calfresh" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="images/thumbnails/berkcalfresh.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">Berkeley Basic Needs CalFresh Application Assistance</p>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="pdfs/ucsfcalfresh.pdf" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="images/thumbnails/ucsfcalfresh.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">UCSF CalFresh Application Guide</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel w-full carousel-narrow">
+          <div id="slide1" class="carousel-item relative w-full min-w-[min(400px,100%)]">
+            <a href="https://basicneeds.berkeley.edu/calfresh" target="_blank" class="w-full">
+              <img src="images/thumbnails/berkcalfresh.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">Berkeley Basic Needs CalFresh Application Assistance</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <a href="pdfs/ucsfcalfresh.pdf" target="_blank" class="w-full">
+              <img src="images/thumbnails/ucsfcalfresh.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">UCSF CalFresh Application Guide</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
       </section>
 
     </div>
