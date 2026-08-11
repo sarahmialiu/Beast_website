@@ -299,7 +299,7 @@ hr {
    Settings for smaller window
    =============================== */
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .carousel-wide {
     display: none;
   }

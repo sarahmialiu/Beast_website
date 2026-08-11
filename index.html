@@ -39,6 +39,115 @@
 </div>
 
 <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start"></div>
+
+  <div class="navbar-center">
+    <div class="megamenu max-sm:megamenu-vertical megamenu-full" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+ 
+      <button popovertarget="d1">Academics</button>
+      <div id="d1" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="academics_firstyear.html">First Year</a>
+              <ul class="max-sm:hidden">
+                <li><a href="academics_firstyear.html#classes">Classes</a></li>
+                <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+                <li><a href="academics_firstyear.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="quals.html">Qualifying Exam</a>
+              <ul class="max-sm:hidden">
+                <li><a href="quals.html#about">About the Exam</a></li>
+                <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+                <li><a href="quals.html#exam">Exam Content</a></li>
+                <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+                <li><a href="quals.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="dissertation.html">Dissertation</a>
+              <ul class="max-sm:hidden">
+                <li><a href="dixxertation.html#about">About the Dissertation</a></li>
+                <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+                <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+                <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="courses.html">Course Information</a>
+              <ul class="max-sm:hidden">
+                <li><a href="courses.html#area">Area Requirements</a></li>
+                <li><a href="courses.html#major">Major & Minor</a></li>
+                <li><a href="courses.html#recommendations">Course Reviews</a></li>
+              </ul>
+            </li>
+            <li><a href="forms.html">Forms</a></li>
+          </ul>
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden">
+        </div>
+      </div>
+ 
+      <button popovertarget="d2">Student Life</button>
+      <div id="d2" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="movingtoca.html">Living in the Bay</a>
+              <ul class="max-sm:hidden">
+                <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
+                <li><a href="movingtoca.html#residency">CA Residency</a></li>
+                <li><a href="movingtoca.html#dmv">The DMV</a></li>
+              </ul>
+            </li>
+            <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li><a href="career.html">Career Development</a></li>
+            <li><a href="taxes.html">Taxes</a></li>
+          </ul>
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
+        </div>
+      </div>
+ 
+      <button popovertarget="d3">News & Events</button>
+      <div id="d3" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="news.html">BioE News</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="photos.html">Photo Album</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <button popovertarget="d4">About</button>
+      <div id="d4" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="about.html">Beast</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-end">
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<!-- <div class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
   </div>
 
@@ -144,7 +253,7 @@
       </svg>
     </button>
   </div>
-</div>
+</div> -->
 
 <div class="page-container">
   <div class="flex items-start gap-6" style="padding-top:40px;">
@@ -176,7 +285,7 @@
               <p class="py-6">
                 We're the graduate student association for the joint UC Berkeley-UCSF Bioengineering Graduate Program.
               </p>
-              <button class="btn btn-primary" href="about.html">About Us</button>
+              <button class="btn btn-primary"><a href="about.html">About Us</button></a>
             </div>
           </div>
         </div>
@@ -197,7 +306,7 @@
             <div class="absolute inset-0 bg-black/50"></div>
 
             <div class="card-body items-center justify-center text-center relative z-10 text-white">
-              <h5 class="text-3xl font-bold">Forms</h5>
+              <h5 class="text-2xl! md:text-5xl! font-bold">Forms</h5>
             </div>
           </a>
         </div>
@@ -214,7 +323,7 @@
             <div class="absolute inset-0 bg-black/50"></div>
 
             <div class="card-body items-center justify-center text-center relative z-10 text-white">
-              <h5 class="text-3xl font-bold">Courses</h5>
+              <h5 class="text-2xl! md:text-5xl! font-bold">Courses</h5>
             </div>
           </a>
         </div>
@@ -231,7 +340,7 @@
             <div class="absolute inset-0 bg-black/50"></div>
 
             <div class="card-body items-center justify-center text-center relative z-10 text-white">
-              <h5 class="text-3xl font-bold">Quals</h5>
+              <h5 class="text-2xl! md:text-5xl! font-bold">Quals</h5>
             </div>
           </a>
         </div>
@@ -248,7 +357,7 @@
             <div class="absolute inset-0 bg-black/50"></div>
 
             <div class="card-body items-center justify-center text-center relative z-10 text-white">
-              <h5 class="text-sm md:text-3xl font-bold">Dissertation</h5>
+              <h5 class="text-2xl! md:text-5xl! font-bold">Dissertation</h5>
             </div>
           </a>
         </div>
@@ -265,7 +374,7 @@
             <div class="absolute inset-0 bg-black/50"></div>
 
             <div class="card-body items-center justify-center text-center relative z-10 text-white">
-              <h5 class="text-3xl font-bold">First Year</h5>
+              <h5 class="text-2xl! md:text-5xl! font-bold">First Year</h5>
             </div>
           </a>
         </div>
@@ -282,7 +391,7 @@
             <div class="absolute inset-0 bg-black/50"></div>
 
             <div class="card-body items-center justify-center text-center relative z-10 text-white">
-              <h5 class="text-3xl font-bold">Housing</h5>
+              <h5 class="text-2xl! md:text-5xl! font-bold">Housing</h5>
             </div>
           </a>
         </div>

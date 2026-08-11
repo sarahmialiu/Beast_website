@@ -31,7 +31,7 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="academics_firstyear.html">First Year</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="academics_firstyear.html#classes">Classes</a></li>
                 <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
                 <li><a href="academics_firstyear.html#forms">Forms</a></li>
@@ -39,7 +39,7 @@
             </li>
             <li>
               <a href="quals.html">Qualifying Exam</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="quals.html#about">About the Exam</a></li>
                 <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
                 <li><a href="quals.html#exam">Exam Content</a></li>
@@ -49,7 +49,8 @@
             </li>
             <li>
               <a href="dissertation.html">Dissertation</a>
-              <ul>
+              <ul class="max-sm:hidden">
+                <li><a href="dixxertation.html#about">About the Dissertation</a></li>
                 <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
                 <li><a href="dissertation.html#exit">Exit Seminar</a></li>
                 <li><a href="dissertation.html#interview">Exit Interviews</a></li>
@@ -57,7 +58,7 @@
             </li>
             <li>
               <a href="courses.html">Course Information</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="courses.html#area">Area Requirements</a></li>
                 <li><a href="courses.html#major">Major & Minor</a></li>
                 <li><a href="courses.html#recommendations">Course Reviews</a></li>
@@ -65,7 +66,7 @@
             </li>
             <li><a href="forms.html">Forms</a></li>
           </ul>
-          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
@@ -75,23 +76,25 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="movingtoca.html">Living in the Bay</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
                 <li><a href="movingtoca.html#residency">CA Residency</a></li>
                 <li><a href="movingtoca.html#dmv">The DMV</a></li>
               </ul>
             </li>
             <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li><a href="career.html">Career Development</a></li>
             <li><a href="taxes.html">Taxes</a></li>
           </ul>
-          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
       <button popovertarget="d3">News & Events</button>
       <div id="d3" popover>
         <div class="flex max-sm:flex-col items-start">
-          <ul class="menu w-full md:menu-horizontal style="align-items:start"">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li><a href="news.html">BioE News</a></li>
             <li><a href="events.html">Upcoming Events</a></li>
             <li><a href="photos.html">Photo Album</a></li>
@@ -103,10 +106,9 @@
       <div id="d4" popover>
         <div class="flex max-sm:flex-col items-start">
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
-            <li><a href="beast.html">Beast</a></li>
-            <li><a href="directory.html">Student Directory</a></li>
+            <li><a href="about.html">Beast</a></li>
             <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -132,6 +134,8 @@
 </div>
 
 <div class="page-container">
+
+
 
 
   <div class="flex items-start gap-6" style="padding-top:40px;">
@@ -163,33 +167,23 @@
         <h5>News from Beast!</h5>
         <hr>
 
-        <ul class="list" style="margin-top: 20px; margin-bottom: 20px;">      
-          <li class="list-row">
-            <div><a href="https://partiful.com/e/Vx0xKnKNIgitm2w9RQZH?"><img class="size-48" src="images/events/karaoke.png"/></a></div>
+        <ul class="list" id="news-list" style="margin-top: 20px; margin-bottom: 20px;">      
+          <li class="list-row" data-page="1">
             <div>
-              <a href="https://partiful.com/e/Vx0xKnKNIgitm2w9RQZH?"><p class="large-p" style="text-align: left;">BioE Karaoke Night</p></a>
-              <p>Sing your stress away or showcase your stage presence as we gear up for the new academic year!</p>
-              <p><b>When: Saturday, August 15 @ 7:30 PM</b></p> 
-              <p><b>Where: Pandora Karaoke & Bar</b></p>
-            </div>
-          </li>
-
-          <li class="list-row">
-            <div><a href="https://partiful.com/e/8SUznLuCdSIb1pWVpXEM?"><img class="size-48" src="images/events/welcomepicnic.png"/></a></div>
-            <div>
-              <a href="https://partiful.com/e/8SUznLuCdSIb1pWVpXEM?"><p class="large-p" style="text-align: left;">BioE Annual Welcome Picnic</p></a>
-              <p>Hosted by the BEAST Peer Advising, let’s give a warm welcome to our incoming 2026 Cohort! Join us for a relaxing afternoon in the sun—bring a blanket, grab some snacks, touch some grass, and enjoy the SF summer weather with your fellow BioEs.</p>
-              <p><b>When: Sunday, August 23 @ 11:00 AM</b></p> 
-              <p><b>Where: Mission Dolores Park </b></p>
+              <p class="large-p" style="text-align: left;">Exit Seminar: Rodrigo Cotrim Chaves</p>
+              <p>Congratulations to BioE student Rodrigo Cotrim Chaves, who will be giving his exit seminar titled "Functionalized Microparticles for Joint 
+                Optical and Genomic Profiling of Single Cells" on his research conducted under the mentorship of Prof. Aaron Streets. Join Wednesday, 
+                August 12th at 3 PM at Stanley Hall, or on <a class="link link-info" href="https://berkeley.zoom.us/j/99052515002?pwd=YENefDsTjvZezbpsLKtVsClzEaHSK1.1">Zoom</a>.
+              </p>
             </div>
           </li>
         </ul>
 
         <hr>
 
-        <div class="join flex justify-center" style="margin:40px">
+        <div class="join flex justify-center" id="pagination" style="margin:40px">
           <button class="join-item btn btn-primary">1</button>
-          <button class="join-item btn btn-outline btn-disabled">2</button>
+          <button class="join-item btn btn-outline">2</button>
           <button class="join-item btn btn-outline btn-disabled">3</button>
           <button class="join-item btn btn-outline btn-disabled">4</button>
         </div>
@@ -244,7 +238,63 @@
       card.style.display = matches ? '' : 'none';
     });
   });
+
+  const list = document.getElementById('news-list');
+  const allItems = Array.from(list.querySelectorAll('.list-row'));
+  const paginationContainer = document.getElementById('pagination');
+
+  // Figure out how many pages exist from data-page attributes
+  const pageNumbers = [...new Set(allItems.map(item => item.dataset.page))].sort((a, b) => a - b);
+
+  let currentPage = '1';
+
+  function isMobile() {
+    return window.innerWidth < 768; // matches Tailwind's md breakpoint
+  }
+
+  function renderPage(page) {
+    currentPage = page;
+
+    if (isMobile()) {
+      // show every item as one continuous list
+      allItems.forEach(item => { item.style.display = ''; });
+    } else {
+      allItems.forEach(item => {
+        item.style.display = (item.dataset.page === page) ? '' : 'none';
+      });
+    }
+
+    renderPaginationButtons();
+  }
+
+  function renderPaginationButtons() {
+    paginationContainer.innerHTML = '';
+
+    if (isMobile()) {
+      paginationContainer.style.display = 'none';
+      return;
+    }
+
+    paginationContainer.style.display = '';
+    pageNumbers.forEach(num => {
+      const btn = document.createElement('button');
+      btn.textContent = num;
+      btn.className = 'join-item btn ' + (num === currentPage ? 'btn-primary' : 'btn-outline');
+      btn.addEventListener('click', () => renderPage(num));
+      paginationContainer.appendChild(btn);
+    });
+  }
+
+  renderPage('1'); // show page 1 (or all items, on mobile) on load
+
+  // re-render on resize so switching between mobile/desktop widths updates the view
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => renderPage(currentPage), 150);
+  });
 </script>
+
 
 </body>
 </html>

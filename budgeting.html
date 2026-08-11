@@ -31,7 +31,7 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="academics_firstyear.html">First Year</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="academics_firstyear.html#classes">Classes</a></li>
                 <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
                 <li><a href="academics_firstyear.html#forms">Forms</a></li>
@@ -39,7 +39,7 @@
             </li>
             <li>
               <a href="quals.html">Qualifying Exam</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="quals.html#about">About the Exam</a></li>
                 <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
                 <li><a href="quals.html#exam">Exam Content</a></li>
@@ -49,7 +49,8 @@
             </li>
             <li>
               <a href="dissertation.html">Dissertation</a>
-              <ul>
+              <ul class="max-sm:hidden">
+                <li><a href="dixxertation.html#about">About the Dissertation</a></li>
                 <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
                 <li><a href="dissertation.html#exit">Exit Seminar</a></li>
                 <li><a href="dissertation.html#interview">Exit Interviews</a></li>
@@ -57,7 +58,7 @@
             </li>
             <li>
               <a href="courses.html">Course Information</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="courses.html#area">Area Requirements</a></li>
                 <li><a href="courses.html#major">Major & Minor</a></li>
                 <li><a href="courses.html#recommendations">Course Reviews</a></li>
@@ -65,7 +66,7 @@
             </li>
             <li><a href="forms.html">Forms</a></li>
           </ul>
-          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
@@ -75,23 +76,25 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="movingtoca.html">Living in the Bay</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
                 <li><a href="movingtoca.html#residency">CA Residency</a></li>
                 <li><a href="movingtoca.html#dmv">The DMV</a></li>
               </ul>
             </li>
             <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li><a href="career.html">Career Development</a></li>
             <li><a href="taxes.html">Taxes</a></li>
           </ul>
-          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
       <button popovertarget="d3">News & Events</button>
       <div id="d3" popover>
         <div class="flex max-sm:flex-col items-start">
-          <ul class="menu w-full md:menu-horizontal style="align-items:start"">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li><a href="news.html">BioE News</a></li>
             <li><a href="events.html">Upcoming Events</a></li>
             <li><a href="photos.html">Photo Album</a></li>
@@ -103,10 +106,9 @@
       <div id="d4" popover>
         <div class="flex max-sm:flex-col items-start">
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
-            <li><a href="beast.html">Beast</a></li>
-            <li><a href="directory.html">Student Directory</a></li>
+            <li><a href="about.html">Beast</a></li>
             <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -163,7 +165,7 @@
         <h5>Budgeting & Personal Finance Resources</h5>
         <hr>
 
-        <div style="padding:20px">
+        <div class="pt-4 md:p-6">
           <p>
             Living in the Bay Area can be expensive when you're competing for rent with 6-figure-salaried tech bros.
             Below, we've compiled a non-exhaustive list of resources that may be helpful to you for saving money in graduate school, 
@@ -178,7 +180,7 @@
 
         <ul class="list" id="budgeting-list" style="margin-top: 20px; margin-bottom: 20px;">      
           <li class="list-row" data-page="1">
-            <div><a href="https://docs.google.com/spreadsheets/d/1eoD28u0NFAd87jzUTd-CxWIMsu-1b4eAg8g2Uvka5y0/edit?gid=0#gid=0"><img class="size-36" src="images/thumbnails/samplebudget.png"/></a></div>
+            <div><a href="https://docs.google.com/spreadsheets/d/1eoD28u0NFAd87jzUTd-CxWIMsu-1b4eAg8g2Uvka5y0/edit?gid=0#gid=0"><img class="size-24 md:size-36" src="images/thumbnails/samplebudget.png"/></a></div>
             <div>
               <a href="https://docs.google.com/spreadsheets/d/1eoD28u0NFAd87jzUTd-CxWIMsu-1b4eAg8g2Uvka5y0/edit?gid=0#gid=0"><p class="large-p" style="text-align: left;">Sample Student Budget</p></a>
               <p>Created by a former student, this budget template can help you calculate how much your cost of living might be during graduate school.</p>
@@ -186,7 +188,7 @@
           </li>
 
           <li class="list-row" data-page="1">
-            <div><a href="https://basicneeds.berkeley.edu/"><img class="size-36" src="images/thumbnails/berkbasicneeds.png"/></a></div>
+            <div><a href="https://basicneeds.berkeley.edu/"><img class="size-24 md:size-36" src="images/thumbnails/berkbasicneeds.png"/></a></div>
             <div>
               <a href="https://basicneeds.berkeley.edu/"><p class="large-p" style="text-align: left;">UC Berkeley Basic Needs</p></a>
               <p>The Basic Needs Center team is committed to addressing students’ basic needs, including food security, housing security, 
@@ -197,7 +199,7 @@
           </li>
 
           <li class="list-row" data-page="1">
-            <div><a href="https://basicneeds.ucsf.edu/"><img class="size-36" src="images/thumbnails/ucsfbasicneeds.png"/></a></div>
+            <div><a href="https://basicneeds.ucsf.edu/"><img class="size-24 md:size-36" src="images/thumbnails/ucsfbasicneeds.png"/></a></div>
             <div>
               <a href="https://basicneeds.ucsf.edu/"><p class="large-p" style="text-align: left;">UCSF Basic Needs for Students</p></a>
               <p>Through a robust model of prevention, intervention, and emergency relief, Basic Needs connects students to critical on- and off-campus resources and provides educational opportunities for students to take personal responsibility for their wellness.
@@ -206,7 +208,7 @@
           </li>
 
           <li class="list-row" data-page="1">
-            <div><a href="https://finaid.ucsf.edu/financial-literacy"><img class="size-36" src="images/thumbnails/ucsffinancialservices.png"/></a></div>
+            <div><a href="https://finaid.ucsf.edu/financial-literacy"><img class="size-24 md:size-36" src="images/thumbnails/ucsffinancialservices.png"/></a></div>
             <div>
               <a href="https://finaid.ucsf.edu/financial-literacy"><p class="large-p" style="text-align: left;">UCSF Student Financial Services</p></a>
               <p>The UCSF Student Financial Services division offers services to manage student debt, create spending plans, and connect individuals with aid offered by UCSF.
@@ -215,7 +217,7 @@
           </li>
 
           <li class="list-row" data-page="2">
-            <div><a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><img class="size-36" src="images/thumbnails/baypass.png"/></a></div>
+            <div><a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><img class="size-24 md:size-36" src="images/thumbnails/baypass.png"/></a></div>
             <div>
               <a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><p class="large-p" style="text-align: left;">UCSF BayPass</p></a>
               <p>
@@ -225,7 +227,7 @@
           </li>
 
           <li class="list-row" data-page="2">
-            <div><a href="https://travel.ucop.edu/connexxus/"><img class="size-36" src="images/thumbnails/connexuc.png"/></a></div>
+            <div><a href="https://travel.ucop.edu/connexxus/"><img class="size-24 md:size-36" src="images/thumbnails/connexuc.png"/></a></div>
             <div>
               <a href="https://travel.ucop.edu/connexxus/"><p class="large-p" style="text-align: left;">ConnexUC</p></a>
               <p>ConnexUC is the UC's preferred travel platform. ConnexUC negotiates discounts and rewards with major airlines, lodging properties, car rental companies, rail and travel agencies on behalf of UC employees.
@@ -234,7 +236,7 @@
           </li>
 
           <li class="list-row" data-page="2">
-            <div><a href="https://haas.berkeley.edu/undergrad/academics/courses/special-topics-business-administration-courses/"><img class="size-36" src="images/thumbnails/haascourses.png"/></a></div>
+            <div><a href="https://haas.berkeley.edu/undergrad/academics/courses/special-topics-business-administration-courses/"><img class="size-24 md:size-36" src="images/thumbnails/haascourses.png"/></a></div>
             <div>
               <a href="https://haas.berkeley.edu/undergrad/academics/courses/special-topics-business-administration-courses/"><p class="large-p" style="text-align: left;">Haas Personal Finance Courses</p></a>
               <p>According to other students, Fred Selinger is a fun lectuerer, and there’s a course specifically tailored for grad students and that's just 2 hours commitment per week.
@@ -243,7 +245,7 @@
           </li>
 
           <li class="list-row" data-page="2">
-            <div><a href="https://www.businessinsider.com/guides/deals/best-student-discounts"><img class="size-36" src="images/thumbnails/businsider.png"/></a></div>
+            <div><a href="https://www.businessinsider.com/guides/deals/best-student-discounts"><img class="size-24 md:size-36" src="images/thumbnails/businsider.png"/></a></div>
             <div>
               <a href="https://www.businessinsider.com/guides/deals/best-student-discounts"><p class="large-p" style="text-align: left;">Student Discounts</p></a>
               <p>
@@ -322,16 +324,34 @@
 
   let currentPage = '1';
 
+  function isMobile() {
+    return window.innerWidth < 768; // matches Tailwind's md breakpoint
+  }
+
   function renderPage(page) {
     currentPage = page;
-    allItems.forEach(item => {
-      item.style.display = (item.dataset.page === page) ? '' : 'none';
-    });
+
+    if (isMobile()) {
+      // show every item as one continuous list
+      allItems.forEach(item => { item.style.display = ''; });
+    } else {
+      allItems.forEach(item => {
+        item.style.display = (item.dataset.page === page) ? '' : 'none';
+      });
+    }
+
     renderPaginationButtons();
   }
 
   function renderPaginationButtons() {
     paginationContainer.innerHTML = '';
+
+    if (isMobile()) {
+      paginationContainer.style.display = 'none';
+      return;
+    }
+
+    paginationContainer.style.display = '';
     pageNumbers.forEach(num => {
       const btn = document.createElement('button');
       btn.textContent = num;
@@ -341,8 +361,16 @@
     });
   }
 
-  renderPage('1'); // show page 1 on load
+  renderPage('1'); // show page 1 (or all items, on mobile) on load
+
+  // re-render on resize so switching between mobile/desktop widths updates the view
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => renderPage(currentPage), 150);
+  });
 </script>
+
 
 </body>
 </html>

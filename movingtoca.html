@@ -31,7 +31,7 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="academics_firstyear.html">First Year</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="academics_firstyear.html#classes">Classes</a></li>
                 <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
                 <li><a href="academics_firstyear.html#forms">Forms</a></li>
@@ -39,7 +39,7 @@
             </li>
             <li>
               <a href="quals.html">Qualifying Exam</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="quals.html#about">About the Exam</a></li>
                 <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
                 <li><a href="quals.html#exam">Exam Content</a></li>
@@ -49,7 +49,8 @@
             </li>
             <li>
               <a href="dissertation.html">Dissertation</a>
-              <ul>
+              <ul class="max-sm:hidden">
+                <li><a href="dixxertation.html#about">About the Dissertation</a></li>
                 <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
                 <li><a href="dissertation.html#exit">Exit Seminar</a></li>
                 <li><a href="dissertation.html#interview">Exit Interviews</a></li>
@@ -57,7 +58,7 @@
             </li>
             <li>
               <a href="courses.html">Course Information</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="courses.html#area">Area Requirements</a></li>
                 <li><a href="courses.html#major">Major & Minor</a></li>
                 <li><a href="courses.html#recommendations">Course Reviews</a></li>
@@ -75,13 +76,15 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="movingtoca.html">Living in the Bay</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
                 <li><a href="movingtoca.html#residency">CA Residency</a></li>
                 <li><a href="movingtoca.html#dmv">The DMV</a></li>
               </ul>
             </li>
             <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li><a href="career.html">Career Development</a></li>
             <li><a href="taxes.html">Taxes</a></li>
           </ul>
           <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
@@ -91,7 +94,7 @@
       <button popovertarget="d3">News & Events</button>
       <div id="d3" popover>
         <div class="flex max-sm:flex-col items-start">
-          <ul class="menu w-full md:menu-horizontal style="align-items:start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li><a href="news.html">BioE News</a></li>
             <li><a href="events.html">Upcoming Events</a></li>
             <li><a href="photos.html">Photo Album</a></li>
@@ -103,10 +106,9 @@
       <div id="d4" popover>
         <div class="flex max-sm:flex-col items-start">
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
-            <li><a href="beast.html">Beast</a></li>
-            <li><a href="directory.html">Student Directory</a></li>
+            <li><a href="about.html">Beast</a></li>
             <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -165,7 +167,7 @@
         <h5>Housing</h5>
         <hr>
 
-        <div class="flex flex-wrap gap-4" style="padding:20px;">
+        <div class="flex flex-wrap gap-4 pt-4 md:p-6">
           <div class="flex-1 min-w-[min(400px,100%)]">
             <p>Finding an apartment or house in the Bay Area can be stressful, but often times students will be able to find rent under $1200/month. Keep in mind that the rent increases each year, with larger hikes in areas not protected by rent control.</p>
             <p>Current students often report finding aparments on <a href="https://www.zillow.com/homes/">Zillow</a>, <a href="https://www.apartments.com/">Apartments.com</a>, <a href="https://sfbay.craigslist.org/search/berkeley-ca/apa#search=2~gallery~0">Craigslist</a> or even some Facebook groups.</p>
@@ -187,13 +189,13 @@
           </div>
         </div>
 
-        <div style="padding:40px; padding-top:10px">
+        <div class="pb-4 md:pt-0 md:p-12">
           <p class="hint">There is no limit on the amount of rent a landlord may first charge the tenant when renting a vacant unit. The annual allowable rent increase is approximately ~5%. As such, leases that started further in the past often correspond to lower rent.</p>
         </div>
 
         <hr>
 
-        <p class="large-p" style="padding:20px">To get you started on your apartment hunt journey, here's some resources complied by students and the schools over the years.</p>
+        <p class="large-p pt-4 md:p-6">To get you started on your apartment hunt journey, here's some resources complied by students and the schools over the years.</p>
         
         <div class="carousel carousel-center rounded-box bg-base-200 space-x-4 p-4 carousel-wide" >
           <div class="carousel-item">
@@ -280,7 +282,7 @@
         <h5>Rent Map</h5>
         <hr>
 
-        <div style="padding:20px">
+        <div class="pt-4 md:p-6">
           <p>Here are some examples of housing that current students have found in the past, collected from Beast Peer Advising. 
             Please note that these are just examples and housing prices in San Francisco and the Bay Area fluctuate frequently.
           </p>
@@ -300,9 +302,9 @@
 
           <div class="tabs tabs-lift" style="margin-top: 20px">
             <input type="radio" name="my_tabs_3" class="tab" aria-label="2025" />
-            <div class="tab-content bg-base-100 border-base-300 p-6">
+            <div class="tab-content bg-base-100 border-base-300 p-3 md:p-6">
               <div class="overflow-x-auto h-128 w-full table-container">
-                <table class="table table-xs table-pin-rows" style="background-color: white;">
+                <table class="table table-xs table-pin-rows w-full" style="background-color: white;">
                   <thead>
                     <tr>
                       <th>Zip Code</th>
@@ -499,9 +501,9 @@
             </div>
 
             <input type="radio" name="my_tabs_3" class="tab" aria-label="2026" checked="checked" />
-            <div class="tab-content bg-base-100 border-base-300 p-6">
+            <div class="tab-content bg-base-100 border-base-300 p-3 md:p-6">
               <div class="overflow-x-auto h-128 w-full table-container">
-                <table class="table table-xs table-pin-rows" style="background-color: white;">
+                <table class="table table-xs table-pin-rows w-full" style="background-color: white;">
                   <thead>
                     <tr>
                       <th>Zip Code</th>
@@ -864,7 +866,7 @@
         <h5>California Residency</h5>
         <hr>
 
-        <div style="padding:20px">
+        <div class="pt-4 md:p-6">
           <p>The UC schools are public research universities, and as such, tuition is dependent on the student’s residency status. If you are a US citizen or permanent resident, you are expected to become a resident of California as soon as possible and prior to the Fall of your second year. To do so you must satisfy the “Physical Presence” and “Intent to Remain in California” requirements by the residence determination date, which is the first day of instruction.</p>
           <p>The following list is a rough outline of what needs to be completed to gain California residency.</p>
 
@@ -905,14 +907,14 @@
       <section id="dmv">
         <h5>Navigating the DMV</h5>
         <hr>
-        <div style="padding-left:20px; padding-right:20px; padding-top:20px">
+        <div class="pt-4 md:p-6">
           <p><b>Appointments</b>: The DMV allows for 
             <a class="link link-info" href="https://www.dmv.ca.gov/portal/dmv/dmv/appointments">online scheduling</a> of appointments 
             up to three (3) months in advance. However, depending on the day, walk-in appointments may still be served more quickly 
             than appointments. If you find it challenging to schedule an appointment, it may be worthwhile to take a day to complete 
             your business as a walk-in.</p>
         </div>
-        <div class="flex flex-wrap gap-6" style="padding-left:20px; padding-right:20px">
+        <div class="flex flex-wrap gap-6 md:pt-0 md:p-6">
           <div class="flex-1" style="min-width: min(280px,100%);">
             <p><b>Real ID</b>: Starting Oct. 1, 2020, a regular California driver’s license or ID card won’t be accepted as a valid form of federal identification. Only Real ID will be accepted at federal courthouses, military bases, and airports. You can upgrade your current driver's lisence to a Real ID or obtain a new one through bringing the following items to your appointment:</p>
             <ul class="ul-text" style="padding-bottom:0px">
@@ -922,7 +924,7 @@
             </ul>
           </div>
 
-          <div class="flex-1" style="min-width: min(340px,100%)">
+          <div class="flex-1 flex justify-center items-center" style="min-width: min(340px,100%)">
             <div class="hover-3d">
               <!-- content -->
               <figure class="max-w-100 rounded-2xl">
@@ -942,7 +944,7 @@
           </div>
         </div>
 
-        <div style="padding-left: 20px; padding-right: 20px; padding-top: 20px">
+        <div class="md:p-6">
           <p><b>Driving Test</b>: If you already hold a valid license from another state, visit a DMV location and take the CA written test and vision test. If you pass these, the driving test is generally waived and a CA license will be granted and your former state’s license will be nullified. If you only hold a valid license from another country, you must also take the driving skills test. A Driving Test requires a specific appointment at the DMV, which are frequently booked up. For the best results, book your appointment early and/or call the DMV to check for open appointments due to last minute cancellations.</p>
         </div>
 

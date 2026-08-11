@@ -31,7 +31,7 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="academics_firstyear.html">First Year</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="academics_firstyear.html#classes">Classes</a></li>
                 <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
                 <li><a href="academics_firstyear.html#forms">Forms</a></li>
@@ -39,7 +39,7 @@
             </li>
             <li>
               <a href="quals.html">Qualifying Exam</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="quals.html#about">About the Exam</a></li>
                 <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
                 <li><a href="quals.html#exam">Exam Content</a></li>
@@ -49,7 +49,8 @@
             </li>
             <li>
               <a href="dissertation.html">Dissertation</a>
-              <ul>
+              <ul class="max-sm:hidden">
+                <li><a href="dixxertation.html#about">About the Dissertation</a></li>
                 <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
                 <li><a href="dissertation.html#exit">Exit Seminar</a></li>
                 <li><a href="dissertation.html#interview">Exit Interviews</a></li>
@@ -57,7 +58,7 @@
             </li>
             <li>
               <a href="courses.html">Course Information</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="courses.html#area">Area Requirements</a></li>
                 <li><a href="courses.html#major">Major & Minor</a></li>
                 <li><a href="courses.html#recommendations">Course Reviews</a></li>
@@ -65,7 +66,7 @@
             </li>
             <li><a href="forms.html">Forms</a></li>
           </ul>
-          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
@@ -75,23 +76,25 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="movingtoca.html">Living in the Bay</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
                 <li><a href="movingtoca.html#residency">CA Residency</a></li>
                 <li><a href="movingtoca.html#dmv">The DMV</a></li>
               </ul>
             </li>
             <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li><a href="career.html">Career Development</a></li>
             <li><a href="taxes.html">Taxes</a></li>
           </ul>
-          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
       <button popovertarget="d3">News & Events</button>
       <div id="d3" popover>
         <div class="flex max-sm:flex-col items-start">
-          <ul class="menu w-full md:menu-horizontal style="align-items:start"">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li><a href="news.html">BioE News</a></li>
             <li><a href="events.html">Upcoming Events</a></li>
             <li><a href="photos.html">Photo Album</a></li>
@@ -104,7 +107,6 @@
         <div class="flex max-sm:flex-col items-start">
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li><a href="about.html">Beast</a></li>
-            <li><a href="directory.html">Student Directory</a></li>
             <li><a href="faqs.html">FAQs</a></li>
             <li><a href="about.html#contact">Contact</a></li>
           </ul>
@@ -132,67 +134,64 @@
 </div>
 
 <div class="page-container">
-  <div class="flex items-start gap-6" style="padding-top:40px;">
-    <!-- Sidebar -->
-    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px"></ul>
+  <div class="p-6">
 
-    <!-- Main -->
-    <div class="page-content">
+    <section id="about">
+      <div class="flex justify-center">
+        <img src="images/groupphoto.png" class="max-w-[100%] md:max-w-[70%]">
+      </div>
+      
+      <div class="p-4 md:p-6"></div>
 
-      <section id="about">
-        <div class="md:p-6"></div>
-
-        <img src="images/groupphoto.png">
-
-        <div class="p-4 md:p-6"></div>
-
-        <div class="hero">
-          <div class="hero-content text-center">
-            <div class="max-w-xl">
-              <h1 class="text-5xl font-bold">Hi, we're beast!</h1>
-              <p class="py-6">
-                We're the graduate student association for the joint UC Berkeley-UCSF Bioengineering Graduate Program. Our organization is dedicated to helping students navigate 
-                the graduate school process across half a decade and two sides of the Bay. Our members help plan the interviewee Visit Weekend, create social events for the entire program, 
-                and sit on the UCSF-UC Berkeley Bioengineering admissions committee.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="hero-content flex-col lg:flex-row-reverse md:py-12">
-          
-          <div class="card bg-base-100 w-full max-w-lg shrink-0 shadow-md">
-            <div class="card-body">
-              <form class="w-full mx-auto">
-                <label for="message" class="block mb-2.5 text-sm font-medium text-base-content">...or leave us a message</label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  class="textarea textarea-bordered w-full min-h-[250px] text-base-content text-sm shadow-xs placeholder:text-base-content/50"
-                  placeholder="Any events you'd like to see in the future? What's working well? What needs some improvement?"
-                ></textarea>
-                <div class="pt-4 text-right">
-                  <button class="btn btn-primary" href="about.html">submit</button>  
-                </div>
-                
-              </form>
-            </div>
-          </div>
-
-          <div class="text-center lg:text-left px-12">
-            <h1 class="text-4xl font-bold">Contact Us</h1>
+      <div class="hero">
+        <div class="hero-content text-center">
+          <div class="max-w-xl">
+            <h1 class="text-5xl font-bold">Hi, we're beast!</h1>
             <p class="py-6">
-              For general student-led help with classes, rotations or dealing with lab, please reach out to our Peer Advisors.
-            </p>
-            <p>
-              For administrative and logistics help, visit our <a class="link link-info" href="faqs.html">FAQs page</a>, or reach out to Rocio and Victoria.
+              We're the graduate student association for the joint UC Berkeley-UCSF Bioengineering Graduate Program. Our organization is dedicated to helping students navigate 
+              the graduate school process across half a decade and two sides of the Bay. Our members help plan the interviewee Visit Weekend, create social events for the entire program, 
+              and sit on the UCSF-UC Berkeley Bioengineering admissions committee.
             </p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="hero-content flex-col lg:flex-row-reverse md:py-12 md:px-12">
+        
+        <div class="card bg-base-100 w-full max-w-lg shrink-0 shadow-md order-2 lg:order-1">
+          <div class="card-body">
+            <form id="contact-form" class="w-full mx-auto">
+              <label for="message" class="block mb-2.5 text-sm font-medium text-base-content">...leave us a message</label>
+              <input type="text" name="email" id="email" placeholder="email (optional)" class="input w-full" style="margin-bottom: 8px;" />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="textarea textarea-bordered w-full min-h-[250px] text-base-content text-sm shadow-xs placeholder:text-base-content/50"
+                placeholder="Any events you'd like to see in the future? What's working well? What needs some improvement?"
+              ></textarea>
+              <div class="pt-4 text-right">
+                <button type="submit" class="btn btn-primary" id="submit-btn">submit</button>
+              </div>
+              <p id="form-status" class="block mb-2.5 text-sm font-medium text-base-content text-right pt-2 hidden"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="text-center md:text-left md:pl-12 md:px-12 order-1 lg:order-2">
+          <h1 class="text-4xl font-bold">Contact Us</h1>
+          <p class="py-6">
+            For general student-led help with classes, rotations or dealing with lab, please reach out to our Peer Advisors.
+            For administrative and logistics help, visit our <a class="link link-info" href="faqs.html">FAQs page</a>, or reach out to Rocio and Victoria.
+          </p>
+          <p>
+            For concerns related to Beast events and affairs, take a look at our member directory below to get your email to the right person quickly, or leave us a general message in the form.
+          </p>
+        </div>
+      </div>
+    </section>
 
   </div>
 </div>
@@ -631,6 +630,39 @@
       const matches = name.includes(query) || role.includes(query);
       card.style.display = matches ? '' : 'none';
     });
+  });
+
+
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzDlSf9ABNn3AP1CWG0yz4bmhJRSOLGRMW-8sIwKDLYZqYVSaPPTofcQUpT6Sis3sCH/exec"; // ends in /exec
+
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+  const submitBtn = document.getElementById("submit-btn");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = "sending...";
+
+    const formData = new FormData(form);
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+      });
+
+      status.textContent = "Thanks — your message was sent!";
+      status.classList.remove("hidden");
+      form.reset();
+    } catch (err) {
+      status.textContent = "Something went wrong. Please try again.";
+      status.classList.remove("hidden");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "submit";
+    }
   });
 </script>
 
