@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Directory</title>
+  <title>beast - Student Directory</title>
   <link rel="stylesheet" href="/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="academics_firstyear.html">First Year</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="academics_firstyear.html#classes">Classes</a></li>
                 <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
                 <li><a href="academics_firstyear.html#forms">Forms</a></li>
@@ -39,7 +39,7 @@
             </li>
             <li>
               <a href="quals.html">Qualifying Exam</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="quals.html#about">About the Exam</a></li>
                 <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
                 <li><a href="quals.html#exam">Exam Content</a></li>
@@ -49,7 +49,8 @@
             </li>
             <li>
               <a href="dissertation.html">Dissertation</a>
-              <ul>
+              <ul class="max-sm:hidden">
+                <li><a href="dissertation.html#about">About the Dissertation</a></li>
                 <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
                 <li><a href="dissertation.html#exit">Exit Seminar</a></li>
                 <li><a href="dissertation.html#interview">Exit Interviews</a></li>
@@ -57,7 +58,7 @@
             </li>
             <li>
               <a href="courses.html">Course Information</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="courses.html#area">Area Requirements</a></li>
                 <li><a href="courses.html#major">Major & Minor</a></li>
                 <li><a href="courses.html#recommendations">Course Reviews</a></li>
@@ -65,7 +66,7 @@
             </li>
             <li><a href="forms.html">Forms</a></li>
           </ul>
-          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
@@ -75,16 +76,23 @@
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
             <li>
               <a href="movingtoca.html">Living in the Bay</a>
-              <ul>
+              <ul class="max-sm:hidden">
                 <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
                 <li><a href="movingtoca.html#residency">CA Residency</a></li>
                 <li><a href="movingtoca.html#dmv">The DMV</a></li>
               </ul>
             </li>
-            <li><a href="budgeting.html">Budgeting Resources</a></li>
+            <li>
+              <a href="budgeting.html">Budgeting Resources</a>
+              <ul class="max-sm:hidden">
+                <li><a href="budgeting.html#calfresh">CalFresh</a></li>
+              </ul>
+            </li>
+            <li><a href="career.html">Career Development</a></li>
             <li><a href="taxes.html">Taxes</a></li>
           </ul>
-          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden" alt="Tailwind CSS megamenu">
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
         </div>
       </div>
  
@@ -103,10 +111,9 @@
       <div id="d4" popover>
         <div class="flex max-sm:flex-col items-start">
           <ul class="menu w-full md:menu-horizontal" style="align-items:start">
-            <li><a href="beast.html">Beast</a></li>
-            <li><a href="directory.html">Student Directory</a></li>
+            <li><a href="about.html">Beast</a></li>
             <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>

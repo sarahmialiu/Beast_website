@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="beastwebsite">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beast - Career Development</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical megamenu-full" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+ 
+      <button popovertarget="d1">Academics</button>
+      <div id="d1" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="academics_firstyear.html">First Year</a>
+              <ul class="max-sm:hidden">
+                <li><a href="academics_firstyear.html#classes">Classes</a></li>
+                <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+                <li><a href="academics_firstyear.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="quals.html">Qualifying Exam</a>
+              <ul class="max-sm:hidden">
+                <li><a href="quals.html#about">About the Exam</a></li>
+                <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+                <li><a href="quals.html#exam">Exam Content</a></li>
+                <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+                <li><a href="quals.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="dissertation.html">Dissertation</a>
+              <ul class="max-sm:hidden">
+                <li><a href="dissertation.html#about">About the Dissertation</a></li>
+                <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+                <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+                <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="courses.html">Course Information</a>
+              <ul class="max-sm:hidden">
+                <li><a href="courses.html#area">Area Requirements</a></li>
+                <li><a href="courses.html#major">Major & Minor</a></li>
+                <li><a href="courses.html#recommendations">Course Reviews</a></li>
+              </ul>
+            </li>
+            <li><a href="forms.html">Forms</a></li>
+          </ul>
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden">
+        </div>
+      </div>
+ 
+      <button popovertarget="d2">Student Life</button>
+      <div id="d2" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="movingtoca.html">Living in the Bay</a>
+              <ul class="max-sm:hidden">
+                <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
+                <li><a href="movingtoca.html#residency">CA Residency</a></li>
+                <li><a href="movingtoca.html#dmv">The DMV</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="budgeting.html">Budgeting Resources</a>
+              <ul class="max-sm:hidden">
+                <li><a href="budgeting.html#calfresh">CalFresh</a></li>
+              </ul>
+            </li>
+            <li><a href="career.html">Career Development</a></li>
+            <li><a href="taxes.html">Taxes</a></li>
+          </ul>
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
+        </div>
+      </div>
+ 
+      <button popovertarget="d3">News & Events</button>
+      <div id="d3" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="news.html">BioE News</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="photos.html">Photo Album</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <button popovertarget="d4">About</button>
+      <div id="d4" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="about.html">Beast</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Career Development</li>
+  </ul>
+</div>
+
+<div class="page-container">
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">Resources</a></li>
+      <li style="padding: 10px 20px">
+        <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+                >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+                </g>
+            </svg>
+            <input type="search" id="budgeting-search" class="grow" placeholder="Search" />
+        </label>
+      </li>
+    </ul>
+    
+    <!-- Main -->
+    <div class="page-content">
+      <section id="resources">
+        <h5>Career Development Resources</h5>
+        <hr>
+
+        <div class="pt-4 md:p-6">
+          <p>
+            Part of graduate school is nurturing students for careers both within and outside academia. Below, we've gotten started compiling 
+            some resources that can help you get ahead in the post-graduation PhD job scramble.
+          </p>
+          <p class="hint">
+            Please reach out to the current Beast Webmaster if you know any additional resources that would be helpful to other students!
+          </p>
+        </div>
+
+        <hr>
+
+        <ul class="list" id="budgeting-list" style="margin-top: 20px; margin-bottom: 20px;">      
+          <li class="list-row" data-page="1">
+            <div><a href="pdfs/academia_to_industry.pdf"><img class="size-24 md:size-36" src="images/thumbnails/academia_to_industry.png"/></a></div>
+            <div>
+              <a href="pdfs/academia_to_industry.pd"><p class="large-p" style="text-align: left;">Industry Job Search Tips</p></a>
+              <p>
+                So, you're looking to go into industry and are trying to land a job. Start here with tips compiled from older students who have gone through the job hunt themselves.
+                *Note that the information may be out-of-date.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="1">
+            <div><a href="https://basicneeds.berkeley.edu/"><img class="size-24 md:size-36" src="images/thumbnails/berkbasicneeds.png"/></a></div>
+            <div>
+              <a href="https://basicneeds.berkeley.edu/"><p class="large-p" style="text-align: left;">UC Berkeley Basic Needs</p></a>
+              <p>The Basic Needs Center team is committed to addressing students’ basic needs, including food security, housing security, 
+                and financial stability. All enrolled students including undergraduate, graduate, international and undocumented students 
+                are eligible for Basic Needs Center resources and services.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="1">
+            <div><a href="https://basicneeds.ucsf.edu/"><img class="size-24 md:size-36" src="images/thumbnails/ucsfbasicneeds.png"/></a></div>
+            <div>
+              <a href="https://basicneeds.ucsf.edu/"><p class="large-p" style="text-align: left;">UCSF Basic Needs for Students</p></a>
+              <p>Through a robust model of prevention, intervention, and emergency relief, Basic Needs connects students to critical on- and off-campus resources and provides educational opportunities for students to take personal responsibility for their wellness.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://finaid.ucsf.edu/financial-literacy"><img class="size-24 md:size-36" src="images/thumbnails/ucsffinancialservices.png"/></a></div>
+            <div>
+              <a href="https://finaid.ucsf.edu/financial-literacy"><p class="large-p" style="text-align: left;">UCSF Student Financial Services</p></a>
+              <p>The UCSF Student Financial Services division offers services to manage student debt, create spending plans, and connect individuals with aid offered by UCSF.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="1">
+            <div><a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><img class="size-24 md:size-36" src="images/thumbnails/baypass.png"/></a></div>
+            <div>
+              <a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass"><p class="large-p" style="text-align: left;">UCSF BayPass</p></a>
+              <p>
+                In Spring 2024, UCSF invited students to join the UCSF BayPass pilot program, providing unlimited travel on any service that uses Clipper (except historic San Francisco Cable Cars, parking, BayWheels and BikeLink). To receive the Clipper BayPass, students must enroll a Clipper card serial number with the program.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://travel.ucop.edu/connexxus/"><img class="size-24 md:size-36" src="images/thumbnails/connexuc.png"/></a></div>
+            <div>
+              <a href="https://travel.ucop.edu/connexxus/"><p class="large-p" style="text-align: left;">ConnexUC</p></a>
+              <p>ConnexUC is the UC's preferred travel platform. ConnexUC negotiates discounts and rewards with major airlines, lodging properties, car rental companies, rail and travel agencies on behalf of UC employees.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://haas.berkeley.edu/undergrad/academics/courses/special-topics-business-administration-courses/"><img class="size-24 md:size-36" src="images/thumbnails/haascourses.png"/></a></div>
+            <div>
+              <a href="https://haas.berkeley.edu/undergrad/academics/courses/special-topics-business-administration-courses/"><p class="large-p" style="text-align: left;">Haas Personal Finance Courses</p></a>
+              <p>According to other students, Fred Selinger is a fun lectuerer, and there’s a course specifically tailored for grad students and that's just 2 hours commitment per week.
+              </p>
+            </div>
+          </li>
+
+          <li class="list-row" data-page="2">
+            <div><a href="https://www.businessinsider.com/guides/deals/best-student-discounts"><img class="size-24 md:size-36" src="images/thumbnails/businsider.png"/></a></div>
+            <div>
+              <a href="https://www.businessinsider.com/guides/deals/best-student-discounts"><p class="large-p" style="text-align: left;">Student Discounts</p></a>
+              <p>
+                This article from Business Insider lists which brands run student deals.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <hr>
+
+        <div class="join flex justify-center" id="pagination" style="margin:40px">
+          <button class="join-item btn btn-primary">1</button>
+          <button class="join-item btn btn-outline">2</button>
+          <button class="join-item btn btn-outline btn-disabled">3</button>
+          <button class="join-item btn btn-outline btn-disabled">4</button>
+        </div>
+
+      </section>
+
+      <section id="calfresh">
+        <h5>CalFresh</h5>
+        <hr>
+
+        <div class="flex flex-wrap gap-4 pt-4 md:p-4 md:pt-6">
+          <div class="flex-1 min-w-[min(400px,100%)]">
+            <p class="large-p">To apply for CalFresh, start your application at <a class="link link-info" href="https://benefitscal.com/ApplyForBenefits/begin/ABOVR?lang=en">BenefitsCal</a>.</p>
+            <p>
+              <a class="link link-info" href="https://www.cdss.ca.gov/inforesources/calfresh">CalFresh</a> is California’s Supplemental Nutrition Assistance Program (SNAP), 
+              formerly known as food stamps. CalFresh is the largest food program in California and provides an essential hunger safety net. CalFresh is federally mandated 
+              and in California, is state-supervised and county-operated. The program issues monthly benefits on an Electronic Benefit Transfer (EBT) card, which can be used 
+              to purchased food at any grocery store or farmers market that accepts EBT cards.
+            </p>
+            
+            <p>
+              While CalFresh is primarily intended for low-income households, the UC Berkeley-UCSF Bioengineering program is also eligible for CalFresh through its status as
+              a <b>local program to increase employability (LPIE)</b>. This basically means that students in BioE are exempt from the standard income requirements that would otherwise
+              make them ineligible to recieve CalFresh benefits. To see a full list of all currently-eligible LPIEs, go <a class="link link-info" 
+              href="https://www.cdss.ca.gov/inforesources/calfresh-resource-center/policy">here</a>.
+            </p>
+
+            
+          </div>
+
+          <div class="flex-1 min-w-[min(400px,100%)] md:pt-4">
+            <div class="pt-0 pb-4 md:p-6 md:pt-0">
+              <div class="card bg-base-200 shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Tips for Getting CalFresh:</h2>
+                  <ul class="list-disc list-outside space-y-2" style="padding:20px; padding-top:0px">
+                    <li>
+                      BioE PhD students are considered <b>full-time students</b>, regardless of teaching appointments. 
+                      <ul class="list-disc list-outside ml-6 mt-2 space-y-1">
+                        <li>This means we are <i>not</i> working while attending school.</li>
+                        <li>The program stipend should be reported as financial aid.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Under "Student Exemptions," make sure to check "<b>Participating in a student employment training program</b>."
+                    </li>
+                    <li>
+                      Submitting as many documents as possible will help you substantiate your application.
+                      <ul class="list-disc list-outside ml-6 mt-2 space-y-1">
+                        <li>UC Berkeley-UCSF BioE Offer Letter</li>
+                        <li>Paystub from UCSF/Berkeley</li>
+                        <li>Lease Agreement</li>
+                        <li>Utility/Tuition Payments</li>
+                      </ul>
+                    </li>
+                    <li>
+                      There is no limit on how many times you can submit a CalFresh application, so if your case is denied the first time, it's worth trying to re-submit again.
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:p-6 md:pt-0">
+            <p class="hint">
+              While some students have recieved EBT benefits up to $298 a month, it's important to note that each application is processed separately, and that CalFresh case workers
+              may assign amounts differently depending on individual circumstances.
+            </p>
+          </div>
+        </div>
+        
+        <hr style="margin-top:40px">
+
+        <p class="large-p" style="padding:20px">Additional CalFresh Help:</p>
+        
+        <div class="carousel carousel-center rounded-box bg-base-200 space-x-4 p-4 carousel-wide flex justify-center" >
+          <div class="carousel-item">
+            <a href="https://basicneeds.berkeley.edu/calfresh" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="images/thumbnails/berkcalfresh.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">Berkeley Basic Needs CalFresh Application Assistance</p>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="pdfs/ucsfcalfresh.pdf" target="_blank" class="w-full">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="images/thumbnails/ucsfcalfresh.png" class="w-full rounded-box" />
+                <p class="text-sm text-base-content text-center">UCSF CalFresh Application Guide</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel w-full carousel-narrow">
+          <div id="slide1" class="carousel-item relative w-full min-w-[min(400px,100%)]">
+            <a href="https://basicneeds.berkeley.edu/calfresh" target="_blank" class="w-full">
+              <img src="images/thumbnails/berkcalfresh.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">Berkeley Basic Needs CalFresh Application Assistance</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <a href="pdfs/ucsfcalfresh.pdf" target="_blank" class="w-full">
+              <img src="images/thumbnails/ucsfcalfresh.png" class="w-full rounded-box" />
+              <p class="text-center text-sm mt-2">UCSF CalFresh Application Guide</p>
+            </a>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  
+
+</div>
+
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <p class="large-p" style="font-weight: 500; color: rgba(255, 255, 255, 0.524);">beast.</p>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="about.html">About Us</a>
+    <a class="link link-hover" href="about.html#contact">Contact</a>
+    <a class="link link-hover" href="directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="credits.html">Credits</a>
+    <a class="link link-hover" href="fun.html">Sarah's Corner</a>
+  </nav>
+</footer>
+
+<script>
+  const searchInput = document.getElementById('budgeting-search');
+  const cards = document.querySelectorAll('.list-row');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      const matches = text.includes(query);
+      card.style.display = matches ? '' : 'none';
+    });
+  });
+
+  const list = document.getElementById('budgeting-list');
+  const allItems = Array.from(list.querySelectorAll('.list-row'));
+  const paginationContainer = document.getElementById('pagination');
+
+  // Figure out how many pages exist from data-page attributes
+  const pageNumbers = [...new Set(allItems.map(item => item.dataset.page))].sort((a, b) => a - b);
+
+  let currentPage = '1';
+
+  function isMobile() {
+    return window.innerWidth < 768; // matches Tailwind's md breakpoint
+  }
+
+  function renderPage(page) {
+    currentPage = page;
+
+    if (isMobile()) {
+      // show every item as one continuous list
+      allItems.forEach(item => { item.style.display = ''; });
+    } else {
+      allItems.forEach(item => {
+        item.style.display = (item.dataset.page === page) ? '' : 'none';
+      });
+    }
+
+    renderPaginationButtons();
+  }
+
+  function renderPaginationButtons() {
+    paginationContainer.innerHTML = '';
+
+    if (isMobile()) {
+      paginationContainer.style.display = 'none';
+      return;
+    }
+
+    paginationContainer.style.display = '';
+    pageNumbers.forEach(num => {
+      const btn = document.createElement('button');
+      btn.textContent = num;
+      btn.className = 'join-item btn ' + (num === currentPage ? 'btn-primary' : 'btn-outline');
+      btn.addEventListener('click', () => renderPage(num));
+      paginationContainer.appendChild(btn);
+    });
+  }
+
+  renderPage('1'); // show page 1 (or all items, on mobile) on load
+
+  // re-render on resize so switching between mobile/desktop widths updates the view
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => renderPage(currentPage), 150);
+  });
+</script>
+
+
+</body>
+</html>
