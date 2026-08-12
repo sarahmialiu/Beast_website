@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="beastwebsite">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beast - Academics</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a class="btn btn-ghost text-xl" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="index.html">beast</a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="megamenu max-sm:megamenu-vertical megamenu-full" id="my-megamenu-1" popover>
+      <span class="megamenu-active"></span>
+ 
+      <button popovertarget="d1">Academics</button>
+      <div id="d1" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="academics_firstyear.html">First Year</a>
+              <ul class="max-sm:hidden">
+                <li><a href="academics_firstyear.html#classes">Classes</a></li>
+                <li><a href="academics_firstyear.html#rotations">Rotations</a></li>
+                <li><a href="academics_firstyear.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="quals.html">Qualifying Exam</a>
+              <ul class="max-sm:hidden">
+                <li><a href="quals.html#about">About the Exam</a></li>
+                <li><a href="quals.html#committee">Forming a Quals Committee</a></li>
+                <li><a href="quals.html#exam">Exam Content</a></li>
+                <li><a href="quals.html#candidacy">Advancement to Candidacy</a></li>
+                <li><a href="quals.html#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="dissertation.html">Dissertation</a>
+              <ul class="max-sm:hidden">
+                <li><a href="dissertation.html#about">About the Dissertation</a></li>
+                <li><a href="dissertation.html#committee">Forming a Dissertation Committee</a></li>
+                <li><a href="dissertation.html#exit">Exit Seminar</a></li>
+                <li><a href="dissertation.html#interview">Exit Interviews</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="courses.html">Course Information</a>
+              <ul class="max-sm:hidden">
+                <li><a href="courses.html#area">Area Requirements</a></li>
+                <li><a href="courses.html#major">Major & Minor</a></li>
+                <li><a href="courses.html#recommendations">Course Reviews</a></li>
+              </ul>
+            </li>
+            <li><a href="forms.html">Forms</a></li>
+          </ul>
+          <img src="images/weillhall.jpg" class="md:max-w-sm max-md:hidden">
+        </div>
+      </div>
+ 
+      <button popovertarget="d2">Student Life</button>
+      <div id="d2" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li>
+              <a href="movingtoca.html">Living in the Bay</a>
+              <ul class="max-sm:hidden">
+                <li><a href="movingtoca.html#housing">Housing</a></li>
+                <li><a href="movingtoca.html#map">Rent Map</a></li>
+                <li><a href="movingtoca.html#residency">CA Residency</a></li>
+                <li><a href="movingtoca.html#dmv">The DMV</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="budgeting.html">Budgeting Resources</a>
+              <ul class="max-sm:hidden">
+                <li><a href="budgeting.html#calfresh">CalFresh</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="career.html">Career Development</a>
+              <ul class="max-sm:hidden">
+                <li><a href="#internship">Internships</a></li>
+              </ul>
+            </li>
+            <li><a href="taxes.html">Taxes</a></li>
+          </ul>
+          <img src="images/collegeave.jpg" class="md:max-w-sm max-md:hidden">
+        </div>
+      </div>
+ 
+      <button popovertarget="d3">News & Events</button>
+      <div id="d3" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="news.html">BioE News</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="photos.html">Photo Album</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <button popovertarget="d4">About</button>
+      <div id="d4" popover>
+        <div class="flex max-sm:flex-col items-start">
+          <ul class="menu w-full md:menu-horizontal" style="align-items:start">
+            <li><a href="about.html">Beast</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn sm:hidden btn-circle" popovertarget="my-megamenu-1" id="menu-toggle-btn">
+      <svg class="icon-open fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+      </svg>
+      <svg class="icon-close fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Taxes</li>
+  </ul>
+</div>
+
+<div class="page-container">
+  <div class="flex items-start gap-6" style="padding-top:40px;">
+    <!-- Sidebar -->
+    <ul class="menu sidebar-menu bg-base-000 rounded-box w-56 shrink-0 sticky top-20 z-40" style="padding-bottom:20px">
+      <li><a href="#welcome" class="menu-title">Taxes</a></li>
+      <!-- <li><a href="#classes" class="menu-item">Classes</a></li>
+      <li><a href="#rotations" class="menu-item">Rotations</a></li>
+      <li><a href="#forms" class="menu-item">Forms</a></li> -->
+    </ul>
+    
+    <!-- Main -->
+    <div class="page-content">
+
+      <section id="classes">
+        <h5>Taxes</h5>
+        <hr>
+
+        <div class="pt-4 md:p-6 md:pb-0">
+          <p class="hint">
+            Note: This page is completely unofficial and is no way endorsed by the UC Berkeley-UCSF Graduate Program or the University of California.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-4 md:p-6 pt-0">
+          <div class="flex-1 min-w-[min(400px,100%)]">
+            <p>Sarah doesn't know how taxes work yet, but she's learning and will be back to fix this page. Meanwhile, 
+              <a class="link link-info" href="https://ucbeast.berkeley.edu/extracurricular-resources/living-cost/tax-info/">this page</a> has some useful
+              information, but also note that it may be out-of-date.
+            </p>
+          </div>
+          
+          <div class="flex-1 min-w-[min(400px,100%)]">
+            
+          </div>
+        </div>
+
+        
+      </section>
+
+      <section id="forms">
+        <h5>Forms</h5>
+        <hr>
+
+        <!-- Multi-item carousel - shown on larger screens -->
+        <div class="carousel carousel-center rounded-box bg-base-200 space-x-4 p-4 carousel-wide" >
+          <div class="carousel-item">
+            <a href="https://www.irs.gov/pub/irs-pdf/f1040.pdf" target="_blank">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/f1040.png" class="rounded-box w-full h-auto object-cover" />
+                <figcaption class="text-sm text-base-content text-center">Form 1040</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf" target="_blank">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/f1040-es.png" class="rounded-box w-full h-auto object-cover" />
+                <figcaption class="text-sm text-base-content text-center">Form 1040-ES</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.irs.gov/pub/irs-pdf/f1040nr.pdf" target="_blank">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/f1040-nr.png" class="rounded-box w-full h-auto object-cover" />
+                <figcaption class="text-sm text-base-content text-center">Nonresident: Form 1040-NR</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.ftb.ca.gov/forms/2025/2025-540.pdf" target="_blank">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/f540.png" class="rounded-box w-full h-auto object-cover" />
+                <figcaption class="text-sm text-base-content text-center">Form 540</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.ftb.ca.gov/forms/2026/2026-540-es.pdf" target="_blank">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/f540-es.png" class="rounded-box w-full h-auto object-cover" />
+                <figcaption class="text-sm text-base-content text-center">Form 540-ES</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.ftb.ca.gov/forms/2025/2025-540nr.pdf" target="_blank">
+              <figure class="flex flex-col items-center gap-2">
+                <img src="pdfs/thumbnails/f540-nr.png" class="rounded-box w-full h-auto object-cover" />
+                <figcaption class="text-sm text-base-content text-center">Nonresident: Form 540-NR</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <!-- Single-slide carousel w/ arrows - shown on smaller screens -->
+        <div class="p-8">
+          <div class="carousel w-full carousel-narrow">
+            <div id="slide1" class="carousel-item relative w-full min-w-[min(400px,100%)]">
+              <a href="https://www.irs.gov/pub/irs-pdf/f1040.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/f1040.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Form 1040</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide6" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/f1040-es.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Form 1040-ES</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <a href="https://www.irs.gov/pub/irs-pdf/f1040nr.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/f1040-nr.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Nonresident: Form 1040-NR</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <a href="https://www.ftb.ca.gov/forms/2025/2025-540.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/f540.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Form 540</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide5" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide5" class="carousel-item relative w-full">
+              <a href="https://www.ftb.ca.gov/forms/2026/2026-540-es.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/f540-es.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Form 540-ES</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide6" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide6" class="carousel-item relative w-full">
+              <a href="https://www.ftb.ca.gov/forms/2025/2025-540nr.pdf" target="_blank" class="w-full">
+                <img src="pdfs/thumbnails/f540-nr.png" class="w-full rounded-box" />
+                <p class="text-center text-sm mt-2">Nonresident: Form 540-NR</p>
+              </a>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide5" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      </section>  
+    </div>
+  </div>
+</div>
+
+<footer class="footer sm:footer-horizontal bg-primary text-primary-content p-10">
+  <aside>
+    <p class="large-p" style="font-weight: 500; color: rgba(255, 255, 255, 0.524);">beast.</p>
+    <p class="max-w-xl">
+      The BioEngineering Association of STudents (BEAST) is the graduate student organization for the 
+      UC Berkeley-UCSF Bioengineering Graduate Program. This website is maintained by BEAST to provide 
+      resources and information for current and prospective students.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Beast</h6>
+    <a class="link link-hover" href="about.html">About Us</a>
+    <a class="link link-hover" href="about.html#contact">Contact</a>
+    <a class="link link-hover" href="directory.html">Directory</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Socials</h6>
+    <a class="link link-hover" href="https://www.instagram.com/bioe_beast/?hl=en">Instagram</a>
+    <a class="link link-hover" href="https://x.com/BioE_Beast">Twitter</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Website</h6>
+    <a class="link link-hover" href="https://ucbeast.berkeley.edu/">Old Beast Wiki</a>
+    <a class="link link-hover" href="credits.html">Credits</a>
+    <a class="link link-hover" href="fun.html">Sarah's Corner</a>
+  </nav>
+</footer>
+
+<script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+</html>
